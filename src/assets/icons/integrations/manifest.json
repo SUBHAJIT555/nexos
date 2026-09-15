@@ -1,0 +1,172 @@
+[
+  {
+    "label": "Claude Code",
+    "id": "claude-code",
+    "file": "claude-code.svg"
+  },
+  {
+    "label": "Cline",
+    "id": "cline",
+    "file": "cline.svg"
+  },
+  {
+    "label": "Openbox",
+    "id": "openbox",
+    "file": "openbox.svg"
+  },
+  {
+    "label": "OpenAI Codex",
+    "id": "openai-codex",
+    "file": "openai-codex.svg"
+  },
+  {
+    "label": "Kilo Code",
+    "id": "kilo-code",
+    "file": "kilo-code.svg"
+  },
+  {
+    "label": "Opencode",
+    "id": "opencode",
+    "file": "opencode.svg"
+  },
+  {
+    "label": "Roo Code",
+    "id": "roo-code",
+    "file": "roo-code.svg"
+  },
+  {
+    "label": "n8n",
+    "id": "n8n",
+    "file": "n8n.svg"
+  },
+  {
+    "label": "Langfuse",
+    "id": "langfuse",
+    "file": "langfuse.svg"
+  },
+  {
+    "label": "Braintrust",
+    "id": "braintrust",
+    "file": "braintrust.svg"
+  },
+  {
+    "label": "LangGraph",
+    "id": "langgraph",
+    "file": "langgraph.svg"
+  },
+  {
+    "label": "Zapier",
+    "id": "zapier",
+    "file": "zapier.svg"
+  },
+  {
+    "label": "LangChain",
+    "id": "langchain",
+    "file": "langchain.svg"
+  },
+  {
+    "label": "Make",
+    "id": "make",
+    "file": "make.svg"
+  },
+  {
+    "label": "Claude",
+    "id": "claude",
+    "file": "claude.svg"
+  },
+  {
+    "label": "Kimi",
+    "id": "kimi",
+    "file": "kimi.svg"
+  },
+  {
+    "label": "Grok",
+    "id": "grok",
+    "file": "grok.svg"
+  },
+  {
+    "label": "GPT",
+    "id": "gpt",
+    "file": "gpt.svg"
+  },
+  {
+    "label": "Qwen",
+    "id": "qwen",
+    "file": "qwen.svg"
+  },
+  {
+    "label": "GLM",
+    "id": "glm",
+    "file": "glm.svg"
+  },
+  {
+    "label": "Gemini",
+    "id": "gemini",
+    "file": "gemini.svg"
+  },
+  {
+    "label": "DeepSeek",
+    "id": "deepseek",
+    "file": "deepseek.svg"
+  },
+  {
+    "label": "Mistral",
+    "id": "mistral",
+    "file": "mistral.svg"
+  },
+  {
+    "label": "Slack",
+    "id": "slack",
+    "file": "slack.svg"
+  },
+  {
+    "label": "Gmail",
+    "id": "gmail",
+    "file": "gmail.svg"
+  },
+  {
+    "label": "SharePoint",
+    "id": "sharepoint",
+    "file": "sharepoint.svg"
+  },
+  {
+    "label": "YouTube",
+    "id": "youtube",
+    "file": "youtube.svg"
+  },
+  {
+    "label": "Jira",
+    "id": "jira",
+    "file": "jira.svg"
+  },
+  {
+    "label": "Google Drive",
+    "id": "google-drive",
+    "file": "google-drive.svg"
+  },
+  {
+    "label": "Figma",
+    "id": "figma",
+    "file": "figma.svg"
+  },
+  {
+    "label": "Canva",
+    "id": "canva",
+    "file": "canva.svg"
+  },
+  {
+    "label": "Confluence",
+    "id": "confluence",
+    "file": "confluence.svg"
+  },
+  {
+    "label": "MS Teams",
+    "id": "ms-teams",
+    "file": "ms-teams.svg"
+  },
+  {
+    "label": "LinkedIn",
+    "id": "linkedin",
+    "file": "linkedin.svg"
+  }
+]

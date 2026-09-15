@@ -1,0 +1,56 @@
+{
+  "extractedAt": "2026-09-16",
+  "source": "https://nexos.ai (live site via browser CDP)",
+  "pages": [
+    {
+      "url": "https://nexos.ai/legal/terms-of-use/",
+      "file": "tmp/legal-html/terms-of-use.html",
+      "pageTitle": "Terms of Use | nexos.ai",
+      "effectiveDate": "Effective date: 1 Oct 2026",
+      "containerClasses": "col-span-12 lg:col-start-3 lg:col-span-8",
+      "documentMaxWidth": "1168px",
+      "htmlLength": 201433,
+      "tableCount": 0,
+      "legalSectionCount": 7,
+      "includesSchedules": ["Schedule A", "Schedule B", "Schedule C", "Schedule D", "ANNEX 1", "ANNEX 2"],
+      "notes": "7 lazy-loaded sections merged; includes full Schedule A-D and annexes"
+    },
+    {
+      "url": "https://nexos.ai/legal/privacy-policy/",
+      "file": "tmp/legal-html/privacy-policy.html",
+      "pageTitle": "Privacy Policy | nexos.ai",
+      "effectiveDate": "Last updated on 27 February 2026",
+      "containerClasses": "col-span-12 lg:col-start-3 lg:col-span-8",
+      "documentMaxWidth": "1168px",
+      "htmlLength": 62370,
+      "tableCount": 0,
+      "legalSectionCount": 3,
+      "notes": "Content split across 3 lazy-loaded sections before CTA"
+    },
+    {
+      "url": "https://nexos.ai/legal/cookie-policy/",
+      "file": "tmp/legal-html/cookie-policy.html",
+      "pageTitle": "Cookie Policy | nexos.ai",
+      "effectiveDate": "This statement was last updated on 14 January 2025.",
+      "containerClasses": "col-span-12 lg:col-start-3 lg:col-span-8",
+      "documentMaxWidth": "1168px",
+      "htmlLength": 44217,
+      "tableCount": 0,
+      "gridTableCount": 1,
+      "legalSectionCount": 3,
+      "notes": "Cookie list uses CSS grid (md:grid-cols-3), not HTML table elements. Includes z-cookies-consent-nexos.ai, LinkedIn, Google Inc."
+    },
+    {
+      "url": "https://nexos.ai/security-practices/",
+      "file": "tmp/legal-html/security-practices.html",
+      "pageTitle": "Security Practices | nexos.ai",
+      "effectiveDate": null,
+      "containerClasses": "col-span-12 lg:col-start-3 lg:col-span-8",
+      "documentMaxWidth": "1168px",
+      "htmlLength": 18937,
+      "tableCount": 0,
+      "legalSectionCount": 1,
+      "notes": "No effective/updated date on page"
+    }
+  ]
+}
