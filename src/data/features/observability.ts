@@ -1,3 +1,4 @@
+import { salesMailto } from "@/config/contact";
 import { observabilityGraphics } from "@/assets/observability";
 import { faqParagraphs } from "@/data/products/shared";
 import type { ProductFaqItem, ProductLink } from "@/data/products/types";
@@ -6,7 +7,7 @@ export const observabilityHero = {
   heading: "LLM Observability: Get the full picture of AI usage",
   body: "Gain complete visibility into how AI is used across your organization – from shadow tools and prompts to Gateway-level traffic, performance & spend.",
   primary: { label: "Get API key", href: "/pricing" } satisfies ProductLink,
-  secondary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  secondary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   trustCaption: "Chosen by leading engineering teams",
   visualAlt: "Person at a laptop beside nexos.ai dashboards showing total AI spend and usage by team",
   info: {
@@ -249,7 +250,7 @@ export const observabilityBlind = {
 export const observabilityCta = {
   heading: "From “we use AI” to “we know exactly how”",
   body: "Uncover what’s driving AI usage and cost.",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Get API Key", href: "/pricing" } satisfies ProductLink,
 };
 

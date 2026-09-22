@@ -1,3 +1,4 @@
+import { salesMailto } from "@/config/contact";
 import { siteConfig } from "@/config/site";
 
 function docsHref(path: string) {
@@ -25,7 +26,7 @@ export const homepageHero = {
   subhead:
     "One AI platform to access 200+ LLMs, see every request, and optimize spend.",
   primaryCta: { label: "Get API key", href: "/pricing" },
-  secondaryCta: { label: "Book a demo", href: "/contact-sales" },
+  secondaryCta: { label: "Book a demo", href: salesMailto },
   platformLink: { label: "What is an AI platform?", href: "#ai-platform" },
 } as const;
 
@@ -348,7 +349,7 @@ export const homepageCta = {
   headingLine2: "and control over AI",
   body: "Track LLM usage, manage spend, and stay in control across every team.",
   primaryCta: { label: "Get nexos.ai", href: "/pricing" },
-  secondaryCta: { label: "Book a demo", href: "/contact-sales" },
+  secondaryCta: { label: "Book a demo", href: salesMailto },
 } as const;
 
 export type FaqItem = {

@@ -1,3 +1,4 @@
+import { salesMailto } from "@/config/contact";
 import { gatewayShots } from "@/assets/gateway";
 import { homepageTestimonials } from "@/data/homepage";
 import { gatewaySecurityCards, productDocs } from "@/data/products/shared";
@@ -6,7 +7,7 @@ export const gatewayHero = {
   headingBefore: "AI Gateway:",
   headingAfter: "unified LLM access, full AI spend control",
   body: "One secure, lightweight layer to access, route, and manage 200+ models. Real-time monitoring, cost controls, and full governance keep your teams shipping fast and your AI spend predictable.",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" },
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto },
   secondary: { label: "Get API Key", href: "/pricing" },
   info: {
     label: "What is an AI Gateway?",
@@ -242,7 +243,7 @@ export const gatewaySecurity = {
 export const gatewayCta = {
   heading: "All your AI. One secure Gateway.",
   body: "Book a personalized demo to see how nexos.ai simplifies AI adoption.",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" },
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto },
   secondary: { label: "Get API Key", href: "/pricing" },
 };
 

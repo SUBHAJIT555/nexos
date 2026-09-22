@@ -1,10 +1,11 @@
+import { salesMailto } from "@/config/contact";
 import type { ProductFaqItem, ProductLink } from "@/data/products/types";
 
 export const euHero = {
   heading: "Run the best AI models through EU-hosted infrastructure",
   bodyBeforeBreak: "One endpoint for Claude, GPT, Gemini and Mistral – EU-hosted gateway,",
   bodyAfterBreak: "zero data retention, one line of code.",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Get API access", href: "/pricing" } satisfies ProductLink,
 };
 
@@ -228,7 +229,7 @@ export const euCompare = {
 export const euCta = {
   heading: "Compliance-ready, without compromise",
   body: "Keep your data in the EU without giving up the best models.",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Get API Key", href: "/pricing" } satisfies ProductLink,
 };
 

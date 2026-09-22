@@ -1,4 +1,5 @@
 import { navGraphics } from "@/assets/nav";
+import { salesMailto } from "@/config/contact";
 import type {
   FeaturedPanel,
   FooterNavGroup,
@@ -151,7 +152,7 @@ export const headerCtas: NavigationCta[] = [
   {
     id: "talk-to-sales",
     label: "Talk to sales",
-    href: "/contact-sales",
+    href: salesMailto,
     variant: "outline",
   },
   {

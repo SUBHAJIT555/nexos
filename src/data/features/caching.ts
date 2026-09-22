@@ -1,3 +1,4 @@
+import { salesMailto } from "@/config/contact";
 import { cachingGraphics } from "@/assets/caching";
 import { faqParagraphs } from "@/data/products/shared";
 import type { ProductFaqItem, ProductLink } from "@/data/products/types";
@@ -11,7 +12,7 @@ export const cachingHero = {
     "One integration – no per-provider cache logic to maintain.",
   ],
   primary: { label: "Start building", href: "/pricing" } satisfies ProductLink,
-  secondary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  secondary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   trustCaption: "Chosen by leading engineering teams",
   visualAlt: "nexos.ai Gateway cache routes requests to cached responses or an LLM provider",
 };
@@ -68,7 +69,7 @@ export const cachingImprove = {
   headingAfter: " improves LLM caching",
   intro:
     "nexos.ai works on two levels. Exact repeats are answered instantly by the Gateway's own cache, no provider call needed. Everything else is structured to make the most of the provider's own caching, so nothing gets processed at full price unnecessarily.",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Get API key", href: "/pricing" } satisfies ProductLink,
   cards: [
     {
@@ -163,7 +164,7 @@ export const cachingResults = {
 export const cachingCta = {
   heading: "Stop paying twice for the same context",
   body: "Turn repeated context into lower AI costs with nexos.ai LLM caching.",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Start Building", href: "/pricing" } satisfies ProductLink,
 };
 

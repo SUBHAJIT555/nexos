@@ -1,3 +1,4 @@
+import { salesMailto } from "@/config/contact";
 import type { StaticImageData } from "next/image";
 import type { ProductFaqItem } from "@/data/products/types";
 import {
@@ -24,7 +25,7 @@ export const reviewsHero = {
     "Read what leading industry experts say about our AI platform",
     "Learn more about our award-winning AI solution",
   ],
-  primaryCta: { label: "Talk to Solutions Engineer", href: "/contact-sales" },
+  primaryCta: { label: "Talk to Solutions Engineer", href: salesMailto },
   secondaryCta: { label: "Get API Key", href: "/pricing" },
   imageAlt: "nexos ai review",
 } as const;

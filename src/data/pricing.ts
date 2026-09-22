@@ -1,3 +1,5 @@
+import { salesMailto } from "@/config/contact";
+import { checkoutHref } from "@/data/checkout";
 import { siteConfig } from "@/config/site";
 import { faqParagraphs } from "@/data/products/shared";
 import type { ProductFaqItem, RichSegment } from "@/data/products/types";
@@ -21,11 +23,11 @@ export const pricingTabs = [
 ];
 
 export const pricingCtas = {
-  getStarted: { label: "Get started", href: "/checkout" },
-  getNexos: { label: "Get nexos.ai", href: "/checkout" },
-  talkEngineer: { label: "Talk to Solutions Engineer", href: "/contact-sales" },
-  talkSales: { label: "Talk to sales", href: "/contact-sales" },
-  customPricing: { label: "Custom pricing", href: "/contact-sales" },
+  getStarted: { label: "Get started", href: checkoutHref("gateway", "payg") },
+  getNexos: { label: "Get nexos.ai", href: checkoutHref("workspace", "month") },
+  talkEngineer: { label: "Talk to Solutions Engineer", href: salesMailto },
+  talkSales: { label: "Talk to sales", href: salesMailto },
+  customPricing: { label: "Custom pricing", href: salesMailto },
 };
 
 export const pricingHero = {
@@ -168,7 +170,7 @@ export const gatewayCompare = {
     { id: "enterprise", name: "Enterprise", description: "Built for enterprise AI adoption" },
   ],
   rows: [
-    { label: "Platform fee", payg: { kind: "text", value: "5%" }, enterprise: { kind: "link", value: "Custom pricing", href: "/contact-sales" } },
+    { label: "Platform fee", payg: { kind: "text", value: "5%" }, enterprise: { kind: "link", value: "Custom pricing", href: salesMailto } },
     { label: "Available models", payg: { kind: "text", value: "200+" }, enterprise: { kind: "text", value: "200+" } },
     { label: "Unified API access", payg: { kind: "check" }, enterprise: { kind: "check" } },
     { label: "EU-data residency", payg: { kind: "check" }, enterprise: { kind: "check" } },
@@ -649,7 +651,7 @@ export const workspaceFaq = {
           answer: [
             [
               "Yes, nexos.ai offers flexible enterprise plans customized to meet your organization's needs. ",
-              { href: "/contact-sales", label: "Talk to sales" },
+              { href: salesMailto, label: "Talk to sales" },
               " to get a custom quote.",
             ],
           ],

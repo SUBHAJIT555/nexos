@@ -1,3 +1,5 @@
+import { salesMailto } from "@/config/contact";
+
 export const nordSecurityMeta = {
   title: "Nord Security cuts coding-agent LLM costs",
   description:
@@ -95,7 +97,7 @@ export const nordSecurityChallenge = {
 export const nordSecurityMidCta = {
   kicker: "Bring every AI request through one secure AI Gateway",
   heading: "Gain visibility, optimize costs, and keep developers moving",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" },
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto },
   secondary: { label: "Get API Key", href: "/pricing" },
 };
 
@@ -187,7 +189,7 @@ export const nordSecurityResult = {
 
 export const nordSecurityFinalCta = {
   heading: "Bring your AI spend under control",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" },
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto },
   secondary: { label: "Get API Key", href: "/pricing" },
 };
 

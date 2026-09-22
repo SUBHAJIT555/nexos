@@ -1,5 +1,9 @@
 export type BillingInterval = "month" | "year" | "one_time";
 
+export type CheckoutProduct = "gateway" | "workspace";
+
+export type CheckoutPlanId = "payg" | "month";
+
 export type CheckoutLineItem = {
   id: string;
   name: string;
@@ -11,9 +15,16 @@ export type CheckoutLineItem = {
 };
 
 export type CheckoutCustomer = {
-  email?: string;
-  name?: string;
+  email: string;
+  name: string;
+  company?: string;
 };
+
+export type CheckoutSessionStatus =
+  | "pending"
+  | "awaiting_payment"
+  | "completed"
+  | "cancelled";
 
 /**
  * Provider-agnostic checkout session shape.
@@ -21,8 +32,24 @@ export type CheckoutCustomer = {
  * without changing page-level component APIs.
  */
 export type CheckoutSessionInput = {
+  product: CheckoutProduct;
+  planId: CheckoutPlanId;
   items: CheckoutLineItem[];
-  customer?: CheckoutCustomer;
+  customer: CheckoutCustomer;
   successUrl: string;
   cancelUrl: string;
+};
+
+export type CheckoutSession = CheckoutSessionInput & {
+  id: string;
+  status: CheckoutSessionStatus;
+  createdAt: string;
+};
+
+export type CheckoutSessionResponse = {
+  sessionId: string;
+  status: CheckoutSessionStatus;
+  /** Populated once a payment provider is connected. */
+  paymentUrl?: string;
+  clientSecret?: string;
 };

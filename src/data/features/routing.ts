@@ -1,3 +1,4 @@
+import { salesMailto } from "@/config/contact";
 import { routingGraphics } from "@/assets/routing";
 import { faqParagraphs } from "@/data/products/shared";
 import type { ProductFaqItem, ProductLink } from "@/data/products/types";
@@ -10,7 +11,7 @@ export const routingHero = {
     "Route for quality that fits the task",
     "Faster responses, fewer outages",
   ],
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Get API Key", href: "/pricing" } satisfies ProductLink,
   trustCaption: "Chosen by leading engineering teams",
   visualAlt: "nexos.ai routes each request to the large language model that fits the task best",
@@ -97,7 +98,7 @@ export const routingHow = {
       body: "If the selected model fails, times out, or comes back low-confidence, the router redirects to a backup model automatically – no dropped requests.",
     },
   ],
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Get API Key", href: "/pricing" } satisfies ProductLink,
 };
 
@@ -184,7 +185,7 @@ export const routingCompare = {
 export const routingCta = {
   heading: "Cut your AI costs with Smart LLM routing",
   body: "Match every request to the right model that fits the task, balancing cost, quality, and performance automatically.",
-  primary: { label: "Talk to Solutions Engineer", href: "/contact-sales" } satisfies ProductLink,
+  primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Get API key", href: "/pricing" } satisfies ProductLink,
 };
 

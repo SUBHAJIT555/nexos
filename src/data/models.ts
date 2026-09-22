@@ -1,3 +1,5 @@
+import { salesMailto } from "@/config/contact";
+
 export const modelCapabilities = [
   "Vision",
   "Tools",
@@ -34,14 +36,14 @@ export const modelsHero = {
   headingTail: "models database",
   body: "Discover and compare frontier and open-source AI models based on their benchmarks, capabilities, context window and more to find the right fit for your use case.",
   primary: { label: "Get API key", href: "/pricing" },
-  secondary: { label: "Talk to Solutions Engineer", href: "/contact-sales" },
+  secondary: { label: "Talk to Solutions Engineer", href: salesMailto },
 } as const;
 
 export const modelsCta = {
   heading: "Reduce your AI spend with nexos.ai Gateway",
   body: "Book a 30-minute technical demo to learn how to reduce AI costs while managing multiple AI models through a single API integration.",
   primary: { label: "Get API key", href: "/pricing" },
-  secondary: { label: "Talk to Solutions Engineer", href: "/contact-sales" },
+  secondary: { label: "Talk to Solutions Engineer", href: salesMailto },
 } as const;
 
 export const modelsCatalogue: ModelRow[] = [
