@@ -10,7 +10,7 @@ import { motionDuration, motionEase } from "@/lib/animation/motion";
 
 const tabs = [
   { id: "about", label: "About AI Gateway", items: gatewayFaqAbout },
-  { id: "product", label: "nexos.ai Gateway", items: gatewayFaqProduct },
+  { id: "product", label: "NexEco AI Gateway", items: gatewayFaqProduct },
 ];
 
 export function GatewayFaq() {

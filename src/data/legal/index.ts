@@ -16,19 +16,19 @@ export function getLegalDocumentHtml(id: LegalDocumentId): string {
 export const legalDocuments = {
   "terms-of-use": {
     title: "Terms of Use",
-    description: "Terms of Use for nexos.ai services.",
+    description: "Terms of Use for NexEco AI services.",
   },
   "privacy-policy": {
     title: "Privacy Policy",
-    description: "Privacy Policy for nexos.ai services.",
+    description: "Privacy Policy for NexEco AI services.",
   },
   "cookie-policy": {
     title: "Cookie Policy",
-    description: "Cookie Policy for nexos.ai website.",
+    description: "Cookie Policy for NexEco AI website.",
   },
   "security-practices": {
     title: "Security Practices",
-    description: "nexos.ai responsible disclosure and security practices.",
+    description: "NexEco AI responsible disclosure and security practices.",
   },
 } as const satisfies Record<
   LegalDocumentId,

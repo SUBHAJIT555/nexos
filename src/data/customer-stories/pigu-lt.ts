@@ -1,5 +1,5 @@
 export const piguLtMeta = {
-  title: "Pigu.lt optimizes e-commerce engine with nexos.ai",
+  title: "Pigu.lt optimizes e-commerce engine with NexEco AI",
   description:
     "Leading online retailer faced a dilemma: refining product descriptions and QAing 4.5 million products from a 6.5M catalog. Here’s how we did it with AI in 6 weeks.",
 };
@@ -31,7 +31,7 @@ export const piguLtMeet = {
 
 export const piguLtBefore = {
   id: "manually-enriching",
-  eyebrow: "Before nexos.ai",
+  eyebrow: "Before NexEco AI",
   heading: "Scaling leading online retailer in Northern Europe",
   intro: "Pigu.lt faced a massive task:",
   cards: [
@@ -53,14 +53,14 @@ export const piguLtQuote = {
   id: "quality-issues",
   logoAlt: "pigu.lt",
   quote:
-    "“Our content team needed to optimize 4 million products in our catalog – that’s a lot. And to do it by hand would take 3 years and cost us millions of euros. That’s extremely expensive. With nexos.ai, optimizing one item is 99.8% cheaper than doing it manually.”",
+    "“Our content team needed to optimize 4 million products in our catalog – that’s a lot. And to do it by hand would take 3 years and cost us millions of euros. That’s extremely expensive. With NexEco AI, optimizing one item is 99.8% cheaper than doing it manually.”",
   name: "Vytautas Romeika",
   title: "CMO @ Pigu.lt",
   portraitAlt: "vytautas romeika",
 };
 
 export const piguLtWithIntro = {
-  eyebrow: "With nexos.ai",
+  eyebrow: "With NexEco AI",
   heading: "Integrating AI into the core of e-commerce",
 };
 
@@ -109,7 +109,7 @@ export const piguLtOutcomes: PiguOutcome[] = [
     without:
       "Production delays for product descriptions and search optimization extended to 2+ weeks, impacting time-to-market.",
     withNexos:
-      "With nexos.ai, Pigu.lt completed catalog enrichment in 1.5 months versus an estimated 3 years for manual processes of all products.",
+      "With NexEco AI, Pigu.lt completed catalog enrichment in 1.5 months versus an estimated 3 years for manual processes of all products.",
     from: {
       kicker: "From:",
       value: "3 years",
@@ -118,7 +118,7 @@ export const piguLtOutcomes: PiguOutcome[] = [
     to: {
       kicker: "To:",
       value: "1.5 months",
-      caption: "Took for AI to process all products with nexos.ai",
+      caption: "Took for AI to process all products with NexEco AI",
     },
   },
   {
@@ -139,7 +139,7 @@ export const piguLtOutcomes: PiguOutcome[] = [
     without:
       "Pigu.lt spent $350K on external translation agencies when sellers needed product information in additional languages.",
     withNexos:
-      "With nexos.ai, Pigu.lt can translate product descriptions for approximately $30K, reducing translation costs by over 90%.",
+      "With NexEco AI, Pigu.lt can translate product descriptions for approximately $30K, reducing translation costs by over 90%.",
     from: {
       kicker: "From:",
       value: "$350K",
@@ -161,7 +161,7 @@ export const piguLtOutcomes: PiguOutcome[] = [
     without:
       "Pigu.lt struggled to manually create ingredient lists for beauty products and similar items to meet regulatory requirements, creating a significant operational bottleneck.",
     withNexos:
-      "Using nexos.ai, they automatically retrieve ingredient information based on product barcodes and autofill the required fields, ensuring regulatory compliance with minimal effort.",
+      "Using NexEco AI, they automatically retrieve ingredient information based on product barcodes and autofill the required fields, ensuring regulatory compliance with minimal effort.",
   },
   {
     id: "instant-market-pricing",
@@ -170,14 +170,14 @@ export const piguLtOutcomes: PiguOutcome[] = [
     without:
       "Pigu.lt struggled to manually create ingredient lists for beauty products and similar items to meet regulatory requirements, creating a significant operational bottleneck.",
     withNexos:
-      "Using nexos.ai Gateway, the platform automatically gathers market data to recommend optimal price ranges and implement safeguards that prevent sellers from abusing pricing.",
+      "Using NexEco AI Gateway, the platform automatically gathers market data to recommend optimal price ranges and implement safeguards that prevent sellers from abusing pricing.",
   },
 ];
 
 export const piguLtFuture = {
   id: "whats-next",
   eyebrow: "Future",
-  heading: "What’s next for Pigu.lt x nexos.ai",
+  heading: "What’s next for Pigu.lt x NexEco AI",
   body: "Pigu.lt is taking AI integration to the next level by turning it into a revenue stream. As they scale to 8 million requests, this price difference transforms AI from a cost-saving tool into a profitable business offering, creating value for all parties in their ecosystem.",
 };
 
@@ -192,19 +192,19 @@ export const piguLtRelated = {
   stories: [
     {
       slug: "payhawk",
-      title: "Payhawk cuts security investigation time by 80% with nexos.ai",
+      title: "Payhawk cuts security investigation time by 80% with NexEco AI",
       image: "relatedPayhawk" as const,
       alt: "payhawk hero",
     },
     {
       slug: "oxylabs",
-      title: "Oxylabs doubles AI output and slashes costs with nexos.ai",
+      title: "Oxylabs doubles AI output and slashes costs with NexEco AI",
       image: "relatedOxylabs" as const,
       alt: "oxylabs hero",
     },
     {
       slug: "hostinger",
-      title: "Hostinger Horizons scaled no-code AI web builder with nexos.ai",
+      title: "Hostinger Horizons scaled no-code AI web builder with NexEco AI",
       image: "relatedHostinger" as const,
       alt: "hostinger hero",
     },

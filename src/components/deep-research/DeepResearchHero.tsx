@@ -56,7 +56,7 @@ export function DeepResearchHero() {
             <div className="w-full lg:w-[555px] lg:justify-self-end">
               <Image
                 src={deepResearchPageShots.hero}
-                alt="Person using nexos.ai Deep Research on a laptop"
+                alt="Person using NexEco AI Deep Research on a laptop"
                 sizes="(min-width: 1024px) 555px, 100vw"
                 priority
                 className="h-auto w-full"

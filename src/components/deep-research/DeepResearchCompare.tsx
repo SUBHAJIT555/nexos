@@ -20,7 +20,7 @@ export function DeepResearchCompare() {
           </div>
           <img
             src={assetSrc(deepResearchPageGraphics.providers)}
-            alt="nexos.ai, Gemini, OpenAI, and Perplexity logos"
+            alt="NexEco AI, Gemini, OpenAI, and Perplexity logos"
             width={157}
             height={67}
             className="h-[67px] w-[157px] shrink-0"
@@ -37,7 +37,7 @@ export function DeepResearchCompare() {
                 {deepCompare.columns.map((col) => (
                   <th key={col} className="px-6 py-6 font-bold text-neutral-600">
                     <span className="inline-flex items-center gap-2">
-                      {col === "nexos.ai" ? <BrandMark className="size-4 text-white" /> : null}
+                      {col === "NexEco AI" ? <BrandMark className="size-4 text-white" /> : null}
                       {col}
                     </span>
                   </th>

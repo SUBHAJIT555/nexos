@@ -8,7 +8,7 @@ function BenefitBody({ id }: { id: string }) {
   if (id === "eng") {
     return (
       <>
-        nexos.ai, an{" "}
+        NexEco AI, an{" "}
         <Link href="/" className="text-accent hover:text-[var(--accent-hover)]">
           all-in-one AI platform
         </Link>
@@ -34,7 +34,7 @@ function BenefitBody({ id }: { id: string }) {
   if (id === "speed") {
     return (
       <>
-        On a cache hit, nexos.ai returns the stored response directly, no call to the model, no generation time. This
+        On a cache hit, NexEco AI returns the stored response directly, no call to the model, no generation time. This
         matters most for requests with large repeated context.
       </>
     );
@@ -42,7 +42,7 @@ function BenefitBody({ id }: { id: string }) {
 
   return (
     <>
-      Caching gets harder to manage with every new agent, model, or provider you add. nexos.ai keeps it working through
+      Caching gets harder to manage with every new agent, model, or provider you add. NexEco AI keeps it working through
       one integration, so it scales with your stack, no rebuild, no lock-in.
     </>
   );

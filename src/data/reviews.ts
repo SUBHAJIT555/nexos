@@ -11,30 +11,30 @@ import {
 } from "@/assets/reviews";
 
 export const reviewsMeta = {
-  title: "nexos.ai reviews and testimonials 2026",
+  title: "NexEco AI reviews and testimonials 2026",
   description:
-    "Teams trust nexos.ai to work smarter and move faster. Read real nexos.ai reviews and testimonials from users, experts, and industry leaders in 2026.",
+    "Teams trust NexEco AI to work smarter and move faster. Read real NexEco AI reviews and testimonials from users, experts, and industry leaders in 2026.",
 } as const;
 
 export const reviewsHero = {
-  headingAccent: "nexos.ai ",
+  headingAccent: "NexEco AI ",
   headingRest: "review in 2026",
-  body: "Don't take our word for it. Here's what the people actually using nexos.ai have to say.",
+  body: "Don't take our word for it. Here's what the people actually using NexEco AI have to say.",
   bullets: [
-    "Hear reviews from real teams that use nexos.ai daily",
+    "Hear reviews from real teams that use NexEco AI daily",
     "Read what leading industry experts say about our AI platform",
     "Learn more about our award-winning AI solution",
   ],
   primaryCta: { label: "Talk to Solutions Engineer", href: salesMailto },
   secondaryCta: { label: "Get API Key", href: "/pricing" },
-  imageAlt: "nexos ai review",
+  imageAlt: "NexEco AI ai review",
 } as const;
 
 export const reviewsIntro = {
-  headingLine1: "nexos.ai reviews:",
+  headingLine1: "NexEco AI reviews:",
   headingLine2: "See what experts and users think",
   beforeBrand: "Is ",
-  brand: "nexos.ai",
+  brand: "NexEco AI",
   afterBrand: " the best AI platform for work productivity? Let’s ask our users and tech experts.",
 } as const;
 
@@ -63,7 +63,7 @@ export const reviewsPodcastColumns: ReviewQuoteCard[][] = [
       id: "20vc",
       title: "The Twenty Minute VC (20VC)",
       quote:
-        "“nexos.ai gives you complete visibility and control over all AI use in your company. Business teams use the models they actually need. It’s not about stopping innovation, it’s about enabling it safely.”",
+        "“NexEco AI gives you complete visibility and control over all AI use in your company. Business teams use the models they actually need. It’s not about stopping innovation, it’s about enabling it safely.”",
       logo: reviewsCreators.twentyVc,
       logoAlt: "creator 20VC",
       logoHeightClass: "h-16 w-auto",
@@ -83,7 +83,7 @@ export const reviewsPodcastColumns: ReviewQuoteCard[][] = [
       id: "this-week",
       title: "This Week In Startups",
       quote:
-        "“nexos.ai is the unified AI platform for secure AI adoption and productivity.”",
+        "“NexEco AI is the unified AI platform for secure AI adoption and productivity.”",
       logo: reviewsCreators.thisWeek,
       logoAlt: "creator This week",
       logoHeightClass: "h-16 w-auto",
@@ -92,7 +92,7 @@ export const reviewsPodcastColumns: ReviewQuoteCard[][] = [
       id: "cortex",
       title: "Cortex",
       quote:
-        "\"nexos.ai brings it all under one roof, a unified platform with workspaces, model access and reusable assistance. Less chaos, lower costs, more growth.\"",
+        "\"NexEco AI brings it all under one roof, a unified platform with workspaces, model access and reusable assistance. Less chaos, lower costs, more growth.\"",
       logo: reviewsCreators.cortex,
       logoAlt: "creator Cortex",
       logoHeightClass: "h-16 w-auto",
@@ -112,7 +112,7 @@ export const reviewsPodcastColumns: ReviewQuoteCard[][] = [
       id: "economics-help",
       title: "Economics Help",
       quote:
-        "“nexos.ai unlocks all the leading AI models – ChatGPT, Claude, Gemini, and more – all in one place. For teams, you can jump between LLMs and build custom AI agents. For admins, replace dozens of AI subscriptions with one tool.”",
+        "“NexEco AI unlocks all the leading AI models – ChatGPT, Claude, Gemini, and more – all in one place. For teams, you can jump between LLMs and build custom AI agents. For admins, replace dozens of AI subscriptions with one tool.”",
       logo: reviewsCreators.economicsHelp,
       logoAlt: "creator Economics Help",
       logoHeightClass: "h-16 w-auto",
@@ -144,7 +144,7 @@ export const reviewsFeaturedColumns: ReviewQuoteCard[][] = [
       id: "cybernews",
       title: "",
       quote:
-        "“nexos.ai addresses the fundamental infrastructure gap to prevent teams from capturing AI's value while maintaining security control.”",
+        "“NexEco AI addresses the fundamental infrastructure gap to prevent teams from capturing AI's value while maintaining security control.”",
       logo: reviewsFeaturedLogos.cybernews,
       logoAlt: "cybernews",
       logoHeightClass: "h-6 w-auto",
@@ -155,7 +155,7 @@ export const reviewsFeaturedColumns: ReviewQuoteCard[][] = [
       id: "bloomberg",
       title: "",
       quote:
-        "“nexos.ai is sorting the AI mess into one central hub by scale, speed, and security.”",
+        "“NexEco AI is sorting the AI mess into one central hub by scale, speed, and security.”",
       logo: reviewsFeaturedLogos.bloomberg,
       logoAlt: "Bloomberg",
       logoHeightClass: "h-[60px] w-auto",
@@ -164,7 +164,7 @@ export const reviewsFeaturedColumns: ReviewQuoteCard[][] = [
       id: "politico",
       title: "",
       quote:
-        "“More and more critical data is leaving companies and other organizations, ending up with large AI companies. nexos.ai enables an organization to harness large language models while keeping security and cost management front and center.”",
+        "“More and more critical data is leaving companies and other organizations, ending up with large AI companies. NexEco AI enables an organization to harness large language models while keeping security and cost management front and center.”",
       logo: reviewsFeaturedLogos.politico,
       logoAlt: "POLITICO",
       logoHeightClass: "h-[60px] w-auto",
@@ -175,7 +175,7 @@ export const reviewsFeaturedColumns: ReviewQuoteCard[][] = [
       id: "forbes",
       title: "",
       quote:
-        "“nexos.ai can reach the organization horizontally to meet 60-70% of the organization’s AI needs.”",
+        "“NexEco AI can reach the organization horizontally to meet 60-70% of the organization’s AI needs.”",
       logo: reviewsFeaturedLogos.forbes,
       logoAlt: "Forbes",
       logoHeightClass: "h-[25px] w-auto",
@@ -184,7 +184,7 @@ export const reviewsFeaturedColumns: ReviewQuoteCard[][] = [
       id: "techradar",
       title: "",
       quote:
-        "“We've built nexos.ai to be the platform that makes working with AI as intuitive as working with human teams.”",
+        "“We've built NexEco AI to be the platform that makes working with AI as intuitive as working with human teams.”",
       logo: reviewsFeaturedLogos.techradar,
       logoAlt: "techradar",
       logoHeightClass: "h-6 w-auto",
@@ -213,7 +213,7 @@ export const reviewsUsers: ReviewUser[] = [
     role: "CMO",
     company: "Pigu.lt",
     quote:
-      "“Our content team needed to optimize 4 million products in our catalog – that’s a lot. And to do it by hand would take 3 years and cost us millions of euros. That’s extremely expensive. With nexos.ai, optimizing one item is 99.8% cheaper than doing it manually.”",
+      "“Our content team needed to optimize 4 million products in our catalog – that’s a lot. And to do it by hand would take 3 years and cost us millions of euros. That’s extremely expensive. With NexEco AI, optimizing one item is 99.8% cheaper than doing it manually.”",
   },
   {
     id: "lauryna",
@@ -223,7 +223,7 @@ export const reviewsUsers: ReviewUser[] = [
     role: "Head of Talent Acquisition",
     company: "Nord Security",
     quote:
-      "“nexos.ai saves us 10+ hours each week. We created a custom Agent that analyzes, evaluates, and writes feedback for candidates based on objective metrics. Now, we find high-quality talent in minutes and don’t waste hours writing feedback from scratch.”",
+      "“NexEco AI saves us 10+ hours each week. We created a custom Agent that analyzes, evaluates, and writes feedback for candidates based on objective metrics. Now, we find high-quality talent in minutes and don’t waste hours writing feedback from scratch.”",
   },
   {
     id: "ilma",
@@ -233,7 +233,7 @@ export const reviewsUsers: ReviewUser[] = [
     role: "Head of Communication",
     company: "NordVPN",
     quote:
-      "\"Using nexos.ai has helped us save time and energy by making such everyday processes as article research, idea generation, and target audience segment classification faster and more efficient. With the help of agents customized for every product we work with, we can now perform content review and implement suggested changes in no time.”",
+      "\"Using NexEco AI has helped us save time and energy by making such everyday processes as article research, idea generation, and target audience segment classification faster and more efficient. With the help of agents customized for every product we work with, we can now perform content review and implement suggested changes in no time.”",
   },
   {
     id: "juras",
@@ -243,7 +243,7 @@ export const reviewsUsers: ReviewUser[] = [
     role: "COO",
     company: "Oxylabs",
     quote:
-      "“nexos.ai has significantly accelerated our AI transformation journey. With seamless access to the latest models and transparent cost management, we’ve gained both agility and clarity.”",
+      "“NexEco AI has significantly accelerated our AI transformation journey. With seamless access to the latest models and transparent cost management, we’ve gained both agility and clarity.”",
   },
   {
     id: "dainius",
@@ -253,7 +253,7 @@ export const reviewsUsers: ReviewUser[] = [
     role: "Head of Product",
     company: "Hostinger Horizons",
     quote:
-      "“Integrating nexos.ai was seamless. It saved us the equivalent of two yearly salaries in development cost.”",
+      "“Integrating NexEco AI was seamless. It saved us the equivalent of two yearly salaries in development cost.”",
   },
   {
     id: "boyko",
@@ -273,7 +273,7 @@ export const reviewsUsers: ReviewUser[] = [
     role: "CIO and Head of IT",
     company: "Pigu.lt",
     quote:
-      "“nexos.ai transformed the core of our e-commerce operations. What would have taken us three years and millions of euros to accomplish manually, we achieved in just six weeks at a fraction of the cost.”",
+      "“NexEco AI transformed the core of our e-commerce operations. What would have taken us three years and millions of euros to accomplish manually, we achieved in just six weeks at a fraction of the cost.”",
   },
 ];
 
@@ -376,7 +376,7 @@ export const reviewsEvents = [
 export type ReviewRichSegment = string | { href: string; label: string };
 
 export const reviewsWhy = {
-  heading: "Why choose nexos.ai?",
+  heading: "Why choose NexEco AI?",
   body: "Keep work moving with AI Agents and no-code automation. Manage everything from one AI platform.",
   blocks: [
     {
@@ -388,7 +388,7 @@ export const reviewsWhy = {
         { href: "/features/projects", label: "Projects" },
         " for instant action.",
       ] satisfies ReviewRichSegment[],
-      cta: { label: "Explore nexos.ai Agents", href: "/features/ai-agents" },
+      cta: { label: "Explore NexEco AI Agents", href: "/features/ai-agents" },
       image: reviewsWhyShots.createAgent,
       imageAlt: "Agents create agent",
     },
@@ -423,7 +423,7 @@ export const reviewsWhy = {
         { href: "/features/llm-observability", label: "LLM Observability" },
         " gives you a real-time view of every interaction, every cost, and every model your team uses. You set the rules via ",
         { href: "/features/ai-governance", label: "AI Governance" },
-        ", nexos.ai enforces them.",
+        ", NexEco AI enforces them.",
       ] satisfies ReviewRichSegment[],
       image: reviewsWhyShots.observability,
       imageAlt: "LLM Observability spend and usage dashboard.",
@@ -439,11 +439,11 @@ export const reviewsIntegrations = {
 } as const;
 
 export const reviewsHow = {
-  heading: "How does nexos.ai work?",
+  heading: "How does NexEco AI work?",
   steps: [
     {
       id: "01",
-      title: "Get started with nexos.ai.",
+      title: "Get started with NexEco AI.",
       body: [
         { href: "/pricing", label: "Choose the plan" },
         " that fits you best and start using AI across your work.",
@@ -467,7 +467,7 @@ export const reviewsHow = {
 } as const;
 
 export const reviewsCommunity = {
-  heading: "Discover nexos.ai community",
+  heading: "Discover NexEco AI community",
   cards: [
     {
       id: "advice",
@@ -494,7 +494,7 @@ export const reviewsCommunity = {
       body: "Discover new tips, prompts, and setup ideas.",
     },
   ],
-  ctaLabel: "Join the nexos.ai community",
+  ctaLabel: "Join the NexEco AI community",
 } as const;
 
 export const reviewsFaq = {
@@ -502,16 +502,16 @@ export const reviewsFaq = {
   items: [
     {
       id: "trustworthy",
-      question: "Is nexos.ai trustworthy?",
+      question: "Is NexEco AI trustworthy?",
       answer: [
         [
-          "Yes. nexos.ai is SOC 2 Type 2 and ISO 27001-certified, fully GDPR-compliant, and hosted in Europe. Our platform has been covered by TechCrunch, Forbes, Bloomberg, and TechRadar. Thousands of professionals trust nexos.ai with their daily work.",
+          "Yes. NexEco AI is SOC 2 Type 2 and ISO 27001-certified, fully GDPR-compliant, and hosted in Europe. Our platform has been covered by TechCrunch, Forbes, Bloomberg, and TechRadar. Thousands of professionals trust NexEco AI with their daily work.",
         ],
       ],
     },
     {
       id: "safe",
-      question: "Is nexos.ai safe for my business?",
+      question: "Is NexEco AI safe for my business?",
       answer: [
         [
           "Absolutely. Your data is never used to train AI models unless you explicitly allow it. You can enable zero data retention at the model level. Every interaction is logged in a full audit trail. Guardrails let you define exactly what your team can and can't do. And your AI Workspace is secured with SSO and role-based access controls.",
@@ -520,19 +520,19 @@ export const reviewsFaq = {
     },
     {
       id: "recommend",
-      question: "Why do users recommend nexos.ai?",
+      question: "Why do users recommend NexEco AI?",
       answer: [
         [
-          "Teams who use nexos.ai save 10+ hours a week by automating repetitive tasks with AI. Companies reduce AI costs by accessing dozens of LLM subscriptions into one platform. And unlike other tools, nexos.ai gives leadership full visibility while giving individual contributors the freedom to move fast. It's the rare tool that works for everyone in the organization at the same time.",
+          "Teams who use NexEco AI save 10+ hours a week by automating repetitive tasks with AI. Companies reduce AI costs by accessing dozens of LLM subscriptions into one platform. And unlike other tools, NexEco AI gives leadership full visibility while giving individual contributors the freedom to move fast. It's the rare tool that works for everyone in the organization at the same time.",
         ],
       ],
     },
     {
       id: "compare",
-      question: "How does nexos.ai compare to other AI platforms?",
+      question: "How does NexEco AI compare to other AI platforms?",
       answer: [
         [
-          "nexos.ai brings together everything that other tools keep separate. Model access, AI Agents, AI Security and Governance, and Observability, all in one place. You don't need five subscriptions to get one complete AI stack. Check out our in-depth reviews and comparisons to see how we stack up.",
+          "NexEco AI brings together everything that other tools keep separate. Model access, AI Agents, AI Security and Governance, and Observability, all in one place. You don't need five subscriptions to get one complete AI stack. Check out our in-depth reviews and comparisons to see how we stack up.",
         ],
       ],
     },

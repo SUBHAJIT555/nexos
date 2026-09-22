@@ -4,15 +4,15 @@ export type StoryInline =
   | { bold: string };
 
 export const oxylabsMeta = {
-  title: "Oxylabs partners with nexos.ai to slash costs",
+  title: "Oxylabs partners with NexEco AI to slash costs",
   description:
     "Read more about our Oxylabs success story: from no centralized AI tool to a seamless, org-wide orchestration layer for productivity and AI features.",
 };
 
 export const oxylabsHero = {
-  heading: "Oxylabs doubles AI output and slashes costs with nexos.ai",
+  heading: "Oxylabs doubles AI output and slashes costs with NexEco AI",
   intro:
-    "Oxylabs, an online proxy and web scraping service, aimed to pass the competition by adapting to the new reality as quickly as possible. To overcome the most common AI transformation hurdles, the company turned to nexos.ai and achieved remarkable results in record time. Here’s how they’ve done it.",
+    "Oxylabs, an online proxy and web scraping service, aimed to pass the competition by adapting to the new reality as quickly as possible. To overcome the most common AI transformation hurdles, the company turned to NexEco AI and achieved remarkable results in record time. Here’s how they’ve done it.",
   author: "By Mia Lysikova",
   authorAlt: "Mia Lysikova",
   heroAlt: "oxylabs hero",
@@ -125,20 +125,20 @@ export const oxylabsSolution = {
   paragraphs: [
     [
       "To solve these issues, Oxylabs turned to ",
-      { href: "/", label: "nexos.ai" },
+      { href: "/", label: "NexEco AI" },
       " and unlocked ",
       { bold: "unified access to a wide range of AI models" },
-      " and high usage limits. In addition, nexos.ai provided ",
+      " and high usage limits. In addition, NexEco AI provided ",
       { bold: "self-host deployment options" },
       ", allowing the customer to self-host sensitive and compliance-critical AI workloads while saving time, expenses, and manpower.",
     ] satisfies StoryInline[],
     [
-      "nexos.ai enterprise-ready features ensured simple access management: users didn’t require extensive permissions and could access over ",
+      "NexEco AI enterprise-ready features ensured simple access management: users didn’t require extensive permissions and could access over ",
       { bold: "200 AI models from various providers" },
       ".",
     ] satisfies StoryInline[],
   ],
-  numbersHeading: "Oxylabs x nexos.ai success in numbers",
+  numbersHeading: "Oxylabs x NexEco AI success in numbers",
   numbersIntro: "Don’t hear it from us. The results speak for themselves.",
   metrics: [
     { value: "80%", label: "Onboarding rate reached in 30 days" },
@@ -148,12 +148,12 @@ export const oxylabsSolution = {
 };
 
 export const oxylabsHow = {
-  heading: "Here’s how nexos.ai solved each challenge",
+  heading: "Here’s how NexEco AI solved each challenge",
   modelAgnostic: {
     heading: "1. Model-agnostic approach",
     paragraphs: [
       [
-        "With nexos.ai’s model-agnostic approach, the entire Oxylabs teams gained access to ",
+        "With NexEco AI’s model-agnostic approach, the entire Oxylabs teams gained access to ",
         {
           href: "/ai-workspace-for-multiple-llms",
           label: "all leading LLMs under one roof",
@@ -183,7 +183,7 @@ export const oxylabsHow = {
         " to power AI feature deployment.",
       ] satisfies StoryInline[],
       [
-        "With nexos.ai, the speed of Oxylabs AI-driven project ",
+        "With NexEco AI, the speed of Oxylabs AI-driven project ",
         { bold: "development increased three times" },
         ", enabling rapid experimentation and iteration. In just the first quarter, the company ",
         { bold: "doubled its AI-driven feature output" },
@@ -204,7 +204,7 @@ export const oxylabsResult = {
       " and allowed nearly all key team members to adopt the platform in the first weeks.",
     ] satisfies StoryInline[],
     [
-      "Cost optimization also became a game-changer. nexos.ai’s transparent usage tracking gave the Oxylabs team ",
+      "Cost optimization also became a game-changer. NexEco AI’s transparent usage tracking gave the Oxylabs team ",
       { bold: "unmatched visibility into its AI spend" },
       ". By identifying and eliminating inefficiencies, operational costs around AI workloads dropped by ",
       { bold: "20%" },
@@ -212,10 +212,10 @@ export const oxylabsResult = {
     ] satisfies StoryInline[],
   ],
   quote:
-    "“nexos.ai has significantly accelerated our AI transformation journey. With seamless access to the latest models and transparent cost management, we’ve gained both agility and clarity.”",
+    "“NexEco AI has significantly accelerated our AI transformation journey. With seamless access to the latest models and transparent cost management, we’ve gained both agility and clarity.”",
 };
 
 export const oxylabsFinalCta = {
   heading: "Discover AI platform for your business",
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
 };

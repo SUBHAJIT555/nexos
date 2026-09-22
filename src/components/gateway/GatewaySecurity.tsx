@@ -21,7 +21,7 @@ export function GatewaySecurity() {
           {gatewaySecurity.cards.map((card, index) => {
             const Icon = icons[index] ?? KeyIcon;
             const isCertified = card.id === "certified";
-            const [before, after] = card.body.split("Check nexos.ai trust center");
+            const [before, after] = card.body.split("Check NexEco AI trust center");
             return (
               <article
                 key={card.id}
@@ -45,7 +45,7 @@ export function GatewaySecurity() {
                     <>
                       {before}
                       <Link href={productDocs.trustCenter} className="text-accent hover:text-[var(--accent-hover)]">
-                        nexos.ai trust center
+                        NexEco AI trust center
                       </Link>
                       {after}
                     </>

@@ -9,7 +9,7 @@ export const compareHero = {
     "Run the same prompt for all selected models side by side.",
     "Compare the outputs, choose the best one for the task.",
   ],
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
   trustCaption: "Trusted by enterprises:",
 };
 
@@ -104,7 +104,7 @@ export const compareTeams = {
 export const compareCta = {
   heading: "Experiment with AI models securely.",
   body: "Find the best LLM for your teams.",
-  primary: { label: "Buy nexos.ai", href: "/pricing" },
+  primary: { label: "Get NexEco AI", href: "/pricing" },
 };
 
 export const compareFaq: ProductFaqItem[] = [
@@ -113,18 +113,18 @@ export const compareFaq: ProductFaqItem[] = [
     question: "What LLMs are available in Compare Models?",
     answer: [
       [
-        "nexos.ai is an all-in-one AI platform for enterprise that follows a model-agnostic approach. That means we don’t focus on just one provider, like ChatGPT or Claude, but provide access to all leading LLMs under one roof. Browse all available models in our ",
-        { href: productDocs.models, label: "nexos.ai Models documentation" },
+        "NexEco AI is an all-in-one AI platform for enterprise that follows a model-agnostic approach. That means we don’t focus on just one provider, like ChatGPT or Claude, but provide access to all leading LLMs under one roof. Browse all available models in our ",
+        { href: productDocs.models, label: "NexEco AI Models documentation" },
         ".",
       ],
     ],
   },
   {
     id: "vs-chat",
-    question: "What’s the difference between nexos.ai Chat and Compare Models features?",
+    question: "What’s the difference between NexEco AI Chat and Compare Models features?",
     answer: [
       [
-        "With AI Chat on nexos.ai, you pick just one AI model to work with. You can change them anytime, but only receive one output per query. With Compare Models, you choose multiple AI models from the start and get multiple AI answers side by side. That way, it’s easier to get a range of answers simultaneously and pick the best option for the task, instead of running different models separately in different chats.",
+        "With AI Chat on NexEco AI, you pick just one AI model to work with. You can change them anytime, but only receive one output per query. With Compare Models, you choose multiple AI models from the start and get multiple AI answers side by side. That way, it’s easier to get a range of answers simultaneously and pick the best option for the task, instead of running different models separately in different chats.",
       ],
     ],
   },
@@ -142,7 +142,7 @@ export const compareFaq: ProductFaqItem[] = [
     question: "Is Compare Models secure?",
     answer: [
       [
-        "Compare Models, along with all other features available in nexos.ai Workspace, is secure and enterprise-ready. Centralized dashboard with LLM observability controls helps admins enforce policies, assign models and define permissions.",
+        "Compare Models, along with all other features available in NexEco AI Workspace, is secure and enterprise-ready. Centralized dashboard with LLM observability controls helps admins enforce policies, assign models and define permissions.",
       ],
     ],
   },

@@ -3,14 +3,14 @@ import type { CustomerStoryDepartment, CustomerStorySummary } from "@/types/cust
 export const customerStoriesListingMeta = {
   title: "Discover our customer stories",
   description:
-    "See how companies use nexos.ai to adopt AI across teams, cut costs, and keep governance in one place.",
+    "See how companies use NexEco AI to adopt AI across teams, cut costs, and keep governance in one place.",
 };
 
 export const customerStoriesHero = {
   eyebrow: "Customer Stories",
-  heading: "Meet the companies already using nexos.ai",
+  heading: "Meet the companies already using NexEco AI",
   logoAlt:
-    "Logos of companies using nexos.ai: pigu.lt, NordVPN, payabl., Surfshark, and Hostinger",
+    "Logos of companies using NexEco AI: pigu.lt, NordVPN, payabl., Surfshark, and Hostinger",
 };
 
 export const featuredCustomerStory = {
@@ -19,13 +19,13 @@ export const featuredCustomerStory = {
   role: "CTO @NordVPN",
   portraitAlt: "Marijus Briedis",
   quote:
-    '"nexos.ai helped us reduce coding-agent LLM costs by 46% without changing our prompts, models, or developer workflows. The optimization was transparent to our engineers, while giving us much better visibility into AI usage and spend."',
+    '"NexEco AI helped us reduce coding-agent LLM costs by 46% without changing our prompts, models, or developer workflows. The optimization was transparent to our engineers, while giving us much better visibility into AI usage and spend."',
   ctaLabel: "Read customer story",
   href: "/customer-stories/nord-security",
 };
 
 export const customerStoriesDirectory = {
-  heading: "Learn how companies are using nexos.ai",
+  heading: "Learn how companies are using NexEco AI",
   searchPlaceholder: "Search stories...",
   filterLabel: "Filter by Department:",
   empty: "No stories match your search.",
@@ -50,7 +50,7 @@ export const customerStories: CustomerStorySummary[] = [
   {
     slug: "nord-security",
     company: "Nord Security",
-    title: "Nord Security cuts coding-agent LLM costs by 46% with nexos.ai",
+    title: "Nord Security cuts coding-agent LLM costs by 46% with NexEco AI",
     department: "Engineering",
     logo: "nord-security",
     logoAlt: "Nord Security",
@@ -58,7 +58,7 @@ export const customerStories: CustomerStorySummary[] = [
   {
     slug: "pigu-lt",
     company: "Pigu.lt",
-    title: "Pigu.lt integrates AI at the core of e-commerce with nexos.ai",
+    title: "Pigu.lt integrates AI at the core of e-commerce with NexEco AI",
     department: "E-commerce",
     logo: "pigu-lt",
     logoAlt: "pigu.lt",
@@ -66,7 +66,7 @@ export const customerStories: CustomerStorySummary[] = [
   {
     slug: "payhawk",
     company: "Payhawk",
-    title: "Payhawk cuts security investigation time by 80% with nexos.ai",
+    title: "Payhawk cuts security investigation time by 80% with NexEco AI",
     department: "Finance",
     logo: "payhawk",
     logoAlt: "Payhawk",
@@ -74,7 +74,7 @@ export const customerStories: CustomerStorySummary[] = [
   {
     slug: "oxylabs",
     company: "Oxylabs",
-    title: "Oxylabs doubles AI output and slashes costs with nexos.ai",
+    title: "Oxylabs doubles AI output and slashes costs with NexEco AI",
     department: "Engineering",
     logo: "oxylabs",
     logoAlt: "Oxylabs",
@@ -82,7 +82,7 @@ export const customerStories: CustomerStorySummary[] = [
   {
     slug: "hostinger",
     company: "Hostinger",
-    title: "Hostinger Horizons scales no-code AI web builder with nexos.ai",
+    title: "Hostinger Horizons scales no-code AI web builder with NexEco AI",
     department: "Engineering",
     logo: "hostinger",
     logoAlt: "Hostinger",
@@ -91,7 +91,7 @@ export const customerStories: CustomerStorySummary[] = [
 
 export const customerStoriesCta = {
   heading: "Discover AI platform for your business",
-  ctaLabel: "Get nexos.ai",
+  ctaLabel: "Get NexEco AI",
   ctaHref: "/pricing",
 };
 

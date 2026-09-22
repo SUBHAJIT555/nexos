@@ -11,7 +11,7 @@ export const agentsHero = {
     "Securely connect your work tools to AI",
     "Your data is protected from day one",
   ],
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
   guarantee: "14-day money-back guarantee",
   info: {
     label: "What are AI Agents?",
@@ -52,7 +52,7 @@ export const agentsFeatures = [
   {
     id: "tools",
     title: "Securely connect your work tools",
-    body: "Generic AI doesn’t know your business, but nexos.ai Agents do. Securely connect to your knowledge base and favorite work tools, including Slack, Google Workspace, and MS Office.",
+    body: "Generic AI doesn’t know your business, but NexEco AI Agents do. Securely connect to your knowledge base and favorite work tools, including Slack, Google Workspace, and MS Office.",
     alt: "Integrations with work tools like SharePoint, Slack, and Confluence, inside AI Agents.",
     image: agentsShots.integrations,
     visual: "left" as const,
@@ -153,7 +153,7 @@ const quoteOrder = [
 ] as const;
 
 export const agentsQuotes = {
-  heading: "See what teams achieve with nexos.ai",
+  heading: "See what teams achieve with NexEco AI",
   slides: quoteOrder.map((id) => {
     const item = homepageTestimonials.items.find((entry) => entry.id === id);
     if (!item) {
@@ -172,7 +172,7 @@ export const agentsQuotes = {
 
 export const agentsCta = {
   heading: "Let the boring work run itself",
-  primary: { label: "Get nexos.ai", href: "/pricing" },
+  primary: { label: "Get NexEco AI", href: "/pricing" },
 };
 
 export const agentsFaq: ProductFaqItem[] = [
@@ -193,7 +193,7 @@ export const agentsFaq: ProductFaqItem[] = [
         "In general, the safety of AI agents depends on the governance and security protocols of the platform they run on. Since some agents don’t only access your data but also perform tasks and handle complex tasks autonomously, it is critical to use systems that offer granular control over what the agents can see and do.",
       ],
       [
-        "At nexos.ai, your data stays private and protected from day one. We solve security concerns by providing enterprise-grade governance where organization owners have full control. Users cannot connect to unauthorized personal tools and can only toggle company-approved connections. You are always in charge: you choose the models and define the boundaries, ensuring that as you deploy AI across your team, your work remains secure and compliant.",
+        "At NexEco AI, your data stays private and protected from day one. We solve security concerns by providing enterprise-grade governance where organization owners have full control. Users cannot connect to unauthorized personal tools and can only toggle company-approved connections. You are always in charge: you choose the models and define the boundaries, ensuring that as you deploy AI across your team, your work remains secure and compliant.",
       ],
     ],
   },
@@ -202,7 +202,7 @@ export const agentsFaq: ProductFaqItem[] = [
     question: "Can AI agents integrate with existing tools?",
     answer: [
       [
-        "Yes, the true power of intelligent agents lies in their ability to integrate directly with your tech stack to perform tasks such as creating tickets, updating CRM records, or drafting documents. While standard AI only provides information, nexos.ai Agents use secure integrations to act as a context-aware extension of your team. Eventually, it will unlock multi-Agent systems and complex workflows to automate routine tasks end-to-end.",
+        "Yes, the true power of intelligent agents lies in their ability to integrate directly with your tech stack to perform tasks such as creating tickets, updating CRM records, or drafting documents. While standard AI only provides information, NexEco AI Agents use secure integrations to act as a context-aware extension of your team. Eventually, it will unlock multi-Agent systems and complex workflows to automate routine tasks end-to-end.",
       ],
     ],
   },
@@ -214,7 +214,7 @@ export const agentsFaq: ProductFaqItem[] = [
         "When evaluating AI agents, look for solutions that prioritize security, ease of integration, and the ability to perform tasks within your specific business context. The best agents should handle complex tasks that currently require excessive human intervention, allowing your human agents to focus on strategy rather than busywork. Unlike many other AI agents that operate in a vacuum, a high-quality agent must securely connect to your existing data to be truly effective.",
       ],
       [
-        "At nexos.ai, we balance power with accessibility. Our Agents are designed for real-world impact to handle the repeatable parts of your workflow so you can multiply your output without increasing your workload. Whether you are looking for specific use cases or building from scratch, nexos.ai provides the flexibility to choose the best models for your needs while ensuring your data remains protected.",
+        "At NexEco AI, we balance power with accessibility. Our Agents are designed for real-world impact to handle the repeatable parts of your workflow so you can multiply your output without increasing your workload. Whether you are looking for specific use cases or building from scratch, NexEco AI provides the flexibility to choose the best models for your needs while ensuring your data remains protected.",
       ],
     ],
   },

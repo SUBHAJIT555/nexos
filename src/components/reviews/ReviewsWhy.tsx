@@ -44,7 +44,7 @@ export function ReviewsRichText({ segments }: { segments: readonly ReviewRichSeg
 
 export function ReviewsWhy() {
   return (
-    <section id="why-nexos" className="bg-white py-16">
+    <section id="why-nexeco-ai" className="bg-white py-16">
       <Container>
         <div className="mx-auto max-w-[768px] text-center">
           <h2 className="font-heading text-[36px] leading-[1.2] font-semibold tracking-[-0.015em] text-neutral-900 md:text-[40px] md:leading-[48px]">

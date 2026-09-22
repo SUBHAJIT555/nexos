@@ -50,7 +50,7 @@ export function GatewayUnified() {
             <source media="(max-width: 767px)" srcSet={assetSrc(gatewayGraphics.schemaXs)} />
             <img
               src={assetSrc(gatewayGraphics.schemaXl)}
-              alt="Diagram showing how the nexos.ai gateway routes AI applications like chatbots and agents through one lightweight unified LLM access layer to models such as Claude, ChatGPT, and Mistral, and integrations like Slack, Teams, and Gmail"
+              alt="Diagram showing how the NexEco AI gateway routes AI applications like chatbots and agents through one lightweight unified LLM access layer to models such as Claude, ChatGPT, and Mistral, and integrations like Slack, Teams, and Gmail"
               width={1400}
               height={654}
               className="mx-auto h-auto w-full max-w-[1168px]"

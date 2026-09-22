@@ -10,7 +10,7 @@ export const workspaceHero = {
     "Compare model outputs side by side",
     "Automate work with no-code AI Agents",
   ],
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
   trustCaption: "Trusted by",
 };
 
@@ -46,7 +46,7 @@ export const workspaceChat = {
       id: "files",
       title: "Finished files, straight from your prompt",
       lead: "Work with AI like you would with a teammate.",
-      body: "Instead of only replying to the exact prompt you type, nexos.ai can pause, ask follow-up questions, and guide the conversation when it needs more context. Sharper results, first try.",
+      body: "Instead of only replying to the exact prompt you type, NexEco AI can pause, ask follow-up questions, and guide the conversation when it needs more context. Sharper results, first try.",
     },
     {
       id: "memory",
@@ -82,8 +82,8 @@ export const workspaceGallery = {
 };
 
 export const workspaceHow = {
-  heading: "How the nexos.ai Workspace\nworks for your team",
-  body: "The benefits of an AI workspace go beyond saving time on individual tasks – nexos.ai Workspace gives every person on your team everything they need to work more effectively.",
+  heading: "How the NexEco AI Workspace\nworks for your team",
+  body: "The benefits of an AI workspace go beyond saving time on individual tasks – NexEco AI Workspace gives every person on your team everything they need to work more effectively.",
   items: [
     {
       id: "interface",
@@ -130,7 +130,7 @@ export const workspaceHow = {
 
 export const workspaceCta = {
   heading: "Ready to replace scattered AI tools with one workspace?",
-  primary: { label: "Get nexos.ai", href: "/pricing" },
+  primary: { label: "Get NexEco AI", href: "/pricing" },
 };
 
 export const workspaceFaq: ProductFaqItem[] = [
@@ -139,8 +139,8 @@ export const workspaceFaq: ProductFaqItem[] = [
     question: "What is an AI workspace?",
     answer: [
       [
-        "An AI workspace is a centralized platform where individuals and teams can access multiple AI models, build automation, and get work done - all from one place. Instead of switching between separate tools and subscriptions, everyone works from a single, consistent environment. In nexos.ai Workspace that means chatting with 200+ leading AI models, comparing their outputs, generating content and documents, and building no-code Agents that handle recurring tasks automatically, with shared security policies and usage controls across the whole organization. Check the ",
-        { href: productDocs.workspace, label: "nexos.ai Workspace documentation" },
+        "An AI workspace is a centralized platform where individuals and teams can access multiple AI models, build automation, and get work done - all from one place. Instead of switching between separate tools and subscriptions, everyone works from a single, consistent environment. In NexEco AI Workspace that means chatting with 200+ leading AI models, comparing their outputs, generating content and documents, and building no-code Agents that handle recurring tasks automatically, with shared security policies and usage controls across the whole organization. Check the ",
+        { href: productDocs.workspace, label: "NexEco AI Workspace documentation" },
         " to learn more about how it works.",
       ],
     ],
@@ -156,7 +156,7 @@ export const workspaceFaq: ProductFaqItem[] = [
   },
   {
     id: "choose-models",
-    question: "Can I choose which LLMs to use on the nexos.ai chat interface?",
+    question: "Can I choose which LLMs to use on the NexEco AI chat interface?",
     answer: [
       [
         "Yes. You can choose which model to use before or during your prompt and even switch between LLMs within the same session. For example, you might start with Claude for creative ideation, swap to GPT-4 for data interpretation, and return to Claude to rephrase or summarize the results. Your admin controls which models are available to which teams.",

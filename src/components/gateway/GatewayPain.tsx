@@ -62,7 +62,7 @@ export function GatewayPain() {
             <source media="(max-width: 767px)" srcSet={assetSrc(gatewayShots.modelsUiXs)} />
             <img
               src={assetSrc(gatewayShots.modelsUi)}
-              alt="nexos.ai gateway model management dashboard showing a fine-tuned GPT-4o model with Claude and Gemini fallback models for reliability."
+              alt="NexEco AI gateway model management dashboard showing a fine-tuned GPT-4o model with Claude and Gemini fallback models for reliability."
               width={2144}
               height={760}
               className="mx-auto h-auto w-full max-w-[1168px]"

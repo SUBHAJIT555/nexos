@@ -40,7 +40,7 @@ export const modelsHero = {
 } as const;
 
 export const modelsCta = {
-  heading: "Reduce your AI spend with nexos.ai Gateway",
+  heading: "Reduce your AI spend with NexEco AI Gateway",
   body: "Book a 30-minute technical demo to learn how to reduce AI costs while managing multiple AI models through a single API integration.",
   primary: { label: "Get API key", href: "/pricing" },
   secondary: { label: "Talk to Solutions Engineer", href: salesMailto },

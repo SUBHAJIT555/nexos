@@ -8,7 +8,7 @@ import { routingHow } from "@/data/features/routing";
 
 export function RoutingHow() {
   return (
-    <section id="how-does-nexosai-smart-llm-routing-work" className="relative">
+    <section id="how-does-nexeco-ai-smart-llm-routing-work" className="relative">
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-[linear-gradient(#071013_0%,#22165d_100%)]"
@@ -16,7 +16,7 @@ export function RoutingHow() {
       <div className="relative py-16 md:py-24">
         <Container className="text-center">
           <h2 className="mx-auto max-w-[740px] font-heading text-[36px] leading-[1.2] font-semibold tracking-[-0.015em] text-white md:text-[48px] md:leading-[57.6px]">
-            How does nexos.ai
+            How does NexEco AI
             <br className="hidden md:block" /> Smart LLM routing work
           </h2>
           <p className="mx-auto mt-5 max-w-[760px] text-base leading-6 text-[#EFF4F8] md:text-[18px] md:leading-[28px]">

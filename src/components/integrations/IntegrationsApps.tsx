@@ -16,7 +16,7 @@ export function IntegrationsApps() {
           </h2>
           <img
             src={assetSrc(integrationsShots.apps)}
-            alt="nexos integration apps"
+            alt="NexEco AI integration apps"
             width={1168}
             height={320}
             className="h-auto w-full"

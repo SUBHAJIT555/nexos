@@ -35,7 +35,7 @@ const dottedPanel =
 const companyLogos = {
   nord: { src: cybercareGraphics.nordLogoWhite, width: 83, height: 23 },
   cybercare: { src: cybercareGraphics.cybercareLogoWhite, width: 59, height: 32 },
-  nexos: { src: cybercareGraphics.nexosLogoWhite, width: 95, height: 17 },
+  nexeco: { src: cybercareGraphics.brandLogoWhite, width: 95, height: 17 },
 } as const;
 
 function StoryContainer({
@@ -243,7 +243,7 @@ function CyberCareSolution() {
 function CyberCareRelies() {
   return (
     <>
-      <section id="where-cybercare-relies-on-nexosai" className="bg-[#311469] py-16 text-white">
+      <section id="where-cybercare-relies-on-nexeco-ai" className="bg-[#311469] py-16 text-white">
         <StoryContainer>
           <div className="grid grid-cols-1 items-start gap-y-8 lg:grid-cols-2 lg:gap-x-8">
             <div className="flex flex-col gap-6">
@@ -269,7 +269,7 @@ function CyberCareRelies() {
         </StoryContainer>
       </section>
       <section
-        id="story-checklist-what-made-nexosai-work-2x3-check-grid"
+        id="story-checklist-what-made-nexeco-ai-work-2x3-check-grid"
         className="py-8 text-white md:py-16"
         style={{ backgroundImage: "linear-gradient(180deg, #311469 0%, #071013 91.827%)" }}
       >
@@ -396,7 +396,7 @@ export function CyberCarePage() {
       <CyberCareSolution />
       <CyberCareRelies />
       <CyberCareQuote
-        id="quote-justas-morkunas-nexosai"
+        id="quote-justas-morkunas-nexeco-ai"
         quote={cybercareQuotes.justas.quote}
         name={cybercareQuotes.justas.name}
         title={cybercareQuotes.justas.title}

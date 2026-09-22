@@ -9,7 +9,7 @@ export const observabilityHero = {
   primary: { label: "Get API key", href: "/pricing" } satisfies ProductLink,
   secondary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   trustCaption: "Chosen by leading engineering teams",
-  visualAlt: "Person at a laptop beside nexos.ai dashboards showing total AI spend and usage by team",
+  visualAlt: "Person at a laptop beside NexEco AI dashboards showing total AI spend and usage by team",
   info: {
     label: "What is LLM observability?",
     heading: "What is LLM observability?",
@@ -114,19 +114,19 @@ export const observabilityExplore = {
       id: "profile",
       label: "Profile",
       image: observabilityGraphics.exploreOrg,
-      alt: "nexos.ai Observer console — Organisation, Profile tab",
+      alt: "NexEco AI Observer console — Organisation, Profile tab",
     },
     {
       id: "usage",
       label: "Usage",
       image: observabilityGraphics.exploreOrgUsage,
-      alt: "nexos.ai Observer console — Organisation, Usage tab",
+      alt: "NexEco AI Observer console — Organisation, Usage tab",
     },
     {
       id: "audit",
       label: "Audit log",
       image: observabilityGraphics.exploreOrgAudit,
-      alt: "nexos.ai Observer console — Organisation, Audit log tab",
+      alt: "NexEco AI Observer console — Organisation, Audit log tab",
     },
     {
       id: "tokens",
@@ -143,15 +143,15 @@ export const observabilityExplore = {
   views: {
     security: {
       image: observabilityGraphics.exploreSecurity,
-      alt: "nexos.ai Observer console — Security view",
+      alt: "NexEco AI Observer console — Security view",
     },
     adoption: {
       image: observabilityGraphics.exploreAdoption,
-      alt: "nexos.ai Observer console — Adoption overview",
+      alt: "NexEco AI Observer console — Adoption overview",
     },
     knowledge: {
       image: observabilityGraphics.exploreKnowledge,
-      alt: "nexos.ai Observer console — Knowledge base view",
+      alt: "NexEco AI Observer console — Knowledge base view",
     },
   },
 };
@@ -160,7 +160,7 @@ export const observabilityObserve = {
   pill: "AI GATEWAY",
   heading: "Observe and manage LLM requests",
   intro:
-    "nexos.ai gives you one place to monitor how AI is being used so you can optimize model choices, caching habits, spend controls, and more.",
+    "NexEco AI gives you one place to monitor how AI is being used so you can optimize model choices, caching habits, spend controls, and more.",
   cards: [
     {
       id: "usage",
@@ -266,7 +266,7 @@ export const observabilityFaq: ProductFaqItem[] = [
     id: "admins",
     question: "Can the LLM admins access all the analytics and logs from all the users?",
     answer: faqParagraphs(
-      "Yes. With nexos.ai AI Gateway, admins get full visibility into every user interaction across all connected LLM models and AI Agents. You can review prompt histories, outputs, token usage, and triggered guardrails — all logged for auditability and compliance checks.",
+      "Yes. With NexEco AI AI Gateway, admins get full visibility into every user interaction across all connected LLM models and AI Agents. You can review prompt histories, outputs, token usage, and triggered guardrails — all logged for auditability and compliance checks.",
     ),
   },
   {
@@ -280,7 +280,7 @@ export const observabilityFaq: ProductFaqItem[] = [
     id: "choose",
     question: "How do you choose an LLM observability solution?",
     answer: faqParagraphs(
-      "Look for an LLM observability platform that provides:\n\nFull stack visibility: From user prompts to model responses, every interaction should be logged and traceable.\n\nChain and agent-level tracing: Understand how multi-agent workflows and chained prompts perform.\n\nData protection and guardrails: Protect sensitive inputs and outputs in real time.\n\nScalability and integration: Ensure the solution works across all your apps, models, and teams.\n\nUser and admin access: Provide the right level of visibility to both technical teams and business users.\n\nUnlike single-purpose monitoring tools or model-specific dashboards, nexos.ai combines LLM observability, security, routing, and management in one platform.",
+      "Look for an LLM observability platform that provides:\n\nFull stack visibility: From user prompts to model responses, every interaction should be logged and traceable.\n\nChain and agent-level tracing: Understand how multi-agent workflows and chained prompts perform.\n\nData protection and guardrails: Protect sensitive inputs and outputs in real time.\n\nScalability and integration: Ensure the solution works across all your apps, models, and teams.\n\nUser and admin access: Provide the right level of visibility to both technical teams and business users.\n\nUnlike single-purpose monitoring tools or model-specific dashboards, NexEco AI combines LLM observability, security, routing, and management in one platform.",
     ),
   },
   {

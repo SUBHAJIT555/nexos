@@ -9,7 +9,7 @@ const icons = {
 
 export function CachingTwoWays() {
   return (
-    <section id="two-ways-nexosai-makes-caching-work" className="relative bg-[#071013] py-16 md:py-24">
+    <section id="two-ways-nexeco-ai-makes-caching-work" className="relative bg-[#071013] py-16 md:py-24">
       <Container>
         <div className="grid gap-8 lg:grid-cols-[minmax(0,568px)_minmax(0,568px)] lg:items-start lg:justify-between">
           <h2 className="max-w-[568px] font-heading text-[36px] leading-[1.2] font-semibold tracking-[-0.015em] text-white md:text-[48px] md:leading-[57.6px]">

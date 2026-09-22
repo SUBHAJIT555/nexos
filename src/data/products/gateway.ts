@@ -63,42 +63,42 @@ export const gatewayDataSlides = [
   {
     id: "connect",
     title: "Connect to every model through one secure layer",
-    body: "One AI Gateway platform replaces every provider integration you'd otherwise build and babysit. The nexos.ai Gateway is a lightweight, secure layer that gives your teams instant access to 200+ LLMs through a single endpoint, and the moment a new model ships, it's already available to you.",
+    body: "One AI Gateway platform replaces every provider integration you'd otherwise build and babysit. The NexEco AI Gateway is a lightweight, secure layer that gives your teams instant access to 200+ LLMs through a single endpoint, and the moment a new model ships, it's already available to you.",
     image: gatewayShots.connect,
     gradient: "linear-gradient(rgb(222, 231, 245) 0%, rgb(248, 250, 252) 100%)",
-    alt: "nexos.ai AI gateway providing unified access to GPT-4, Claude, and Gemini through a single secure connection.",
+    alt: "NexEco AI AI gateway providing unified access to GPT-4, Claude, and Gemini through a single secure connection.",
   },
   {
     id: "optimize",
     title: "Optimize costs with smart routing",
-    body: "You don't need a frontier model for every single prompt. The nexos.ai Gateway reads each request and sends it to the best model for the job, balanced across cost, quality, and latency, automatically.",
+    body: "You don't need a frontier model for every single prompt. The NexEco AI Gateway reads each request and sends it to the best model for the job, balanced across cost, quality, and latency, automatically.",
     image: gatewayShots.optimize,
     gradient: "linear-gradient(rgb(185, 181, 245) 0%, rgb(239, 244, 248) 100%)",
-    alt: "nexos.ai gateway evaluating responses from Gemini, Claude, and GPT-4 to route each request to the best performing model.",
+    alt: "NexEco AI gateway evaluating responses from Gemini, Claude, and GPT-4 to route each request to the best performing model.",
   },
   {
     id: "costs",
     title: "See exactly what your AI costs, in real time",
-    body: "The nexos.ai Gateway makes every LLM call visible across every provider, then lets you control it. Cap budgets by user, team, or project before overruns happen. Logs and traces capture every prompt, response, and error, so you can see which teams, and models drive your AI costs, and act on it without guessing.",
+    body: "The NexEco AI Gateway makes every LLM call visible across every provider, then lets you control it. Cap budgets by user, team, or project before overruns happen. Logs and traces capture every prompt, response, and error, so you can see which teams, and models drive your AI costs, and act on it without guessing.",
     image: gatewayShots.costs,
     gradient: "linear-gradient(0deg, rgb(245, 243, 252) 0%, rgb(225, 215, 255) 100%)",
-    alt: "nexos.ai gateway cost visibility dashboard showing monthly LLM spend per team across Product, Data, and Developers.",
+    alt: "NexEco AI gateway cost visibility dashboard showing monthly LLM spend per team across Product, Data, and Developers.",
   },
   {
     id: "team",
     title: "One AI Gateway for every team",
-    body: "Built for both technical and non-technical users. One invoice, one control plane, one set of policies. The nexos.ai Gateway gives you one governed home for engineers and business teams, one bill that covers every team and project, and the same security and usage rules applied to every team, automatically.",
+    body: "Built for both technical and non-technical users. One invoice, one control plane, one set of policies. The NexEco AI Gateway gives you one governed home for engineers and business teams, one bill that covers every team and project, and the same security and usage rules applied to every team, automatically.",
     image: gatewayShots.everyTeam,
     gradient: "linear-gradient(rgb(222, 231, 245) 0%, rgb(248, 250, 252) 100%)",
-    alt: "nexos.ai gateway governance panel showing one policy, single invoice, and custom budgets for multiple teams using AI.",
+    alt: "NexEco AI gateway governance panel showing one policy, single invoice, and custom budgets for multiple teams using AI.",
   },
   {
     id: "invoice",
     title: "Move fast, without the scary invoice",
-    body: "Most Gateways force a bad trade: throttle your teams to protect the budget, or let throughput run and brace for the bill. The nexos.ai Gateway removes the trade. You get enterprise-grade rate limits so productivity never gets blocked, while smart routing and budgets keep spend predictable as you scale.",
+    body: "Most Gateways force a bad trade: throttle your teams to protect the budget, or let throughput run and brace for the bill. The NexEco AI Gateway removes the trade. You get enterprise-grade rate limits so productivity never gets blocked, while smart routing and budgets keep spend predictable as you scale.",
     image: gatewayShots.moveFast,
     gradient: "linear-gradient(0deg, rgb(248, 250, 252) 0%, rgb(245, 243, 252) 100%)",
-    alt: "nexos.ai gateway admin settings panel for setting a monthly AI budget limit to control LLM costs.",
+    alt: "NexEco AI gateway admin settings panel for setting a monthly AI budget limit to control LLM costs.",
   },
   {
     id: "secure",
@@ -106,13 +106,13 @@ export const gatewayDataSlides = [
     body: "Security here isn't a setting you switch on later, it's the foundation the Gateway is built on. Your data stays in the EU, is never used to train models, and can run with zero data retention at the LLM level. Enterprise-grade protection your CISO signs off on quickly, without slowing the people doing the work.",
     image: gatewayShots.secure,
     gradient: "linear-gradient(0deg, rgb(245, 243, 252) 0%, rgb(225, 215, 255) 100%)",
-    alt: "Security and compliance badges showing the nexos.ai gateway is EU-hosted, GDPR compliant, ISO 27001 compliant, and SOC 2 Type 2 certified.",
+    alt: "Security and compliance badges showing the NexEco AI gateway is EU-hosted, GDPR compliant, ISO 27001 compliant, and SOC 2 Type 2 certified.",
   },
 ];
 
 export const gatewayPain = {
   heading: "One AI Gateway solution for your LLM integration pain points",
-  body: "Whether you're launching your first model or scaling AI company-wide, nexos.ai helps you solve the biggest AI integration challenges:",
+  body: "Whether you're launching your first model or scaling AI company-wide, NexEco AI helps you solve the biggest AI integration challenges:",
   cards: [
     {
       id: "dev-cost",
@@ -131,12 +131,12 @@ export const gatewayPain = {
     },
   ],
   close:
-    "nexos.ai helps you solve these and other LLM usage challenges with a single, secure Gateway that centralizes model access, eliminates integration overhead, and gives you full visibility over how AI is used.",
+    "NexEco AI helps you solve these and other LLM usage challenges with a single, secure Gateway that centralizes model access, eliminates integration overhead, and gives you full visibility over how AI is used.",
 };
 
 export const gatewayWhy = {
   heading: "Why your business needs an AI Gateway",
-  body: "The nexos.ai Gateway gives you direct, policy-enforced access to 200+ AI models, while keeping cost control, security, and observability front and center. Here are the main features of nexos.ai Gateway.",
+  body: "The NexEco AI Gateway gives you direct, policy-enforced access to 200+ AI models, while keeping cost control, security, and observability front and center. Here are the main features of NexEco AI Gateway.",
   slides: [
     {
       id: "routing",
@@ -161,7 +161,7 @@ export const gatewayWhy = {
     {
       id: "fallbacks",
       title: "Fallbacks",
-      body: "Keep your AI running even when a provider doesn't. If a model slows down or goes offline, the nexos.ai Gateway reroutes traffic to a backup automatically, so your apps and users never feel the outage.",
+      body: "Keep your AI running even when a provider doesn't. If a model slows down or goes offline, the NexEco AI Gateway reroutes traffic to a backup automatically, so your apps and users never feel the outage.",
     },
     {
       id: "caching",
@@ -182,13 +182,13 @@ export const gatewayWhy = {
 };
 
 export const gatewayQuotes = {
-  heading: "What leading teams say about nexos.ai",
+  heading: "What leading teams say about NexEco AI",
   slides: [
     {
       id: "marijus",
       badge: "Technology" as const,
       quote:
-        "“nexos.ai helped us reduce coding-agent LLM costs by 46% without changing our prompts, models, or developer workflows. The optimization was transparent to our engineers, while giving us much better visibility into AI usage and spend.”",
+        "“NexEco AI helped us reduce coding-agent LLM costs by 46% without changing our prompts, models, or developer workflows. The optimization was transparent to our engineers, while giving us much better visibility into AI usage and spend.”",
       name: "Marijus Briedis",
       role: "CTO",
       company: "NordVPN",
@@ -198,7 +198,7 @@ export const gatewayQuotes = {
       id: "dainius",
       badge: "Product" as const,
       quote:
-        "“Integrating nexos.ai was seamless. It saved us the equivalent of two yearly salaries in development cost.”",
+        "“Integrating NexEco AI was seamless. It saved us the equivalent of two yearly salaries in development cost.”",
       name: "Dainius Kavoliūnas",
       role: "Head of Product",
       company: "Hostinger Horizons",
@@ -208,7 +208,7 @@ export const gatewayQuotes = {
       id: "vytautas",
       badge: "Marketing" as const,
       quote:
-        "“Our content team needed to optimize 4 million products in our catalog – that’s a lot. And to do it by hand would take 3 years and cost us millions of euros. That’s extremely expensive. With nexos.ai, optimizing one item is 99.8% cheaper than doing it manually.”",
+        "“Our content team needed to optimize 4 million products in our catalog – that’s a lot. And to do it by hand would take 3 years and cost us millions of euros. That’s extremely expensive. With NexEco AI, optimizing one item is 99.8% cheaper than doing it manually.”",
       name: "Vytautas Romeika",
       role: "CMO",
       company: "Pigu.lt",
@@ -236,13 +236,13 @@ export const gatewayQuotes = {
 };
 
 export const gatewaySecurity = {
-  heading: "With nexos.ai your data is always secure",
+  heading: "With NexEco AI your data is always secure",
   cards: gatewaySecurityCards,
 };
 
 export const gatewayCta = {
   heading: "All your AI. One secure Gateway.",
-  body: "Book a personalized demo to see how nexos.ai simplifies AI adoption.",
+  body: "Book a personalized demo to see how NexEco AI simplifies AI adoption.",
   primary: { label: "Talk to Solutions Engineer", href: salesMailto },
   secondary: { label: "Get API Key", href: "/pricing" },
 };

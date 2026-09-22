@@ -123,7 +123,7 @@ export function AgentsTestimonials() {
             />
             <img
               src={assetSrc(productLogos.customerStories)}
-              alt="Logos of companies that trust nexos.ai: Surfshark, NordVPN, payabl., Nord Security, Hostinger, Oxylabs, Payhawk"
+              alt="Logos of companies that trust NexEco AI: Surfshark, NordVPN, payabl., Nord Security, Hostinger, Oxylabs, Payhawk"
               width={1168}
               height={64}
               className="h-16 w-full object-contain md:h-20"

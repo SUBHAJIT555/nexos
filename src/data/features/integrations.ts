@@ -4,7 +4,7 @@ import type { ProductLink, SecurityCard } from "@/data/products/types";
 export const integrationsHero = {
   heading: "Unlock AI integrations for your favorite work tools",
   body: "Bring your files and workflows straight into Chats and Projects with an MCP integration. Instantly, securely, and without interrupting your workflow.",
-  primary: { label: "Get nexos.ai", href: "/pricing" } satisfies ProductLink,
+  primary: { label: "Get NexEco AI", href: "/pricing" } satisfies ProductLink,
 };
 
 export const integrationsApps = {
@@ -19,7 +19,7 @@ export const integrationsWhy = {
     {
       id: "faster",
       title: "Work faster with fewer steps",
-      body: "Select and add files directly within nexos.ai. No more downloading files to your computer and re-uploading them to your Chats or Projects.",
+      body: "Select and add files directly within NexEco AI. No more downloading files to your computer and re-uploading them to your Chats or Projects.",
     },
     {
       id: "knowledge",
@@ -47,7 +47,7 @@ export const integrationsHow = {
       id: "choose",
       n: "01",
       title: "Choose your tool",
-      body: "Choose the work tool you want to integrate into nexos.ai.",
+      body: "Choose the work tool you want to integrate into NexEco AI.",
     },
     {
       id: "connect",
@@ -227,5 +227,5 @@ export const integrationsCta = {
   eyebrow: "Unified AI integrations",
   heading: "Bring your tools directly into AI Workspace",
   body: "Transform how your team works with AI by bringing all your knowledge directly to your AI.",
-  primary: { label: "Buy nexos.ai", href: "/pricing" } satisfies ProductLink,
+  primary: { label: "Get NexEco AI", href: "/pricing" } satisfies ProductLink,
 };

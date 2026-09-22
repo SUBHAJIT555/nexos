@@ -51,7 +51,7 @@ export const gatewayFaqAbout: GatewayFaqItem[] = [
       },
       {
         type: "p",
-        text: "With nexos.ai, these features are built-in – no extra setup or engineering required.",
+        text: "With NexEco AI, these features are built-in – no extra setup or engineering required.",
       },
     ],
   },
@@ -90,7 +90,7 @@ export const gatewayFaqAbout: GatewayFaqItem[] = [
       },
       {
         type: "p",
-        text: "nexos.ai checks all these boxes and continues evolving to keep up with the AI ecosystem. We help your teams stay productive and in control.",
+        text: "NexEco AI checks all these boxes and continues evolving to keep up with the AI ecosystem. We help your teams stay productive and in control.",
       },
     ],
   },
@@ -118,28 +118,28 @@ export const gatewayFaqAbout: GatewayFaqItem[] = [
 
 export const gatewayFaqProduct: GatewayFaqItem[] = [
   {
-    id: "why-nexos",
-    question: "Why choose nexos.ai as your AI Gateway product?",
+    id: "why-nexeco",
+    question: "Why choose NexEco AI as your AI Gateway product?",
     blocks: [
       {
         type: "p",
-        text: "nexos.ai Gateway offers more than just model connectivity. You get one secure endpoint to manage all your LLM traffic with observability, fallbacks, cost controls, and governance built in – without assembling a custom stack.",
+        text: "NexEco AI Gateway offers more than just model connectivity. You get one secure endpoint to manage all your LLM traffic with observability, fallbacks, cost controls, and governance built in – without assembling a custom stack.",
       },
     ],
   },
   {
     id: "models",
-    question: "What types of models can I use with the nexos.ai Gateway?",
+    question: "What types of models can I use with the NexEco AI Gateway?",
     blocks: [
       {
         type: "p",
-        text: "nexos.ai Gateway supports models from top providers, including OpenAI, Anthropic (Claude), Google (Gemini), Meta (LLaMA), Grok, Kimi, DeepSeek and Mistral. You can also use privately hosted or open-source models through the same endpoint.",
+        text: "NexEco AI Gateway supports models from top providers, including OpenAI, Anthropic (Claude), Google (Gemini), Meta (LLaMA), Grok, Kimi, DeepSeek and Mistral. You can also use privately hosted or open-source models through the same endpoint.",
       },
     ],
   },
   {
     id: "integrate",
-    question: "How can I integrate nexos.ai Gateway?",
+    question: "How can I integrate NexEco AI Gateway?",
     blocks: [
       {
         type: "p",
@@ -149,11 +149,11 @@ export const gatewayFaqProduct: GatewayFaqItem[] = [
   },
   {
     id: "price",
-    question: "How much does nexos.ai Gateway cost?",
+    question: "How much does NexEco AI Gateway cost?",
     blocks: [
       {
         type: "p",
-        text: "nexos.ai Gateway pricing depends on your business needs. For most organizations nexos.ai offer custom pricing based on your scale, usage, and requirements, so you only pay for what fits your team. Small teams can start from the public pricing page.",
+        text: "NexEco AI Gateway pricing depends on your business needs. For most organizations NexEco AI offer custom pricing based on your scale, usage, and requirements, so you only pay for what fits your team. Small teams can start from the public pricing page.",
       },
     ],
   },

@@ -4,7 +4,7 @@ import { ReviewsRichText } from "@/components/reviews/ReviewsWhy";
 
 export function ReviewsHow() {
   return (
-    <section id="how-does-nexosai-work" className="bg-white py-16">
+    <section id="how-does-nexeco-ai-work" className="bg-white py-16">
       <Container>
         <h2 className="font-heading text-[36px] leading-[1.2] font-semibold tracking-[-0.015em] text-neutral-900 md:text-[40px] md:leading-[48px]">
           {reviewsHow.heading}

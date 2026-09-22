@@ -4,16 +4,16 @@ export type StoryInline =
   | { bold: string };
 
 export const hostingerMeta = {
-  title: "Hostinger Horizons powers AI builder with nexos.ai",
+  title: "Hostinger Horizons powers AI builder with NexEco AI",
   description:
-    "Discover how Hostinger Horizons powered its no-code AI web builder with nexos.ai. Avoid months of dev costs and use nexos.ai for AI orchestration.",
+    "Discover how Hostinger Horizons powered its no-code AI web builder with NexEco AI. Avoid months of dev costs and use NexEco AI for AI orchestration.",
 };
 
 export const hostingerHero = {
-  heading: "Hostinger Horizons scaled no-code AI web builder with nexos.ai",
+  heading: "Hostinger Horizons scaled no-code AI web builder with NexEco AI",
   paragraphs: [
     "When Hostinger set out to launch their no-code web app builder, they already knew one thing: relying on a single AI model provider wouldn’t cut it.",
-    "Building their own orchestration layer and centralized AI platform meant hiring AI developers, setting up infrastructure, and managing ever-evolving model APIs. That’s why they launched with nexos.ai.",
+    "Building their own orchestration layer and centralized AI platform meant hiring AI developers, setting up infrastructure, and managing ever-evolving model APIs. That’s why they launched with NexEco AI.",
   ],
   author: "By Mia Lysikova",
   authorAlt: "Mia Lysikova",
@@ -66,7 +66,7 @@ export const hostingerQuote = {
 export const hostingerChallenge = {
   heading: "The Challenge: Launch a no-code AI platform with custom AI gateway",
   intro: [
-    "The Hostinger team was no stranger to AI before integrating nexos.ai. Both tech and non-tech teams experimented with LLMs:",
+    "The Hostinger team was no stranger to AI before integrating NexEco AI. Both tech and non-tech teams experimented with LLMs:",
     "That simplicity is powered by some serious backend complexity:",
   ],
   bullets: [
@@ -141,14 +141,14 @@ export const hostingerChallenge = {
 
 export const hostingerMidCta = {
   heading: "Replace scattered AI tools and subscriptions",
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
 };
 
 export const hostingerSolution = {
   heading: "The Solution",
   paragraphs: [
     [
-      "With nexos.ai, Hostinger gained access to ",
+      "With NexEco AI, Hostinger gained access to ",
       { href: "/ai-workspace-for-multiple-llms", label: "all the top models" },
       " through a ",
       { bold: "single control point" },
@@ -156,11 +156,11 @@ export const hostingerSolution = {
     ] satisfies StoryInline[],
     [
       "No Frankenstein stack. No vendor lock-in. Instead of Horizon’s front-end directly calling a single AI model, all requests now go through the ",
-      { href: "/ai-gateway", label: "nexos.ai Gateway" },
+      { href: "/ai-gateway", label: "NexEco AI Gateway" },
       ". This gateway acts as a smart traffic controller between Hostinger’s application and various third-party AI models.",
     ] satisfies StoryInline[],
   ],
-  numbersHeading: "Hostinger Horizons x nexos.ai success in numbers",
+  numbersHeading: "Hostinger Horizons x NexEco AI success in numbers",
   numbersIntro: "Don’t hear it from us. The results speak for themselves.",
   metrics: [
     { value: "30%", label: "Saved in developer hiring costs" },
@@ -170,12 +170,12 @@ export const hostingerSolution = {
 };
 
 export const hostingerHow = {
-  heading: "Here’s how nexos.ai solved each challenge",
+  heading: "Here’s how NexEco AI solved each challenge",
   gateway: {
     heading: "1. AI gateway",
     paragraphs: [
       [
-        "With nexos.ai handling the complexity of AI, Hostinger’s developers and data scientists are freed from building and maintaining a custom AI infrastructure.",
+        "With NexEco AI handling the complexity of AI, Hostinger’s developers and data scientists are freed from building and maintaining a custom AI infrastructure.",
       ] satisfies StoryInline[],
       [
         "Instead of spending months engineering a homegrown solution for load balancing or writing custom logic, they integrated an off-the-shelf orchestration platform and trusted its algorithms. The ",
@@ -192,14 +192,14 @@ export const hostingerHow = {
     heading: "2. Enterprise-grade scaling",
     paragraphs: [
       [
-        "By building on nexos.ai, Hostinger Horizons saved significant time and resources, not just in development, but in ",
+        "By building on NexEco AI, Hostinger Horizons saved significant time and resources, not just in development, but in ",
         { bold: "long-term maintenance" },
         ". Hostinger Horizons handles ",
         { bold: "more users and more complex" },
         " projects without lag or drop in output quality.",
       ] satisfies StoryInline[],
       [
-        "As demand grows, nexos.ai ",
+        "As demand grows, NexEco AI ",
         { bold: "dynamically scales AI usage" },
         " across providers to maintain snappy performance. This has a direct impact on user satisfaction: creators using Horizons get near-instant responses and can iterate on their app ideas rapidly, which is essential for a creative flow.",
       ] satisfies StoryInline[],
@@ -210,7 +210,7 @@ export const hostingerHow = {
     heading: "3. Built-in fallback logic",
     paragraphs: [
       [
-        "When your preferred provider goes down or starts timing out, nexos.ai automatically switches requests to a backup model. Behind the scenes, it balances traffic across providers to ",
+        "When your preferred provider goes down or starts timing out, NexEco AI automatically switches requests to a backup model. Behind the scenes, it balances traffic across providers to ",
         { bold: "reduce latency" },
         " and uses ",
         { bold: "intelligent caching to cut redundant calls" },
@@ -231,13 +231,13 @@ export const hostingerResult = {
       "Hostinger Horizons didn’t cut corners. They built a modern, AI-powered no-code platform that can respond to users in real time and do it all securely.",
     ] satisfies StoryInline[],
     [
-      "But building everything in-house can come at a cost in time, resources, and opportunity. With nexos.ai, they ",
+      "But building everything in-house can come at a cost in time, resources, and opportunity. With NexEco AI, they ",
       { bold: "stayed focused on product velocity and user experience" },
       ". The orchestration layer in a form of centralized AI platform handled itself.",
     ] satisfies StoryInline[],
   ],
   quote: {
-    before: "“Integrating nexos.ai was seamless. It saved us the ",
+    before: "“Integrating NexEco AI was seamless. It saved us the ",
     highlight: "equivalent of two yearly salaries",
     after: " in development cost.”",
   },
@@ -245,5 +245,5 @@ export const hostingerResult = {
 
 export const hostingerFinalCta = {
   heading: "Discover AI platform for your business",
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
 };

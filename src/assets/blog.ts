@@ -11,7 +11,7 @@ import grok4Benchmarks from "@/assets/images/blog/featured/grok-4-benchmarks-fea
 import mindaugasJancis from "@/assets/images/blog/authors/mindaugas-jancis.webp";
 import eannaMotherway from "@/assets/images/blog/authors/eanna-motherway.webp";
 import vytautasVaitkevicius from "@/assets/images/blog/authors/vytautas-vaitkevicius.webp";
-import nexosaiExperts from "@/assets/images/blog/authors/nexosai-experts.webp";
+import nexecoAiExperts from "@/assets/images/blog/authors/nexosai-experts.webp";
 import abstractGridXl from "@/assets/images/blog/shared/abstract-grid-bg-xl.webp";
 import abstractGridXs from "@/assets/images/blog/shared/abstract-grid-bg-xs.webp";
 import { assetSrc } from "@/assets/home";
@@ -32,7 +32,7 @@ export const blogAuthorImages = {
   "mindaugas-jancis.webp": mindaugasJancis,
   "eanna-motherway.webp": eannaMotherway,
   "vytautas-vaitkevicius.webp": vytautasVaitkevicius,
-  "nexosai-experts.webp": nexosaiExperts,
+  "nexosai-experts.webp": nexecoAiExperts,
 } as const satisfies Record<string, StaticImageData>;
 
 export const blogCtaGraphics = {
@@ -45,7 +45,7 @@ export function blogFeaturedSrc(file: string): StaticImageData {
 }
 
 export function blogAuthorSrc(file: string): StaticImageData {
-  return blogAuthorImages[file as keyof typeof blogAuthorImages] ?? nexosaiExperts;
+  return blogAuthorImages[file as keyof typeof blogAuthorImages] ?? nexecoAiExperts;
 }
 
 export { assetSrc };

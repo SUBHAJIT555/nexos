@@ -16,7 +16,7 @@ export function RoutingLogos() {
           <source media="(min-width: 768px)" srcSet={assetSrc(routingGraphics.trustedWhite)} />
           <img
             src={assetSrc(routingGraphics.trustedWhiteMobile)}
-            alt="Logos of companies that trust nexos.ai"
+            alt="Logos of companies that trust NexEco AI"
             width={1168}
             height={64}
             className="mt-4 h-16 w-full object-contain"

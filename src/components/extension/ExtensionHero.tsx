@@ -58,7 +58,7 @@ export function ExtensionHero() {
           <div className="flex min-w-0 items-center justify-center">
             <Image
               src={extensionPageShots.hero}
-              alt="nexos.ai browser extension interface"
+              alt="NexEco AI browser extension interface"
               width={555}
               height={555}
               sizes="(min-width: 1024px) 555px, 100vw"

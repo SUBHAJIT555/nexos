@@ -16,7 +16,7 @@ export function TrustMarquee({
   className,
   desktopSrc = productLogos.customerStories,
   mobileSrc = productLogos.customerStoriesXs,
-  alt = "Logos of companies that trust nexos.ai: Surfshark, NordVPN, payabl., Nord Security, Hostinger, Oxylabs, Payhawk",
+  alt = "Logos of companies that trust NexEco AI: Surfshark, NordVPN, payabl., Nord Security, Hostinger, Oxylabs, Payhawk",
 }: TrustMarqueeProps) {
   return (
     <div className={cn("pt-8", className)}>

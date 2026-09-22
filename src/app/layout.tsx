@@ -1,12 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import { fontHeading, fontSans } from "@/lib/fonts";
-import { getMetadataBase, hasProductionUrl, siteConfig } from "@/config/site";
+import { getCanonicalUrl, getMetadataBase, hasProductionUrl, siteConfig } from "@/config/site";
 import { CookieConsentProvider } from "@/components/cookies/CookieConsentProvider";
 import { MotionProvider } from "@/components/providers/MotionProvider";
+import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
 import { SkipLink } from "@/components/layout/SkipLink";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
+
+const canonicalUrl = getCanonicalUrl("/");
 
 export const metadata: Metadata = {
   metadataBase: getMetadataBase(),
@@ -16,6 +19,15 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
+  keywords: [
+    "NexEco AI",
+    "artificial intelligence",
+    "AI platform",
+    "sustainable AI",
+    "AI gateway",
+    "AI workspace",
+    "intelligent automation",
+  ],
   robots: {
     index: hasProductionUrl(),
     follow: hasProductionUrl(),
@@ -26,14 +38,16 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.name,
     description: siteConfig.description,
+    url: canonicalUrl,
   },
-  ...(siteConfig.url
-    ? {
-        alternates: {
-          canonical: siteConfig.url,
-        },
-      }
-    : {}),
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+  },
+  alternates: {
+    canonical: canonicalUrl,
+  },
 };
 
 export const viewport: Viewport = {
@@ -50,6 +64,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <body className="min-h-full bg-background font-sans text-foreground" suppressHydrationWarning>
+        <OrganizationJsonLd />
         <MotionProvider>
           <CookieConsentProvider>
             <SkipLink />

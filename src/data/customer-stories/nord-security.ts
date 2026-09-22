@@ -3,16 +3,16 @@ import { salesMailto } from "@/config/contact";
 export const nordSecurityMeta = {
   title: "Nord Security cuts coding-agent LLM costs",
   description:
-    "See how Nord Security cut coding-agent LLM costs by 46% with nexos.ai without changing prompts, models, or developer workflows.",
+    "See how Nord Security cut coding-agent LLM costs by 46% with NexEco AI without changing prompts, models, or developer workflows.",
 };
 
 export const nordSecurityHero = {
-  heading: "Nord Security cuts coding-agent LLM costs by 46% with nexos.ai",
+  heading: "Nord Security cuts coding-agent LLM costs by 46% with NexEco AI",
   intro:
-    "Nord Security is one of Europe's leading cybersecurity companies, protecting millions of users across multiple products (NordPass, NordVPN). As AI coding agents became part of engineering workflows, LLM usage grew rapidly, making it harder to understand where costs came from and how to optimize them. That's when the nexos.ai AI Gateway stepped in.",
+    "Nord Security is one of Europe's leading cybersecurity companies, protecting millions of users across multiple products (NordPass, NordVPN). As AI coding agents became part of engineering workflows, LLM usage grew rapidly, making it harder to understand where costs came from and how to optimize them. That's when the NexEco AI AI Gateway stepped in.",
   author: "By Vytautas Vaitkevicius",
   authorAlt: "Vytautas Vaitkevicius",
-  heroAlt: "nexos.ai and Nord Security, AI costs down 46%",
+  heroAlt: "NexEco AI and Nord Security, AI costs down 46%",
   metrics: [
     { value: "46%", label: "Reduction in total LLM costs" },
     { value: "77%", label: "Prompt cache hit rate, up from 14%" },
@@ -104,10 +104,10 @@ export const nordSecurityMidCta = {
 export const nordSecuritySolution = {
   heading: "The Solution",
   paragraphs: [
-    "nexos.ai turned Nord Security's rising, hard-to-see AI spend into immediate, measurable savings. We didn't touch a single prompt, model, or agent.",
-    "Instead, every coding-agent request kept flowing exactly as before, while the nexos.ai AI Gateway quietly reused repeated prompt context before requests reached the LLM. All the savings, with zero disruption to how engineers work, built in.",
+    "NexEco AI turned Nord Security's rising, hard-to-see AI spend into immediate, measurable savings. We didn't touch a single prompt, model, or agent.",
+    "Instead, every coding-agent request kept flowing exactly as before, while the NexEco AI AI Gateway quietly reused repeated prompt context before requests reached the LLM. All the savings, with zero disruption to how engineers work, built in.",
   ],
-  numbersHeading: "Nord Security x nexos.ai success in numbers",
+  numbersHeading: "Nord Security x NexEco AI success in numbers",
   numbersIntro: "Don't hear it from us. The results speak for themselves.",
   metrics: [
     { value: "46%", label: "Reduction in total LLM costs" },
@@ -117,9 +117,9 @@ export const nordSecuritySolution = {
 };
 
 export const nordSecurityHow = {
-  kicker: "How nexos.ai stepped in",
+  kicker: "How NexEco AI stepped in",
   headingBefore: "Here's how ",
-  headingAccent: "nexos.ai",
+  headingAccent: "NexEco AI",
   headingAfter: " solved each challenge.",
   steps: [
     {
@@ -127,7 +127,7 @@ export const nordSecurityHow = {
       icon: "one" as const,
       title: "A real-traffic audit that pinpointed the overspend",
       paragraphs: [
-        "nexos.ai analyzed the production AI traffic already flowing through the AI Gateway to measure how effectively repeated prompt context was being reused through caching.",
+        "NexEco AI analyzed the production AI traffic already flowing through the AI Gateway to measure how effectively repeated prompt context was being reused through caching.",
         "The audit found:",
       ],
       bullets: [
@@ -143,7 +143,7 @@ export const nordSecurityHow = {
       icon: "two" as const,
       title: "Gateway caching at the infrastructure layer",
       paragraphs: [
-        "Following the assessment, nexos.ai implemented gateway-level caching that automatically reuses repeated prompt context before requests ever reach the LLM.",
+        "Following the assessment, NexEco AI implemented gateway-level caching that automatically reuses repeated prompt context before requests ever reach the LLM.",
         "By processing only the new information and serving repeated context from cache, the Gateway reduced repeated LLM processing, and it stayed completely transparent to developers.",
       ],
       bullets: [],
@@ -180,11 +180,11 @@ export const nordSecurityHow = {
 export const nordSecurityResult = {
   heading: "The Result",
   paragraphs: [
-    'With the nexos.ai AI Gateway, Nord Security cut total LLM costs by 46% and lifted its prompt cache hit rate from 14% to 77%, into the "excellent" band for coding agents. All of it landed with no application changes, no workflow disruption, and immediate infrastructure optimization.',
+    'With the NexEco AI AI Gateway, Nord Security cut total LLM costs by 46% and lifted its prompt cache hit rate from 14% to 77%, into the "excellent" band for coding agents. All of it landed with no application changes, no workflow disruption, and immediate infrastructure optimization.',
     "Today, Nord Security's engineers keep moving at full speed on the same models, prompts, and agents, while leadership finally has the visibility and cost control that scaling AI requires.",
   ],
   quote:
-    '"nexos.ai helped us reduce coding-agent LLM costs by 46% without changing our prompts, models, or developer workflows. The optimization was transparent to our engineers, while giving us much better visibility into AI usage and spend."',
+    '"NexEco AI helped us reduce coding-agent LLM costs by 46% without changing our prompts, models, or developer workflows. The optimization was transparent to our engineers, while giving us much better visibility into AI usage and spend."',
 };
 
 export const nordSecurityFinalCta = {
@@ -198,25 +198,25 @@ export const nordSecurityRelated = {
   stories: [
     {
       slug: "payhawk",
-      title: "Payhawk cuts security investigation time by 80% with nexos.ai",
+      title: "Payhawk cuts security investigation time by 80% with NexEco AI",
       image: "relatedPayhawk" as const,
       alt: "Payhawk",
     },
     {
       slug: "hostinger",
-      title: "Hostinger Horizons scales no-code AI web builder with nexos.ai",
+      title: "Hostinger Horizons scales no-code AI web builder with NexEco AI",
       image: "relatedHostinger" as const,
       alt: "Hostinger",
     },
     {
       slug: "pigu-lt",
-      title: "Pigu.lt integrates AI at the core of e-commerce with nexos.ai",
+      title: "Pigu.lt integrates AI at the core of e-commerce with NexEco AI",
       image: "relatedPigu" as const,
       alt: "Pigu.lt",
     },
     {
       slug: "oxylabs",
-      title: "Oxylabs doubles AI output and slashes costs with nexos.ai",
+      title: "Oxylabs doubles AI output and slashes costs with NexEco AI",
       image: "relatedOxylabs" as const,
       alt: "Oxylabs",
     },

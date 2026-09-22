@@ -53,7 +53,7 @@ export function GatewayHero() {
               <source media="(max-width: 767px)" srcSet={assetSrc(gatewayGraphics.heroXs)} />
               <img
                 src={assetSrc(gatewayGraphics.heroXl)}
-                alt="nexos.ai AI Gateway routing diagram connecting one endpoint to live cards for total AI spend, tokens routed, model usage, and team budgets."
+                alt="NexEco AI AI Gateway routing diagram connecting one endpoint to live cards for total AI spend, tokens routed, model usage, and team budgets."
                 width={1168}
                 height={360}
                 className="h-auto w-full"

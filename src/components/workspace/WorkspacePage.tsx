@@ -54,7 +54,7 @@ const chatVisuals = {
 const agentCardShots = {
   custom: {
     src: workspaceShots.createAgent,
-    alt: "User creating a no-code SEO keyword researcher AI Agent in nexos.ai.",
+    alt: "User creating a no-code SEO keyword researcher AI Agent in NexEco AI.",
   },
   templates: {
     src: workspaceShots.agentTemplates,
@@ -78,7 +78,7 @@ export function WorkspacePage() {
         visual={
           <ProductShot
             src={workspaceShots.hero}
-            alt="nexos.ai Workspace interface showing a team performance report with active integrations"
+            alt="NexEco AI Workspace interface showing a team performance report with active integrations"
             priority
           />
         }
@@ -183,7 +183,7 @@ export function WorkspacePage() {
       <HowItWorks
         heading={
           <>
-            How the <span className="text-accent">nexos.ai</span> Workspace
+            How the <span className="text-accent">NexEco AI</span> Workspace
             <br />
             works for your team
           </>

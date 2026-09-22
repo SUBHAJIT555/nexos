@@ -343,7 +343,7 @@ export function ReviewsTabs() {
   else panel = <EventsGrid />;
 
   return (
-    <section id="nexos-reviews" className="bg-white py-16">
+    <section id="nexeco-ai-reviews" className="bg-white py-16">
       <Container>
         <div className="mx-auto max-w-[768px] text-center">
           <h2 className="font-heading text-[36px] leading-[1.2] font-semibold tracking-[-0.015em] text-neutral-900 md:text-[40px] md:leading-[48px]">

@@ -15,7 +15,7 @@ export function EuWhy() {
           <article className="flex flex-col justify-end overflow-hidden rounded-xl bg-[#eff4f8]">
             <img
               src={assetSrc(euGatewayGraphics.governance)}
-              alt="Multiple AI models including Gemini, ChatGPT, Claude, and Mistral accessible through nexos.ai"
+              alt="Multiple AI models including Gemini, ChatGPT, Claude, and Mistral accessible through NexEco AI"
               width={1152}
               height={696}
               className="h-auto w-full"

@@ -1,15 +1,15 @@
 export const cybercareMeta = {
   title: "How Nord Security automated 75% of customer support with 86% CSAT",
   description:
-    "See how CyberCare and nexos.ai helped Nord Security automate 75% of customer support with 86% CSAT and first response under 10 seconds.",
+    "See how CyberCare and NexEco AI helped Nord Security automate 75% of customer support with 86% CSAT and first response under 10 seconds.",
 };
 
 export const cybercareHero = {
-  logosAlt: "Nord Security, CyberCare, and nexos.ai logos",
+  logosAlt: "Nord Security, CyberCare, and NexEco AI logos",
   heading: "How Nord Security automated 75% of customer support with 86% CSAT",
   intro:
-    "With millions of users across the globe, Nord Security handles thousands of customer support requests every day. The aim was to deliver instant, reliable support in the most efficient way possible at that scale, without compromising the security, privacy, and customer experience standards of a leading cybersecurity company. Nord Security partnered with CyberCare AI Labs who built an agentic AI support platform. The platform is powered by nexos.ai AI Gateway that stands as an infrastructure layer providing multi-model access, intelligent routing, automatic fallbacks, observability, and cost control. The results speak for themselves:",
-  chartAlt: "CyberCare and nexos.ai automated support",
+    "With millions of users across the globe, Nord Security handles thousands of customer support requests every day. The aim was to deliver instant, reliable support in the most efficient way possible at that scale, without compromising the security, privacy, and customer experience standards of a leading cybersecurity company. Nord Security partnered with CyberCare AI Labs who built an agentic AI support platform. The platform is powered by NexEco AI AI Gateway that stands as an infrastructure layer providing multi-model access, intelligent routing, automatic fallbacks, observability, and cost control. The results speak for themselves:",
+  chartAlt: "CyberCare and NexEco AI automated support",
   metrics: [
     { value: "75%", label: "of customer support answers automated, up from ~40%" },
     { value: "86%", label: "customer satisfaction score (CSAT)" },
@@ -33,10 +33,10 @@ export const cybercareCompanies = {
       logoAlt: "CyberCare logo",
     },
     {
-      key: "nexos" as const,
-      title: "nexos.ai",
-      body: "nexos.ai AI Gateway is the infrastructure layer that powers CyberCare's platform. Through a single AI Gateway, it gives CyberCare secure access to every leading AI model – with the routing, fallbacks, observability, and cost control needed to run AI reliably in production, so CyberCare can focus on building great support instead of managing infrastructure.",
-      logoAlt: "nexos.ai logo",
+      key: "nexeco" as const,
+      title: "NexEco AI",
+      body: "NexEco AI AI Gateway is the infrastructure layer that powers CyberCare's platform. Through a single AI Gateway, it gives CyberCare secure access to every leading AI model – with the routing, fallbacks, observability, and cost control needed to run AI reliably in production, so CyberCare can focus on building great support instead of managing infrastructure.",
+      logoAlt: "NexEco AI logo",
     },
   ],
 };
@@ -81,7 +81,7 @@ export const cybercareGlance = {
       after: "Cybersecurity, Consumer Software, AI",
     },
   ],
-  comesInHeading: "Where nexos.ai comes in",
+  comesInHeading: "Where NexEco AI comes in",
   pills: [
     "AI Gateway",
     "Multi-model access",
@@ -133,7 +133,7 @@ export const cybercareQuotes = {
     quote:
       "“Customer support leaves no room for downtime or inconsistency. An AI platform has to be fast, reliable, and accurate at every interaction. Our role is to give CyberCare a foundation they can depend on as their solution matures and their model needs evolve, so their team can focus entirely on the customer experience, not the infrastructure underneath it.”",
     name: "Justas Morkūnas",
-    title: "COO at nexos.ai",
+    title: "COO at NexEco AI",
     alt: "Justas Morkūnas",
   },
   karina: {
@@ -145,7 +145,7 @@ export const cybercareQuotes = {
   },
   tomas: {
     quote:
-      "“nexos.ai team responded quickly and managed to find quick solutions for every situation along the way. I see this as a true partnership, not a client-vendor relationship.”",
+      "“NexEco AI team responded quickly and managed to find quick solutions for every situation along the way. I see this as a true partnership, not a client-vendor relationship.”",
     name: "Tomas Vilčinskas",
     title: "Engineering manager, CyberCare",
     alt: "Tomas Vilčinskas",
@@ -154,7 +154,7 @@ export const cybercareQuotes = {
 
 export const cybercareSolution = {
   kicker: "The Solution",
-  heading: "Agentic AI support powered by nexos.ai",
+  heading: "Agentic AI support powered by NexEco AI",
   intro:
     "CyberCare built an agentic customer support platform: a system of specialized AI agents that resolve customer inquiries autonomously and hand off to humans when needed. Three things define it:",
   cards: [
@@ -174,17 +174,17 @@ export const cybercareSolution = {
 };
 
 export const cybercareRelies = {
-  heading: "Where CyberCare relies on nexos.ai",
+  heading: "Where CyberCare relies on NexEco AI",
   lead: "A customer support platform like that is only as reliable as the AI infrastructure beneath it, and that's the layer CyberCare chose not to build themselves.",
   paragraphs: [
-    "Through nexos.ai, CyberCare gets full visibility into how the platform performs: cost per model and per conversation, token usage and pricing (including spikes), response latency, request success and failure rates, and model usage across traffic.",
+    "Through NexEco AI, CyberCare gets full visibility into how the platform performs: cost per model and per conversation, token usage and pricing (including spikes), response latency, request success and failure rates, and model usage across traffic.",
     "CyberCare had used Azure, but needed more than it offered: greater stability, real fallback handling, higher reliability, and a faster, easier way to configure and deploy. Managing individual contracts and integrations with every model provider was its own drain – especially early on.",
   ],
   callout:
-    "nexos.ai removed that entire class of problems. It sits as the AI infrastructure layer between CyberCare's agentic platform and the underlying LLM providers – a single API endpoint to every leading model, with the reliability, security, and visibility an enterprise support product demands.",
+    "NexEco AI removed that entire class of problems. It sits as the AI infrastructure layer between CyberCare's agentic platform and the underlying LLM providers – a single API endpoint to every leading model, with the reliability, security, and visibility an enterprise support product demands.",
   closing:
     "It also gave CyberCare room to evolve the solution as it matured. Early on, the team leaned on premium frontier models to get the quality right, then shifted to more efficient ones to make the solution sustainable at scale, all through one provider, without re-integrating anything. Here are the capabilities that mattered most:",
-  teamAlt: "CyberCare and nexos.ai",
+  teamAlt: "CyberCare and NexEco AI",
   capabilities: [
     {
       title: "One integration, every model",
@@ -217,7 +217,7 @@ export const cybercareResult = {
   kicker: "The Result",
   heading: "Faster support, better customer experience",
   intro:
-    "The combination – CyberCare's support-first design and nexos.ai's reliability – produced results that speak the language of both support leaders and CFOs.",
+    "The combination – CyberCare's support-first design and NexEco AI's reliability – produced results that speak the language of both support leaders and CFOs.",
   cards: [
     {
       icon: "gear" as const,
@@ -249,7 +249,7 @@ export const cybercareResult = {
 export const cybercarePartnership = {
   headingBefore: "A real partnership,",
   headingAfter: "not a vendor relationship",
-  intro: "What stood out most to CyberCare was how nexos.ai showed up.",
+  intro: "What stood out most to CyberCare was how NexEco AI showed up.",
   cards: [
     {
       icon: "users" as const,
@@ -265,7 +265,7 @@ export const cybercarePartnership = {
 export const cybercareLookingAhead = {
   heading: "Looking ahead",
   paragraphs: [
-    "What began as a solution for Nord Security is now available to the wider market. CyberCare offers a 360-degree customer support solution: AI-automated and powered by nexos.ai, with real people ready to step in whenever needed, across chat, email, and voice. The customer support platform resolves requests instantly; a human takes over with full context when the issue complexity increases. In the end, the customer simply feels looked after, no matter the channel.",
+    "What began as a solution for Nord Security is now available to the wider market. CyberCare offers a 360-degree customer support solution: AI-automated and powered by NexEco AI, with real people ready to step in whenever needed, across chat, email, and voice. The customer support platform resolves requests instantly; a human takes over with full context when the issue complexity increases. In the end, the customer simply feels looked after, no matter the channel.",
     "Built on an AI infrastructure layer they can trust, CyberCare is scaling enterprise-grade support without scaling the risk. And they're just getting started.",
   ],
 };
@@ -275,27 +275,27 @@ export const cybercareRelated = {
   stories: [
     {
       slug: "payhawk",
-      title: "Payhawk cuts security investigation time by 80% with nexos.ai",
+      title: "Payhawk cuts security investigation time by 80% with NexEco AI",
       image: "relatedPayhawk" as const,
       alt: "payhawk hero",
     },
     {
       slug: "oxylabs",
-      title: "Oxylabs doubles AI output and slashes costs with nexos.ai",
+      title: "Oxylabs doubles AI output and slashes costs with NexEco AI",
       image: "relatedOxylabs" as const,
       alt: "oxylabs hero",
     },
     {
       slug: "hostinger",
-      title: "Hostinger Horizons scaled no-code AI web builder with nexos.ai",
+      title: "Hostinger Horizons scaled no-code AI web builder with NexEco AI",
       image: "relatedHostinger" as const,
       alt: "hostinger hero",
     },
     {
       slug: "nord-security",
-      title: "Nord Security cuts coding-agent LLM costs by 46% with nexos.ai",
+      title: "Nord Security cuts coding-agent LLM costs by 46% with NexEco AI",
       image: "relatedNord" as const,
-      alt: "Nord Security x nexos.ai",
+      alt: "Nord Security x NexEco AI",
     },
   ],
 };

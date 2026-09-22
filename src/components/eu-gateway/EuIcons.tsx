@@ -1,3 +1,4 @@
+import { BrandMark } from "@/components/icons/BrandMark";
 import { cn } from "@/lib/utils";
 
 type IconProps = {
@@ -218,42 +219,8 @@ export function EuInfoIcon({ className }: IconProps) {
 
 export function EuNexosMark({ className }: IconProps) {
   return (
-    <svg
-      fill="none"
-      viewBox="0 0 52 32"
-      className={cn("h-6 w-auto", className)}
-      aria-label="nexos ai logo icon"
-      role="img"
-    >
-      <g clipPath="url(#eu-nexos-clip)">
-        <path
-          fill="#000"
-          d="m33.819 2.06-5.996 6.697 4.721 5.274 8.669-9.679c.9-1.004 2.57-.373 2.57.974v21.04c0 1.343-1.67 1.977-2.57.974L18.615 2.098a6.2 6.2 0 0 0-4.603-2.06L8.2.023C3.676.01 0 3.657 0 8.158v15.71c0 4.493 3.662 8.135 8.179 8.135h5.502a6.2 6.2 0 0 0 4.621-2.06l5.996-6.697-4.721-5.274-8.669 9.682c-.9 1.003-2.57.372-2.57-.974V5.637c0-1.345 1.67-1.978 2.57-.975l22.595 25.239a6.2 6.2 0 0 0 4.603 2.06l5.813.015c4.526.011 8.202-3.634 8.202-8.135V8.135C52.121 3.642 48.46 0 43.942 0h-5.505a6.2 6.2 0 0 0-4.62 2.06z"
-        />
-        <path
-          fill="url(#eu-nexos-g0)"
-          d="m19.577 17.97 4.72 5.273-5.995 6.697a6.18 6.18 0 0 1-4.08 2.034q-.125.01-.248.017a5 5 0 0 1-.29.009h-.009c-2.947 0-5.337-2.377-5.337-5.309.012 1.335 1.676 1.96 2.57.96l5.122-5.723z"
-        />
-        <path
-          fill="url(#eu-nexos-g1)"
-          d="M43.78 5.306c-.015-1.332-1.673-1.952-2.567-.954l-5.122 5.72-3.547 3.959-4.72-5.274 5.995-6.697a6.18 6.18 0 0 1 4.08-2.034c.08-.005.16-.014.242-.017Q38.29 0 38.436 0h.006c.847 0 1.644.194 2.355.543a5.3 5.3 0 0 1 2.983 4.763"
-        />
-      </g>
-      <defs>
-        <linearGradient id="eu-nexos-g0" x1="3.921" x2="15.729" y1="37.822" y2="25.756" gradientUnits="userSpaceOnUse">
-          <stop offset=".38" stopColor="#F0F5F9" />
-          <stop offset=".5" stopColor="#C6CACD" />
-          <stop offset=".77" stopColor="#5D5F60" />
-          <stop offset="1" />
-        </linearGradient>
-        <linearGradient id="eu-nexos-g1" x1="47.66" x2="36.053" y1="-6.448" y2="6.888" gradientUnits="userSpaceOnUse">
-          <stop offset=".33" stopColor="#F0F5F9" />
-          <stop offset="1" />
-        </linearGradient>
-        <clipPath id="eu-nexos-clip">
-          <path fill="#fff" d="M0 0h52v32.003H0z" />
-        </clipPath>
-      </defs>
-    </svg>
+    <span className={cn("inline-flex", className)} aria-label="NexEco AI logo" role="img">
+      <BrandMark className="h-6 w-6" />
+    </span>
   );
 }

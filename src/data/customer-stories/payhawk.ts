@@ -6,14 +6,14 @@ export type StoryInline =
 export const payhawkMeta = {
   title: "Payhawk cuts spending with AI orchestration",
   description:
-    "Discover how Payhawk made 200+ LLMs work for multiple teams and learn how to get the same results with nexos.ai.",
+    "Discover how Payhawk made 200+ LLMs work for multiple teams and learn how to get the same results with NexEco AI.",
 };
 
 export const payhawkHero = {
-  heading: "Payhawk cuts security investigation time by 80% with nexos.ai",
+  heading: "Payhawk cuts security investigation time by 80% with NexEco AI",
   paragraphs: [
     "Payhawk, a leading expense management platform, helps businesses control company spend and automate 90% of manual work. To help finance teams across Europe work smarter and better, Payhawk needed to scale their operations with AI.",
-    "Here, Payhawk faced a paradox: growing with LLM tools vs. potentially exposing sensitive financial data to shadow AI. That's when nexos.ai stepped in.",
+    "Here, Payhawk faced a paradox: growing with LLM tools vs. potentially exposing sensitive financial data to shadow AI. That's when NexEco AI stepped in.",
   ],
   author: "By Mia Lysikova",
   authorAlt: "Mia Lysikova",
@@ -68,7 +68,7 @@ export const payhawkQuote = {
 export const payhawkChallenge = {
   heading: "The Challenge: Scale fintech with AI at no security risk",
   intro:
-    "The Payhawk team was no stranger to AI before integrating nexos.ai. Both tech and non-tech teams experimented with LLMs:",
+    "The Payhawk team was no stranger to AI before integrating NexEco AI. Both tech and non-tech teams experimented with LLMs:",
   teams: [
     {
       id: "finance",
@@ -154,15 +154,15 @@ export const payhawkMidCta = {
 export const payhawkSolution = {
   heading: "The Solution",
   paragraphs: [
-    "nexos.ai turned Payhawk's fragmented AI toolkit into a secure, centralized AI powerhouse. The company stopped paying for and juggling multiple models.",
+    "NexEco AI turned Payhawk's fragmented AI toolkit into a secure, centralized AI powerhouse. The company stopped paying for and juggling multiple models.",
     "Instead, every tech and non-tech team gained instant access to 200+ LLMs through a single platform. All the convenience with enterprise-grade security, perfect for a fintech solution, built in.",
   ],
-  numbersHeading: "Payhawk x nexos.ai success in numbers",
+  numbersHeading: "Payhawk x NexEco AI success in numbers",
   numbersIntro: "Don't hear it from us. The results speak for themselves.",
 };
 
 export const payhawkHow = {
-  heading: "Here's how nexos.ai solved each challenge.",
+  heading: "Here's how NexEco AI solved each challenge.",
   guardrails: {
     heading: "1. AI Guardrails for fintech-ready security",
     paragraphs: [
@@ -182,7 +182,7 @@ export const payhawkHow = {
     heading: "2. Access to 200+ LLMs in one place",
     paragraphs: [
       [
-        "nexos.ai's high usage limits meant every team, from Operations to Development, had the AI tools they needed.",
+        "NexEco AI's high usage limits meant every team, from Operations to Development, had the AI tools they needed.",
       ] satisfies StoryInline[],
       [
         "Payhawk unlocked ",
@@ -203,7 +203,7 @@ export const payhawkHow = {
       ] satisfies StoryInline[],
       [
         { href: "/ai-gateway", label: "AI Gateway" },
-        " also serves as a fully customizable API architecture to scale features within Payhawk. Instead of building a custom solution in-house, nexos.ai handles it all at a fraction of the cost.",
+        " also serves as a fully customizable API architecture to scale features within Payhawk. Instead of building a custom solution in-house, NexEco AI handles it all at a fraction of the cost.",
       ] satisfies StoryInline[],
     ],
     alt: "function team management",
@@ -220,21 +220,21 @@ export const payhawkHow = {
         "Leadership could track AI spend by department, identify inefficiencies, and optimize usage in real-time.",
       ] satisfies StoryInline[],
     ],
-    alt: "nexos metrics tokens usage",
+    alt: "NexEco AI metrics tokens usage",
   },
 };
 
 export const payhawkResult = {
   heading: "The Result",
   paragraphs: [
-    "With nexos.ai, Payhawk achieved 98% data accuracy, slashed costs by 40%, and cut security response time by 80%, all while maintaining zero compliance violations.",
+    "With NexEco AI, Payhawk achieved 98% data accuracy, slashed costs by 40%, and cut security response time by 80%, all while maintaining zero compliance violations.",
     "Today, every Payhawk uses AI. Finance processes billions securely. Support automates without exposing data. Development innovates with confidence.",
   ],
   quote:
-    "“Before, teams were using ChatGPT and Gemini. Today, 75% of our workforce confidently uses enterprise AI. nexos.ai gave us 40% cost reduction and bulletproof security in one platform.”",
+    "“Before, teams were using ChatGPT and Gemini. Today, 75% of our workforce confidently uses enterprise AI. NexEco AI gave us 40% cost reduction and bulletproof security in one platform.”",
 };
 
 export const payhawkFinalCta = {
   heading: "Discover AI platform for your business",
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
 };

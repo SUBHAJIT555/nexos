@@ -12,7 +12,7 @@ function docsHref(path: string) {
 export const pricingMeta = {
   title: "Pricing plans — Get your subscription",
   description:
-    "Choose from 3 pricing plans. Find the right nexos.ai subscription for you or book an intro with our team to discuss a custom quote based on your needs.",
+    "Choose from 3 pricing plans. Find the right NexEco AI subscription for you or book an intro with our team to discuss a custom quote based on your needs.",
 };
 
 export type PricingTabId = "gateway" | "workspace";
@@ -24,7 +24,7 @@ export const pricingTabs = [
 
 export const pricingCtas = {
   getStarted: { label: "Get started", href: checkoutHref("gateway", "payg") },
-  getNexos: { label: "Get nexos.ai", href: checkoutHref("workspace", "month") },
+  getNexos: { label: "Get NexEco AI", href: checkoutHref("workspace", "month") },
   talkEngineer: { label: "Talk to Solutions Engineer", href: salesMailto },
   talkSales: { label: "Talk to sales", href: salesMailto },
   customPricing: { label: "Custom pricing", href: salesMailto },
@@ -211,14 +211,14 @@ export const gatewayFaq = {
           id: "fee",
           question: "How does the 5% platform fee work?",
           answer: answer(
-            "The platform fee is added on top of the AI model provider's pricing. For example, if a model costs $10 per 1M tokens, you'll pay $10.50 per 1M tokens through nexos.ai. The fee includes access to AI Gateway features such as smart routing, prompt caching, AI spend controls, observability, API key management, and enterprise-grade security.",
+            "The platform fee is added on top of the AI model provider's pricing. For example, if a model costs $10 per 1M tokens, you'll pay $10.50 per 1M tokens through NexEco AI. The fee includes access to AI Gateway features such as smart routing, prompt caching, AI spend controls, observability, API key management, and enterprise-grade security.",
           ),
         },
         {
           id: "payg-vs-ent",
           question: "What's the difference between Pay-as-you-go and Enterprise?",
           answer: answer(
-            "nexos.ai Pay-as-you-go is designed for developers and growing teams who want to start building immediately. Enterprise adds governance features such as SSO/SAML, RBAC, audit logs, policy enforcement, dedicated support, and custom commercial terms.",
+            "NexEco AI Pay-as-you-go is designed for developers and growing teams who want to start building immediately. Enterprise adds governance features such as SSO/SAML, RBAC, audit logs, policy enforcement, dedicated support, and custom commercial terms.",
           ),
         },
         {
@@ -232,14 +232,14 @@ export const gatewayFaq = {
           id: "upgrade",
           question: "Can I upgrade to Enterprise later?",
           answer: answer(
-            "Yes. Most nexos.ai customers start with Pay-as-you-go and upgrade when they need organization-wide governance, dedicated support, or advanced security features.",
+            "Yes. Most NexEco AI customers start with Pay-as-you-go and upgrade when they need organization-wide governance, dedicated support, or advanced security features.",
           ),
         },
         {
           id: "payments",
-          question: "Which payment methods does nexos.ai support?",
+          question: "Which payment methods does NexEco AI support?",
           answer: answer(
-            "nexos.ai Pay-as-you-go supports credit cards, Apple Pay, and Google Pay. Enterprise customers can pay by invoice.",
+            "NexEco AI Pay-as-you-go supports credit cards, Apple Pay, and Google Pay. Enterprise customers can pay by invoice.",
           ),
         },
       ] satisfies ProductFaqItem[],
@@ -280,7 +280,7 @@ export const gatewayFaq = {
           id: "data",
           question: "Where is my data stored?",
           answer: answer(
-            "nexos.ai is hosted in Europe and supports EU data residency. Your data is never used to train third-party AI models, and Enterprise customers can apply additional governance policies.",
+            "NexEco AI is hosted in Europe and supports EU data residency. Your data is never used to train third-party AI models, and Enterprise customers can apply additional governance policies.",
           ),
         },
       ] satisfies ProductFaqItem[],
@@ -369,11 +369,11 @@ export type ToolCompareCell = {
 
 export const workspaceToolCompare = {
   headingBefore: "Compare ",
-  headingAccent: "nexos.ai",
+  headingAccent: "NexEco AI",
   headingAfter: " with other AI tools",
-  body: "Instead of using separate tools for AI chat, research, and automations, nexos.ai brings everything together in one platform. Compare how nexos.ai stacks up against popular AI tools below.",
+  body: "Instead of using separate tools for AI chat, research, and automations, NexEco AI brings everything together in one platform. Compare how NexEco AI stacks up against popular AI tools below.",
   columns: [
-    { id: "nexos", label: "nexos.ai" },
+    { id: "nexeco", label: "NexEco AI" },
     { id: "chatgpt", label: "Chat GPT" },
     { id: "perplexity", label: "Perplexity" },
     { id: "lindy", label: "Lindy" },
@@ -502,7 +502,7 @@ export const workspaceSecurity = {
     {
       id: "europe",
       title: "Hosted in Europe",
-      body: "nexos.ai platform is hosted in Europe - as are most of the available models.",
+      body: "NexEco AI platform is hosted in Europe - as are most of the available models.",
       icon: "cloud" as const,
     },
   ],
@@ -525,7 +525,7 @@ export const workspaceTestimonials = {
       role: "CMO",
       company: "Pigu.lt",
       quote:
-        "“Our content team needed to optimize 4 million products in our catalog – that’s a lot. And to do it by hand would take 3 years and cost us millions of euros. That’s extremely expensive. With nexos.ai, optimizing one item is 99.8% cheaper than doing it manually.”",
+        "“Our content team needed to optimize 4 million products in our catalog – that’s a lot. And to do it by hand would take 3 years and cost us millions of euros. That’s extremely expensive. With NexEco AI, optimizing one item is 99.8% cheaper than doing it manually.”",
     },
     {
       id: "ilma",
@@ -536,7 +536,7 @@ export const workspaceTestimonials = {
       role: "Head of Communication",
       company: "NordVPN",
       quote:
-        "“Using nexos.ai has helped us save time and energy by making such everyday processes as article research, idea generation, and target audience segment classification faster and more efficient. With the help of agents customized for every product we work with, we can now perform content review and implement suggested changes in no time.”",
+        "“Using NexEco AI has helped us save time and energy by making such everyday processes as article research, idea generation, and target audience segment classification faster and more efficient. With the help of agents customized for every product we work with, we can now perform content review and implement suggested changes in no time.”",
     },
     {
       id: "juras",
@@ -547,7 +547,7 @@ export const workspaceTestimonials = {
       role: "COO",
       company: "Oxylabs",
       quote:
-        "“nexos.ai has significantly accelerated our AI transformation journey. With seamless access to the latest models and transparent cost management, we’ve gained both agility and clarity.”",
+        "“NexEco AI has significantly accelerated our AI transformation journey. With seamless access to the latest models and transparent cost management, we’ve gained both agility and clarity.”",
     },
     {
       id: "boyko",
@@ -569,7 +569,7 @@ export const workspaceTestimonials = {
       role: "Head of Talent Acquisition",
       company: "Nord Security",
       quote:
-        "“nexos.ai saves us 10+ hours each week. We created a custom Agent that analyzes, evaluates, and writes feedback for candidates based on objective metrics. Now, we find high-quality talent in minutes and don’t waste hours writing feedback from scratch.”",
+        "“NexEco AI saves us 10+ hours each week. We created a custom Agent that analyzes, evaluates, and writes feedback for candidates based on objective metrics. Now, we find high-quality talent in minutes and don’t waste hours writing feedback from scratch.”",
     },
     {
       id: "vismantas",
@@ -602,7 +602,7 @@ export const workspaceTestimonials = {
       role: "Head of Product",
       company: "Hostinger Horizons",
       quote:
-        "“Integrating nexos.ai was seamless. It saved us the equivalent of two yearly salaries in development cost.”",
+        "“Integrating NexEco AI was seamless. It saved us the equivalent of two yearly salaries in development cost.”",
     },
     {
       id: "romas",
@@ -613,7 +613,7 @@ export const workspaceTestimonials = {
       role: "CIO and Head of IT",
       company: "Pigu.lt",
       quote:
-        "“nexos.ai transformed the core of our e-commerce operations. What would have taken us three years and millions of euros to accomplish manually, we achieved in just six weeks at a fraction of the cost.”",
+        "“NexEco AI transformed the core of our e-commerce operations. What would have taken us three years and millions of euros to accomplish manually, we achieved in just six weeks at a fraction of the cost.”",
     },
   ],
 };
@@ -627,29 +627,29 @@ export const workspaceFaq = {
       items: [
         {
           id: "cost",
-          question: "How much does nexos.ai cost?",
+          question: "How much does NexEco AI cost?",
           answer: answer(
-            "nexos.ai offers flexible monthly and annual plans for individuals and teams. Pricing depends on the plan you choose, with annual plans offering the best value. Enterprise pricing is customized based on your organization's needs.",
+            "NexEco AI offers flexible monthly and annual plans for individuals and teams. Pricing depends on the plan you choose, with annual plans offering the best value. Enterprise pricing is customized based on your organization's needs.",
           ),
         },
         {
           id: "difference",
-          question: "What's the difference between nexos.ai plans?",
+          question: "What's the difference between NexEco AI plans?",
           answer: answer(
-            "nexos.ai 1-month and 12-month plans are perfect for individuals and small teams who want daily access to top AI models, custom Agent builder, and our extensive template library. Our Enterprise plan includes everything in the standard plans, plus enhanced security features, team management tools, and detailed analytics – ideal for secure, large-scale AI adoption.",
+            "NexEco AI 1-month and 12-month plans are perfect for individuals and small teams who want daily access to top AI models, custom Agent builder, and our extensive template library. Our Enterprise plan includes everything in the standard plans, plus enhanced security features, team management tools, and detailed analytics – ideal for secure, large-scale AI adoption.",
           ),
         },
         {
           id: "guarantee",
-          question: "Does nexos.ai offer a money-back guarantee?",
-          answer: answer("Yes. Every nexos.ai plan includes a 14-day money-back guarantee."),
+          question: "Does NexEco AI offer a money-back guarantee?",
+          answer: answer("Yes. Every NexEco AI plan includes a 14-day money-back guarantee."),
         },
         {
           id: "enterprise",
-          question: "Does nexos.ai offer custom enterprise plans?",
+          question: "Does NexEco AI offer custom enterprise plans?",
           answer: [
             [
-              "Yes, nexos.ai offers flexible enterprise plans customized to meet your organization's needs. ",
+              "Yes, NexEco AI offers flexible enterprise plans customized to meet your organization's needs. ",
               { href: salesMailto, label: "Talk to sales" },
               " to get a custom quote.",
             ],
@@ -659,7 +659,7 @@ export const workspaceFaq = {
           id: "users",
           question: "How many users are supported on each subscription plan?",
           answer: answer(
-            "Both our 1-month and 12-month nexos.ai plans work great for individuals or small to medium-sized teams. The Enterprise plan is designed specifically for larger organizations that need advanced management, security, and collaboration features. Reach out to our sales team to learn more about Enterprise plan options.",
+            "Both our 1-month and 12-month NexEco AI plans work great for individuals or small to medium-sized teams. The Enterprise plan is designed specifically for larger organizations that need advanced management, security, and collaboration features. Reach out to our sales team to learn more about Enterprise plan options.",
           ),
         },
       ] satisfies ProductFaqItem[],
@@ -670,9 +670,9 @@ export const workspaceFaq = {
       items: [
         {
           id: "methods",
-          question: "What payment methods are accepted at nexos.ai?",
+          question: "What payment methods are accepted at NexEco AI?",
           answer: answer(
-            "You can purchase nexos.ai using any major credit card. For Enterprise plans, please contact sales to discuss alternative payment options, such as invoicing.",
+            "You can purchase NexEco AI using any major credit card. For Enterprise plans, please contact sales to discuss alternative payment options, such as invoicing.",
           ),
         },
         {
@@ -680,22 +680,22 @@ export const workspaceFaq = {
           question: "How can I renew my subscription?",
           answer: [
             [
-              "You can easily renew your nexos.ai subscription in Billing. For Enterprise plans, contact your sales representative to renew. Check the nexos.ai Workspace Billing documentation for more details.",
+              "You can easily renew your NexEco AI subscription in Billing. For Enterprise plans, contact your sales representative to renew. Check the NexEco AI Workspace Billing documentation for more details.",
             ],
           ],
         },
         {
           id: "frequency",
-          question: "What’s the frequency of nexos.ai billing?",
+          question: "What’s the frequency of NexEco AI billing?",
           answer: answer(
             "You have the flexibility between monthly and annual billing cycles. Our annual plans offer discounts compared to monthly payments.",
           ),
         },
         {
           id: "cancel",
-          question: "Can I cancel my nexos.ai subscription anytime?",
+          question: "Can I cancel my NexEco AI subscription anytime?",
           answer: answer(
-            "We value flexibility and your satisfaction. If you're unsatisfied with nexos.ai, you can cancel your plan within 14 days of purchase from the Billing section. For Enterprise plan users, contact your sales representative.",
+            "We value flexibility and your satisfaction. If you're unsatisfied with NexEco AI, you can cancel your plan within 14 days of purchase from the Billing section. For Enterprise plan users, contact your sales representative.",
           ),
         },
         {
@@ -703,8 +703,8 @@ export const workspaceFaq = {
           question: "How can I get support regarding my subscription?",
           answer: [
             [
-              "For any questions about your nexos.ai subscription, just email our support team at ",
-              { href: "mailto:support@nexos.ai", label: "support@nexos.ai" },
+              "For any questions about your NexEco AI subscription, just email our support team at ",
+              { href: "mailto:info@nexeco-ai.com", label: "info@nexeco-ai.com" },
               ".",
             ],
           ],

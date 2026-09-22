@@ -17,6 +17,6 @@ export const extensionPageGraphics = {
 
 export const extensionYoutube = {
   id: "3D1rcPluLBY",
-  title: "nexos.ai: Browser extension",
+  title: "NexEco AI: Browser extension",
   embed: "https://www.youtube.com/embed/3D1rcPluLBY?autoplay=1&enablejsapi=1",
 } as const;

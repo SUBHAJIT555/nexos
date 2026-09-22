@@ -5,20 +5,20 @@ export const CHROME_STORE =
   "https://chromewebstore.google.com/detail/nexosai-make-ai-work-wher/oekflhblfcpkcopglgkomdcaopmejfdm";
 
 export const extensionHero = {
-  heading: "nexos.ai browser extension: Make AI work where you work",
+  heading: "NexEco AI browser extension: Make AI work where you work",
   bullets: [
     "Research, summarize, write, and ask questions – work with AI directly in the browser",
     "Get context-aware AI answers based on company knowledge",
     "All AI interactions follow the same rules configured in the AI Workspace",
   ],
-  primary: { label: "Get nexos.ai", href: "/pricing" } satisfies ProductLink,
+  primary: { label: "Get NexEco AI", href: "/pricing" } satisfies ProductLink,
   secondary: { label: "Install extension", href: CHROME_STORE } satisfies ProductLink,
 };
 
 export const extensionIntro = {
-  heading: "What is the nexos.ai browser extension?",
+  heading: "What is the NexEco AI browser extension?",
   bodyBefore:
-    "The nexos.ai extension is a secure browser tool that brings leading AI models directly into your web experience. It integrates seamlessly with Chrome, allowing you to interact with ",
+    "The NexEco AI extension is a secure browser tool that brings leading AI models directly into your web experience. It integrates seamlessly with Chrome, allowing you to interact with ",
   linkLabel: "multiple AI models",
   linkHref: "/ai-workspace-for-multiple-llms",
   bodyAfter:
@@ -26,7 +26,7 @@ export const extensionIntro = {
 };
 
 export const extensionBenefits = {
-  heading: "Key benefits of using the nexos.ai browser extension",
+  heading: "Key benefits of using the NexEco AI browser extension",
   intro: "The extension transforms how your team uses AI daily. Here's why it matters.",
   featured: [
     {
@@ -34,14 +34,14 @@ export const extensionBenefits = {
       title: "Access multiple LLMs in one interface while browsing",
       body: "Switch between ChatGPT, Claude, Gemini, and other models directly from the extension sidebar. No more juggling between different AI tools or browser tabs. Select from the same range of leading AI models available in your AI Workspace.",
       shot: "models" as const,
-      alt: "AI model selection in nexos.ai browser extension",
+      alt: "AI model selection in NexEco AI browser extension",
     },
     {
       id: "assistants",
       title: "AI Assistants at your fingertips",
       body: "Bring your custom AI Assistants directly to browser chats. Access pre-built Assistants wherever you browse. Apply their specialized capabilities to web content for immediate answers.",
       shot: "assistant" as const,
-      alt: "AI assistants available directly in nexos.ai browser extension",
+      alt: "AI assistants available directly in NexEco AI browser extension",
     },
   ],
   icons: [
@@ -67,9 +67,9 @@ export const extensionBenefits = {
 };
 
 export const extensionHow = {
-  headingBefore: "How does nexos.ai",
+  headingBefore: "How does NexEco AI",
   headingAfter: "browser extension work",
-  caption: "Mikas Stankevičius, Product Manager at nexos.ai",
+  caption: "Mikas Stankevičius, Product Manager at NexEco AI",
   walkthrough: "Browser extension walkthrough",
   playLabel: "Play video",
   duration: "1 min watch",
@@ -78,14 +78,14 @@ export const extensionHow = {
       id: "install",
       n: "01",
       title: "Install the extension",
-      body: "Visit Chrome Web Store and search for \"nexos.ai\" or click the installation link below. Click \"Add to Chrome.\"",
+      body: "Visit Chrome Web Store and search for \"NexEco AI\" or click the installation link below. Click \"Add to Chrome.\"",
       link: { label: "Click to install", href: CHROME_STORE } satisfies ProductLink,
     },
     {
       id: "configure",
       n: "02",
       title: "Log in and configure",
-      body: "Sign in with nexos.ai account. Pin extension for easy access",
+      body: "Sign in with NexEco AI account. Pin extension for easy access",
     },
     {
       id: "start",
@@ -97,7 +97,7 @@ export const extensionHow = {
 };
 
 export const extensionUse = {
-  headingBefore: "How teams use nexos.ai",
+  headingBefore: "How teams use NexEco AI",
   headingAfter: "browser extension",
   introBefore: "The extension transforms everyday workflows across departments.",
   introAfter: "Here's how different teams leverage it.",
@@ -138,29 +138,29 @@ export const extensionUse = {
 export const extensionCta = {
   eyebrow: "Browser extension",
   heading: "Unlock AI where you already work",
-  primary: { label: "Buy nexos.ai", href: "/pricing" } satisfies ProductLink,
+  primary: { label: "Get NexEco AI", href: "/pricing" } satisfies ProductLink,
 };
 
 export const extensionFaq: ProductFaqItem[] = [
   {
     id: "browsers",
-    question: "What browsers support the nexos.ai extension?",
+    question: "What browsers support the NexEco AI extension?",
     answer: faqParagraphs(
-      "Currently, the nexos.ai browser extension is available for Google Chrome, Brave, Opera, and all Chromium-based browsers. We're working on supporting more browsers soon.",
+      "Currently, the NexEco AI browser extension is available for Google Chrome, Brave, Opera, and all Chromium-based browsers. We're working on supporting more browsers soon.",
     ),
   },
   {
     id: "account",
-    question: "Do I need a nexos.ai account to use the extension?",
+    question: "Do I need a NexEco AI account to use the extension?",
     answer: faqParagraphs(
-      "Yes, you need a nexos.ai account to access the extension's features. The extension maintains the same security standards, guardrails, and permissions as the AI Workspace.",
+      "Yes, you need a NexEco AI account to access the extension's features. The extension maintains the same security standards, guardrails, and permissions as the AI Workspace.",
     ),
   },
   {
     id: "cost",
     question: "How much does the browser extension cost?",
     answer: faqParagraphs(
-      "The browser extension is included with your nexos.ai subscription at no additional cost. We want to make AI accessible to you and your team throughout your workflow, whether that means in-app or in your browser tab.",
+      "The browser extension is included with your NexEco AI subscription at no additional cost. We want to make AI accessible to you and your team throughout your workflow, whether that means in-app or in your browser tab.",
     ),
   },
   {

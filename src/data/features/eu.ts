@@ -171,59 +171,59 @@ export type EuCompareCell = {
 };
 
 export const euCompare = {
-  headingBefore: "nexos.ai",
+  headingBefore: "NexEco AI",
   headingAfter: " vs going direct",
-  left: "nexos.ai",
+  left: "NexEco AI",
   right: "Direct provider",
   footnote:
     "Features may differ depending on specific consumer's preferences or legal exceptions.",
   rows: [
     {
       label: "EU-region model access",
-      nexos: { icon: "check" },
+      nexeco: { icon: "check" },
       direct: { icon: "dash", text: "Varies" },
     },
     {
       label: "Data retention",
-      nexos: { icon: "check", text: "Zero retention (model dependent)" },
+      nexeco: { icon: "check", text: "Zero retention (model dependent)" },
       direct: { icon: "dash", text: "Logs stored" },
     },
     {
       label: "Multiple AI providers",
-      nexos: { icon: "check" },
+      nexeco: { icon: "check" },
       direct: { icon: "dash", text: "One" },
     },
     {
       label: "OpenAI compatible",
-      nexos: { icon: "check" },
+      nexeco: { icon: "check" },
       direct: { icon: "x" },
     },
     {
       label: "Migration / set up",
-      nexos: { icon: "check", text: "One-line code" },
+      nexeco: { icon: "check", text: "One-line code" },
       direct: { icon: "dash", text: "Separate SDKs" },
     },
     {
       label: "Contracts",
-      nexos: { icon: "check", text: "One DPA" },
+      nexeco: { icon: "check", text: "One DPA" },
       direct: { icon: "dash", text: "One DPA per provider" },
     },
     {
       label: "Reliability",
-      nexos: { icon: "check", text: "Automatic failover" },
+      nexeco: { icon: "check", text: "Automatic failover" },
       direct: { icon: "x", text: "Dependent on one provider" },
     },
     {
       label: "Cost optimization",
-      nexos: { icon: "check", text: "Routing & caching" },
+      nexeco: { icon: "check", text: "Routing & caching" },
       direct: { icon: "x", text: "No cross-provider routing" },
     },
     {
       label: "Analytics",
-      nexos: { icon: "check" },
+      nexeco: { icon: "check" },
       direct: { icon: "dash", text: "Separate dashboards" },
     },
-  ] satisfies { label: string; nexos: EuCompareCell; direct: EuCompareCell }[],
+  ] satisfies { label: string; nexeco: EuCompareCell; direct: EuCompareCell }[],
 };
 
 export const euCta = {
@@ -236,19 +236,19 @@ export const euCta = {
 export const euFaq: ProductFaqItem[] = [
   {
     id: "gdpr",
-    question: "Is nexos.ai GDPR compliant?",
+    question: "Is NexEco AI GDPR compliant?",
     answer: [
       [
-        "Yes, nexos.ai platform is built to the highest security standards, ensuring your data is protected by enterprise-grade protocols. nexos.ai is fully GDPR-compliant.",
+        "Yes, NexEco AI platform is built to the highest security standards, ensuring your data is protected by enterprise-grade protocols. NexEco AI is fully GDPR-compliant.",
       ],
     ],
   },
   {
     id: "retain",
-    question: "Does nexos.ai retain my data?",
+    question: "Does NexEco AI retain my data?",
     answer: [
       [
-        "Supported models in nexos.ai can be used with zero data retention, and we never train on your data. Limited personal and operational data may be retained as described in our ",
+        "Supported models in NexEco AI can be used with zero data retention, and we never train on your data. Limited personal and operational data may be retained as described in our ",
         { href: "/legal/terms-of-use", label: "Terms of Use" },
         ".",
       ],
@@ -256,19 +256,19 @@ export const euFaq: ProductFaqItem[] = [
   },
   {
     id: "openai",
-    question: "Is nexos.ai API OpenAI-compatible?",
+    question: "Is NexEco AI API OpenAI-compatible?",
     answer: [
       [
-        "Yes. If you're already using an OpenAI-compatible SDK, migrating to nexos.ai typically requires only updating your base URL and API key.",
+        "Yes. If you're already using an OpenAI-compatible SDK, migrating to NexEco AI typically requires only updating your base URL and API key.",
       ],
     ],
   },
   {
     id: "models",
-    question: "Which AI models are available in nexos.ai?",
+    question: "Which AI models are available in NexEco AI?",
     answer: [
       [
-        "Access Claude, GPT, Gemini, Mistral, and other leading AI models through a single OpenAI-compatible endpoint. Model availability in nexos.ai may vary by provider and deployment.",
+        "Access Claude, GPT, Gemini, Mistral, and other leading AI models through a single OpenAI-compatible endpoint. Model availability in NexEco AI may vary by provider and deployment.",
       ],
     ],
   },
@@ -288,7 +288,7 @@ export const euFaq: ProductFaqItem[] = [
     question: "What security certifications do you hold?",
     answer: [
       [
-        "nexos.ai holds SOC 2 Type II and ISO 27001 certifications, independently validating our security and operational controls.",
+        "NexEco AI holds SOC 2 Type II and ISO 27001 certifications, independently validating our security and operational controls.",
       ],
     ],
   },

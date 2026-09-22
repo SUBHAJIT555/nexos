@@ -58,13 +58,13 @@ function Badge({ variant }: { variant: "without" | "with" }) {
   if (variant === "without") {
     return (
       <span className="inline-flex rounded-md bg-neutral-200 px-4 py-1 text-xs leading-[18px] text-neutral-600">
-        Without nexos.ai
+        Without NexEco AI
       </span>
     );
   }
   return (
     <span className="inline-flex rounded-md bg-accent px-4 py-1 text-xs leading-[18px] text-white">
-      With nexos.ai
+      With NexEco AI
     </span>
   );
 }

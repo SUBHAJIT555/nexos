@@ -35,7 +35,7 @@ export function AgentGallery({
   templates,
   searchPlaceholder = "What would you like to automate?",
   ctaHeading = "Find the perfect Agent template for you",
-  ctaLabel = "Get nexos.ai",
+  ctaLabel = "Get NexEco AI",
   ctaHref = "/pricing",
   ctaVariant = "box",
   categoryHeadings,

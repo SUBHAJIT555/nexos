@@ -1,15 +1,16 @@
 export const siteConfig = {
-  name: "Brand",
-  shortName: "Brand",
+  name: "NexEco AI",
+  shortName: "NexEco",
   description:
-    "One platform to access leading AI models, see every request, and optimize spend.",
+    "NexEco AI is a modern AI platform for intelligent automation, model access, and sustainable technology — optimize spend, build responsibly, and scale with confidence.",
   /**
-   * Production origin. Leave empty until a real public URL is available.
-   * Canonical URLs, Open Graph, and sitemap use this value only when set.
+   * Production origin. Set NEXT_PUBLIC_SITE_URL=https://nexeco-ai.com in production.
    */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "",
   docsUrl: process.env.NEXT_PUBLIC_DOCS_URL ?? "/docs",
   locale: "en_US",
+  domain: "nexeco-ai.com",
+  email: "info@nexeco-ai.com",
 } as const;
 
 export type SiteConfig = typeof siteConfig;
@@ -19,9 +20,15 @@ export function getMetadataBase(): URL {
     return new URL(siteConfig.url);
   }
 
-  return new URL("http://localhost:3000");
+  return new URL("https://nexeco-ai.com");
 }
 
 export function hasProductionUrl(): boolean {
   return siteConfig.url.length > 0;
+}
+
+export function getCanonicalUrl(path = ""): string {
+  const base = siteConfig.url || "https://nexeco-ai.com";
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `${base.replace(/\/$/, "")}${normalized === "/" ? "" : normalized}`;
 }

@@ -7,7 +7,7 @@ export type CookiePreferences = {
   advertising: boolean;
 };
 
-export const COOKIE_CONSENT_STORAGE_KEY = "z-cookies-consent-nexos.ai";
+export const COOKIE_CONSENT_STORAGE_KEY = "z-cookies-consent-nexeco-ai.com";
 
 export const defaultCookiePreferences: CookiePreferences = {
   essential: true,

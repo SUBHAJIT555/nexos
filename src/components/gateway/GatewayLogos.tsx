@@ -11,7 +11,7 @@ export function GatewayLogos() {
         className="absolute inset-0 bg-[linear-gradient(#28125f_0%,#36137e_100%)]"
       />
       <Container className="relative py-5">
-        <h2 className="sr-only">How does the nexos.ai Gateway work</h2>
+        <h2 className="sr-only">How does the NexEco AI Gateway work</h2>
         <p className="text-center text-base font-medium leading-6 text-[#A3B4C2]">
           {gatewayLogos.caption}
         </p>
@@ -19,7 +19,7 @@ export function GatewayLogos() {
           <source media="(min-width: 768px)" srcSet={assetSrc(gatewayGraphics.trustedWhite)} />
           <img
             src={assetSrc(gatewayGraphics.trustedWhiteMobile)}
-            alt="Logos of companies that trust nexos.ai"
+            alt="Logos of companies that trust NexEco AI"
             width={1168}
             height={64}
             className="mt-4 h-16 w-full object-contain"

@@ -43,7 +43,7 @@ export function EuHero() {
             <source media="(max-width: 767px)" srcSet={assetSrc(euGatewayGraphics.heroXs)} />
             <img
               src={assetSrc(euGatewayGraphics.heroXl)}
-              alt="nexos.ai AI Gateway routing traffic to GPT, Claude, Gemini, and Mistral through EU-hosted infrastructure"
+              alt="NexEco AI AI Gateway routing traffic to GPT, Claude, Gemini, and Mistral through EU-hosted infrastructure"
               width={1168}
               height={360}
               className="h-auto w-full"

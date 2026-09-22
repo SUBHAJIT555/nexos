@@ -5,7 +5,7 @@ export const chatHero = {
   headingLine1: "AI chat built for",
   headingLine2: "real work",
   body: "Chat with leading AI models to explore ideas, solve problems, and work faster. Turn your prompts into real outputs – from quick answers to full reports.",
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
   trustCaption: "Trusted by leading teams:",
 };
 
@@ -40,7 +40,7 @@ export const chatInside = {
       id: "collaborate",
       title: "Collaborate with Interactive Chat",
       lead: "Work with AI like you would with a teammate.",
-      body: "Instead of only replying to the exact prompt you type, nexos.ai can pause, ask follow-up questions, and guide the conversation when it needs more context. Sharper results, first try.",
+      body: "Instead of only replying to the exact prompt you type, NexEco AI can pause, ask follow-up questions, and guide the conversation when it needs more context. Sharper results, first try.",
     },
     {
       id: "files",
@@ -64,7 +64,7 @@ export const chatPrompt = {
 };
 
 export const chatTeams = {
-  heading: "How teams use nexos.ai",
+  heading: "How teams use NexEco AI",
   body: "Generate files in seconds, analyze customer data instantly, write eye-catching emails, and beyond – find your Chat.",
   cards: [
     {
@@ -102,27 +102,27 @@ export const chatSecurityExtra: SecurityCard = {
 
 export const chatCta = {
   heading: "One AI Chat you’ll ever need for work",
-  primary: { label: "Get nexos.ai", href: "/pricing" },
+  primary: { label: "Get NexEco AI", href: "/pricing" },
 };
 
 export const chatFaq: ProductFaqItem[] = [
   {
     id: "switch",
-    question: "Can I switch AI models in nexos.ai Chat?",
+    question: "Can I switch AI models in NexEco AI Chat?",
     answer: [
       [
-        "Yes, nexos.ai is model-agnostic, meaning our platform allows users to switch between different AI models that your enterprise enables. For example, Engineering teams will benefit from advanced Claude models, while creative Marketing teams are more likely to pick GPT-4o and Gemini. You can switch between models anytime, even mid-conversation. Check the ",
-        { href: productDocs.chat, label: "nexos.ai Chat documentation" },
+        "Yes, NexEco AI is model-agnostic, meaning our platform allows users to switch between different AI models that your enterprise enables. For example, Engineering teams will benefit from advanced Claude models, while creative Marketing teams are more likely to pick GPT-4o and Gemini. You can switch between models anytime, even mid-conversation. Check the ",
+        { href: productDocs.chat, label: "NexEco AI Chat documentation" },
         " to learn more about how it works.",
       ],
     ],
   },
   {
     id: "vs-gpt",
-    question: "What’s the difference between nexos.ai Chat and ChatGPT?",
+    question: "What’s the difference between NexEco AI Chat and ChatGPT?",
     answer: [
       [
-        "ChatGPT is an LLM provider that gives users access to a single AI model (GPT-5 for all, plus earlier versions for paid users). nexos.ai is not an LLM, but an all-in-one AI platform that allows you to pick from a list of advanced AI models in one platform. In a single chat interface, you can chat with GPT-5, Claude Opus 4, and Grok 4, and many others. Instead of paying for separate LLM subscriptions and switching tools, you can enjoy all advanced models under one roof.",
+        "ChatGPT is an LLM provider that gives users access to a single AI model (GPT-5 for all, plus earlier versions for paid users). NexEco AI is not an LLM, but an all-in-one AI platform that allows you to pick from a list of advanced AI models in one platform. In a single chat interface, you can chat with GPT-5, Claude Opus 4, and Grok 4, and many others. Instead of paying for separate LLM subscriptions and switching tools, you can enjoy all advanced models under one roof.",
       ],
     ],
   },

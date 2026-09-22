@@ -56,7 +56,7 @@ export default async function CheckoutSuccessPage({ searchParams }: CheckoutSucc
 
         <p className="mt-6 text-center text-sm text-neutral-600">
           Need help?{" "}
-          <Link href="mailto:support@nexos.ai" className="text-accent hover:text-[var(--accent-hover)]">
+          <Link href="mailto:info@nexeco-ai.com" className="text-accent hover:text-[var(--accent-hover)]">
             Contact support
           </Link>
         </p>

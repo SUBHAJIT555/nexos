@@ -31,7 +31,7 @@ export function EuMigrate() {
             {/* Code window is a permitted SVG still; next/image does not add value. */}
             <img
               src={assetSrc(euGatewayGraphics.apiUrl)}
-              alt="Code snippet showing OpenAI SDK pointed to https://api.nexos.ai"
+              alt="Code snippet showing OpenAI SDK pointed to https://api.nexeco-ai.com"
               width={572}
               height={433}
               className="h-auto w-full"

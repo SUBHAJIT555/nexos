@@ -6,7 +6,7 @@ export const builderHero = {
   headingBefore: "AI Agent Builder:",
   headingAfter: "Create AI Agents in a single prompt",
   body: "Build AI Agents with no code and automate work that's slowing you down.",
-  cta: { label: "Get nexos.ai", href: "/pricing" },
+  cta: { label: "Get NexEco AI", href: "/pricing" },
   guarantee: "14-day money-back guarantee",
 };
 
@@ -47,7 +47,7 @@ export const builderFeatures = [
       { href: "/features/ai-agents", label: "AI Agents" },
       ", pre-built for Marketing, Sales, HR, and more. Tested, refined, and ready to run. Deploy Agents as is, or customize to fit the way you work.",
     ] satisfies RichSegment[],
-    alt: "nexos homepage agent templates",
+    alt: "NexEco AI homepage agent templates",
     image: builderShots.templates,
     visual: "right" as const,
   },
@@ -94,7 +94,7 @@ export const builderSecurity = {
 };
 
 export const builderSteps = {
-  heading: "How to build AI Agents with nexos.ai?",
+  heading: "How to build AI Agents with NexEco AI?",
   body: "If you can describe it, you can build it. Building Agents is a few steps away.",
   items: [
     {
@@ -132,7 +132,7 @@ export const builderSteps = {
 
 export const builderCta = {
   heading: "Try Agent Builder",
-  primary: { label: "Buy nexos.ai", href: "/pricing" },
+  primary: { label: "Get NexEco AI", href: "/pricing" },
 };
 
 export const builderTodo = {
@@ -174,7 +174,7 @@ export const builderUseCases = [
     icon: "hr" as const,
     body: "Finding great people is hard enough. Your HR shouldn't spend hours on admin. AI Agents screen, evaluate, and summarize so your team focuses on the humans, not the paperwork.",
     quote:
-      "“nexos.ai saves us 10+ hours each week. We created a custom Agent that analyzes, evaluates, and writes candidate feedback. Now, we find high-quality talent in minutes.”",
+      "“NexEco AI saves us 10+ hours each week. We created a custom Agent that analyzes, evaluates, and writes candidate feedback. Now, we find high-quality talent in minutes.”",
     name: "Lauryna",
     portrait: "lauryna" as const,
     role: "Head of Talent Acquisition",
@@ -200,7 +200,7 @@ export const builderFaq: ProductFaqItem[] = [
     question: "What is the best AI agent builder for small businesses and teams?",
     answer: [
       [
-        "The best AI Agent Builder for small businesses and teams is one that lets anyone start building Agents without technical skills, connects to the AI tools your team already uses, and scales as your needs grow. nexos.ai ticks all of those boxes. You get a no-code AI Agent Builder with a full library of ready-made Agent templates, seamless Integrations with your existing tools, and enterprise-grade Agents that work for a team of five or a team of five hundred. You can build and deploy AI Agents in minutes, run complex Agent Workflows without a developer, and rely on dedicated customer support every step of the way.",
+        "The best AI Agent Builder for small businesses and teams is one that lets anyone start building Agents without technical skills, connects to the AI tools your team already uses, and scales as your needs grow. NexEco AI ticks all of those boxes. You get a no-code AI Agent Builder with a full library of ready-made Agent templates, seamless Integrations with your existing tools, and enterprise-grade Agents that work for a team of five or a team of five hundred. You can build and deploy AI Agents in minutes, run complex Agent Workflows without a developer, and rely on dedicated customer support every step of the way.",
       ],
     ],
   },
@@ -209,7 +209,7 @@ export const builderFaq: ProductFaqItem[] = [
     question: "Can you build AI agents without coding?",
     answer: [
       [
-        "Yes, with nexos.ai, building Agents to handle complex tasks is possible with no code and the Agent development kit. Create Agents using the AI Agent Builder with natural language input, so you describe what you want your Agent to do in plain language, and the builder handles the rest. No code, no technical prompting, no dev required.",
+        "Yes, with NexEco AI, building Agents to handle complex tasks is possible with no code and the Agent development kit. Create Agents using the AI Agent Builder with natural language input, so you describe what you want your Agent to do in plain language, and the builder handles the rest. No code, no technical prompting, no dev required.",
       ],
     ],
   },
@@ -221,7 +221,7 @@ export const builderFaq: ProductFaqItem[] = [
         "Purchase any plan and get full access to the AI Agent Builder, Agent templates, and Integrations from day one.",
       ],
       [
-        "For larger organizations, nexos.ai offers custom Enterprise pricing and extra features like ",
+        "For larger organizations, NexEco AI offers custom Enterprise pricing and extra features like ",
         { href: "/features/llm-observability", label: "observability" },
         " and ",
         { href: "/features/ai-governance", label: "governance" },
@@ -234,10 +234,10 @@ export const builderFaq: ProductFaqItem[] = [
     question: "Do I need technical software to manage my AI agents?",
     answer: [
       [
-        "You do not need a highly technical orchestration platform to create Agents and get serious results from an Agent Builder. nexos.ai is designed to handle Agent behaviour, Agent output, and autonomous Agents all in one place, without the engineering overhead that traditional orchestration platforms demand.",
+        "You do not need a highly technical orchestration platform to create Agents and get serious results from an Agent Builder. NexEco AI is designed to handle Agent behaviour, Agent output, and autonomous Agents all in one place, without the engineering overhead that traditional orchestration platforms demand.",
       ],
       [
-        "The nexos.ai Agent Builder gives you the full control you need to build, run, and manage your Agents from a single interface. You define the Agent behaviour, connect your tools, and monitor outputs without stitching together separate systems. If your needs grow into multi-Agent Workflows, nexos.ai scales with you. One platform, no extra infrastructure, no technical complexity.",
+        "The NexEco AI Agent Builder gives you the full control you need to build, run, and manage your Agents from a single interface. You define the Agent behaviour, connect your tools, and monitor outputs without stitching together separate systems. If your needs grow into multi-Agent Workflows, NexEco AI scales with you. One platform, no extra infrastructure, no technical complexity.",
       ],
     ],
   },

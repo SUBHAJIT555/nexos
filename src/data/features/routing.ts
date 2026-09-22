@@ -14,7 +14,7 @@ export const routingHero = {
   primary: { label: "Talk to Solutions Engineer", href: salesMailto } satisfies ProductLink,
   secondary: { label: "Get API Key", href: "/pricing" } satisfies ProductLink,
   trustCaption: "Chosen by leading engineering teams",
-  visualAlt: "nexos.ai routes each request to the large language model that fits the task best",
+  visualAlt: "NexEco AI routes each request to the large language model that fits the task best",
   info: {
     label: "What is LLM routing?",
     heading: "What is LLM routing?",
@@ -42,21 +42,21 @@ export const routingBenefits = {
       title: "Improve reliability and performance",
       body: "Smart LLM routing directs requests based on model performance and availability. If a model slows down or becomes unavailable, traffic can shift to another option, helping maintain faster responses and fewer failed requests.",
       image: routingGraphics.reliability,
-      imageAlt: "nexos.ai gateway routes requests based on model performance and availability",
+      imageAlt: "NexEco AI gateway routes requests based on model performance and availability",
     },
     {
       id: "logic",
       title: "No routing logic to build or maintain",
-      body: "Connect to the nexos.ai Gateway and routing is handled for you. No custom logic to write, test, or keep in sync across multiple providers. As your model stack grows, Smart Routing scales with it automatically.",
+      body: "Connect to the NexEco AI Gateway and routing is handled for you. No custom logic to write, test, or keep in sync across multiple providers. As your model stack grows, Smart Routing scales with it automatically.",
       image: routingGraphics.noLogic,
-      imageAlt: "Fallback logic, model selection, routing handled by nexos.ai gateway",
+      imageAlt: "Fallback logic, model selection, routing handled by NexEco AI gateway",
     },
     {
       id: "learning",
       title: "Continuous learning",
       body: "The routing system gets smarter over time, learning from new patterns and adapting as tasks, workloads, and model capabilities evolve. This helps keep routing decisions effective as new models emerge and performance changes, without constant manual tuning.",
       image: routingGraphics.learning,
-      imageAlt: "nexos.ai routing system gets smarter over time learning from new patterns and adapting",
+      imageAlt: "NexEco AI routing system gets smarter over time learning from new patterns and adapting",
     },
   ],
 };
@@ -70,12 +70,12 @@ export const routingMore = {
 };
 
 export const routingHow = {
-  heading: "How does nexos.ai Smart LLM routing work",
-  bodyBefore: "Smart LLM routing is built directly into the nexos.ai ",
+  heading: "How does NexEco AI Smart LLM routing work",
+  bodyBefore: "Smart LLM routing is built directly into the NexEco AI ",
   bodyLink: "AI Gateway",
   bodyAfter:
     ", giving you 200+ large language models (LLMs) through one connection. It works with any coding agent or harness across completions, responses, and messages endpoints. No plugins, no separate router, no changes to your tooling.",
-  imageAlt: "nexos.ai Gateway API setup in code environment",
+  imageAlt: "NexEco AI Gateway API setup in code environment",
   steps: [
     {
       n: "01",
@@ -171,7 +171,7 @@ export const routingCompare = {
   heading: "Smart LLM routing vs one default model",
   intro:
     "Running every request through a single model is the simplest setup – but it means paying the same price whether the task needs it or not.",
-  left: "nexos.ai Smart LLM routing",
+  left: "NexEco AI Smart LLM routing",
   right: "Single default model",
   rows: [
     ["Model selection", "Best-fit model selected per request", "One model for every request"],
@@ -192,44 +192,44 @@ export const routingCta = {
 export const routingFaq: ProductFaqItem[] = [
   {
     id: "multi",
-    question: "Does nexos.ai Smart LLM routing work with multiple LLMs at once?",
+    question: "Does NexEco AI Smart LLM routing work with multiple LLMs at once?",
     answer: faqParagraphs(
       "Yes. Smart LLM routing works across models connected to your AI Gateway, selecting the best fit for each request based on task requirements, cost, quality, and performance – without hard-coding requests to a single model.",
     ),
   },
   {
     id: "choose",
-    question: "How does nexos.ai Smart Routing choose which model to use?",
+    question: "How does NexEco AI Smart Routing choose which model to use?",
     answer: faqParagraphs(
-      "nexos.ai Smart Routing evaluates each request and selects the best-fit model based on factors like task complexity, quality, cost, and performance. Simpler tasks go to faster, lower-cost models; more complex requests go to models with stronger capabilities.",
+      "NexEco AI Smart Routing evaluates each request and selects the best-fit model based on factors like task complexity, quality, cost, and performance. Simpler tasks go to faster, lower-cost models; more complex requests go to models with stronger capabilities.",
     ),
   },
   {
     id: "cost",
-    question: "How does nexos.ai Smart LLM routing reduce AI costs?",
+    question: "How does NexEco AI Smart LLM routing reduce AI costs?",
     answer: faqParagraphs(
       "By matching each request to the model that fits its actual requirements, instead of sending everything to the same premium default LLM model. Simpler requests route to lower-cost models, and more capable models are reserved for the tasks that need them.",
     ),
   },
   {
     id: "adapt",
-    question: "How does nexos.ai Smart Routing adapt as models evolve?",
+    question: "How does NexEco AI Smart Routing adapt as models evolve?",
     answer: faqParagraphs(
-      "The nexos.ai routing engines periodically updated as model capabilities and performance evolve, so decisions keep pace with new and improved models without your team having to re-evaluate its stack manually.",
+      "The NexEco AI routing engines periodically updated as model capabilities and performance evolve, so decisions keep pace with new and improved models without your team having to re-evaluate its stack manually.",
     ),
   },
   {
     id: "custom",
-    question: "Can I customize nexos.ai Smart LLM routing rules for my use case?",
+    question: "Can I customize NexEco AI Smart LLM routing rules for my use case?",
     answer: faqParagraphs(
-      "nexos.ai Smart LLM Routing allows for company-level control. Admins can decide which models Smart Routing may choose from, with separate preferences for Workspace and API usage, and rules for whether teams can override the company default.",
+      "NexEco AI Smart LLM Routing allows for company-level control. Admins can decide which models Smart Routing may choose from, with separate preferences for Workspace and API usage, and rules for whether teams can override the company default.",
     ),
   },
   {
     id: "change",
-    question: "Do I need to change my application to use nexos.ai Smart Routing?",
+    question: "Do I need to change my application to use NexEco AI Smart Routing?",
     answer: faqParagraphs(
-      "No. Smart Routing is built into the nexos.ai AI Gateway, so you don't need a separate router or any change to your application logic. Point your existing requests at the Gateway, and Smart Routing handles model selection automatically.",
+      "No. Smart Routing is built into the NexEco AI AI Gateway, so you don't need a separate router or any change to your application logic. Point your existing requests at the Gateway, and Smart Routing handles model selection automatically.",
     ),
   },
 ];

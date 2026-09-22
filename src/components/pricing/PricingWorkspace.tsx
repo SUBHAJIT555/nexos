@@ -195,7 +195,7 @@ export function PricingToolCompare() {
                   style={{ gridColumn: columnIndex + 2, gridRow: 1 }}
                 >
                   <PricingToolCompareHeaderIcon
-                    id={column.id as "nexos" | "chatgpt" | "perplexity" | "lindy"}
+                    id={column.id as "nexeco" | "chatgpt" | "perplexity" | "lindy"}
                   />
                   <span>{column.label}</span>
                 </div>

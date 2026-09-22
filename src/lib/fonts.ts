@@ -3,7 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 /**
  * Live reference uses Inter (body/UI) and Space Grotesk (headings).
  * Both are OFL. We load them through `next/font/google` instead of
- * copying the hashed woff2 files from nexos.ai.
+ * copying the hashed woff2 files from NexEco AI.
  */
 export const fontSans = Inter({
   subsets: ["latin"],

@@ -30,7 +30,7 @@ export const workspaceSecurityCards: SecurityCard[] = [
   {
     id: "europe",
     title: "Hosted in Europe",
-    body: "The nexos.ai platform and most of our available models are hosted in Europe. You can freely decide which LLM to use based on your preferences and compliance requirements.",
+    body: "The NexEco AI platform and most of our available models are hosted in Europe. You can freely decide which LLM to use based on your preferences and compliance requirements.",
   },
   {
     id: "certified",
@@ -44,13 +44,13 @@ export const gatewaySecurityCards: SecurityCard[] = [
   {
     id: "sso",
     title: "SSO and access control",
-    body: "nexos.ai Gateway is secured with SSO and RBAC to protect sensitive information.",
+    body: "NexEco AI Gateway is secured with SSO and RBAC to protect sensitive information.",
   },
   workspaceSecurityCards[2],
   {
     id: "certified",
     title: "Fully certified and secure",
-    body: "SOC 2 Type 2, ISO 27001 and ISO 42001-certified. Fully compliant with the GDPR. Check nexos.ai trust center for more information.",
+    body: "SOC 2 Type 2, ISO 27001 and ISO 42001-certified. Fully compliant with the GDPR. Check NexEco AI trust center for more information.",
   },
 ];
 

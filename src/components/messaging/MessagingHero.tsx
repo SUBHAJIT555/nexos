@@ -39,7 +39,7 @@ export function MessagingHero() {
           <div className="flex min-w-0 items-center justify-center">
             <Image
               src={messagingPageShots.hero}
-              alt="nexos.ai in Slack and on mobile"
+              alt="NexEco AI in Slack and on mobile"
               width={568}
               height={479}
               sizes="(min-width: 1024px) 568px, 100vw"

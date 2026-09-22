@@ -29,11 +29,11 @@ function CompareValue({ cell, align = "center" }: { cell: EuCompareCell; align?:
 }
 
 export function EuCompare() {
-  const [tab, setTab] = useState<"nexos" | "direct">("nexos");
+  const [tab, setTab] = useState<"nexeco" | "direct">("nexeco");
   const rowCount = euCompare.rows.length;
 
   return (
-    <section id="nexosai-vs-going-direct" className="bg-white py-16 md:py-24">
+    <section id="nexeco-ai-vs-going-direct" className="bg-white py-16 md:py-24">
       <Container>
         <h2 className="text-center font-heading text-[36px] leading-[1.2] font-semibold tracking-[-0.015em] text-neutral-900 md:text-[48px] md:leading-[57.6px]">
           <span className="text-accent">{euCompare.headingBefore}</span>
@@ -96,7 +96,7 @@ export function EuCompare() {
                     className="relative z-[3] flex items-center justify-center px-6 py-5"
                     style={{ gridColumn: 2, gridRow }}
                   >
-                    <CompareValue cell={row.nexos} />
+                    <CompareValue cell={row.nexeco} />
                   </div>
                   <div
                     className="relative z-[3] flex items-center justify-center px-6 py-5"
@@ -114,7 +114,7 @@ export function EuCompare() {
           <div className="flex rounded-full bg-[#eff4f8] p-1">
             {(
               [
-                ["nexos", euCompare.left],
+                ["nexeco", euCompare.left],
                 ["direct", euCompare.right],
               ] as const
             ).map(([id, label]) => (
@@ -138,7 +138,7 @@ export function EuCompare() {
                 className="flex items-center justify-between gap-4 border-b border-[#dbe4eb] px-4 py-4 last:border-b-0"
               >
                 <span className="text-sm font-medium text-neutral-700">{row.label}</span>
-                <CompareValue cell={tab === "nexos" ? row.nexos : row.direct} align="start" />
+                <CompareValue cell={tab === "nexeco" ? row.nexeco : row.direct} align="start" />
               </div>
             ))}
           </div>

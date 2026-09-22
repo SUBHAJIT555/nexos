@@ -1,12 +1,12 @@
 export const partnershipsMeta = {
-  title: "Become nexos.ai Partner",
+  title: "Become NexEco AI Partner",
   description:
-    "Join nexos.ai Technology, Referral, or Reseller Partner Program and unlock new revenue opportunities. See more.",
+    "Join NexEco AI Technology, Referral, or Reseller Partner Program and unlock new revenue opportunities. See more.",
 };
 
 export const partnershipsHero = {
   headingBefore: "Partner with ",
-  headingAccent: "nexos.ai",
+  headingAccent: "NexEco AI",
   body: "Let’s grow together. Building integrations, expanding your network, or reselling AI solutions to your clients? Find the right partnership program for you and unlock new revenue streams.",
   cta: { label: "Become a Partner", href: "#form" },
   imageAlt: "partners program hero",
@@ -23,7 +23,7 @@ export const partnershipsPrograms = {
       iconBg: "#D9E0FF",
       iconClass: "text-accent",
       title: "Technology partner",
-      body: "Build seamless integrations or co-create AI solutions with nexos.ai that your customers will love – and scale at the same time.",
+      body: "Build seamless integrations or co-create AI solutions with NexEco AI that your customers will love – and scale at the same time.",
     },
     {
       id: "referral",
@@ -39,7 +39,7 @@ export const partnershipsPrograms = {
       iconBg: "#C0D8FA",
       iconClass: "text-[#2560B3]",
       title: "Reseller partner",
-      body: "Drive revenue by reselling nexos.ai to your customers. Benefit from competitive margins, training resources, and co-marketing support.",
+      body: "Drive revenue by reselling NexEco AI to your customers. Benefit from competitive margins, training resources, and co-marketing support.",
     },
   ],
 };
@@ -51,9 +51,9 @@ export const partnershipsHow = {
     {
       id: "integrate",
       image: "integrate" as const,
-      alt: "integrate with nexos",
-      title: "Integrate with nexos.ai",
-      body: "Connect your product with nexos.ai and benefit from AI built for productivity.",
+      alt: "integrate with NexEco AI",
+      title: "Integrate with NexEco AI",
+      body: "Connect your product with NexEco AI and benefit from AI built for productivity.",
       theme: "dark" as const,
       className: "bg-[linear-gradient(180deg,#262B30_0%,#5938CB_100%)]",
     },
@@ -80,13 +80,13 @@ export const partnershipsHow = {
 
 export const partnershipsWhy = {
   eyebrow: "Referral and reseller partners",
-  heading: "Why partner with nexos.ai?",
+  heading: "Why partner with NexEco AI?",
   items: [
     {
       id: "wave",
       icon: "sparkles" as const,
       title: "Ride the AI wave",
-      body: "Promote a platform built for team productivity. nexos.ai is where teams go to work smarter – and it’s a product your audience already wants.",
+      body: "Promote a platform built for team productivity. NexEco AI is where teams go to work smarter – and it’s a product your audience already wants.",
     },
     {
       id: "rewards",
@@ -98,7 +98,7 @@ export const partnershipsWhy = {
       id: "experts",
       icon: "users" as const,
       title: "Promote top-industry product created by experts",
-      body: "nexos.ai was created by the founders of NordVPN and backed by leading investors, powered by years of industry experience.",
+      body: "NexEco AI was created by the founders of NordVPN and backed by leading investors, powered by years of industry experience.",
     },
     {
       id: "support",
@@ -111,7 +111,7 @@ export const partnershipsWhy = {
 
 export const partnershipsForm = {
   eyebrow: "Become a partner",
-  heading: "Want to partner with nexos.ai?",
+  heading: "Want to partner with NexEco AI?",
   body: "Fill out the form, and our Partner Manager will reach out to you.",
   submit: "Submit partner application",
   requiredNote: "* Required",
@@ -150,8 +150,8 @@ export const partnershipsForm = {
     },
     {
       name: "partnershipType",
-      label: "How do you want to partner with nexos.ai?",
-      placeholder: "How do you want to partner with nexos.ai?",
+      label: "How do you want to partner with NexEco AI?",
+      placeholder: "How do you want to partner with NexEco AI?",
       type: "text",
       required: false,
       autoComplete: "off",
@@ -160,6 +160,6 @@ export const partnershipsForm = {
   message: {
     name: "message",
     label: "Your message to us (optional)",
-    placeholder: "How do you want to partner with nexos.ai?",
+    placeholder: "How do you want to partner with NexEco AI?",
   },
 } as const;

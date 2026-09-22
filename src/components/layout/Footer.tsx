@@ -1,3 +1,4 @@
+import { siteConfig } from "@/config/site";
 import { footerNavigation, headerCtas } from "@/config/navigation";
 import { Container } from "@/components/layout/Container";
 import { FooterLegalLinks } from "@/components/layout/FooterLegalLinks";
@@ -68,7 +69,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col gap-4 border-t border-neutral-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-neutral-600">
-            © 2026. All Rights Reserved
+            © 2026 {siteConfig.name}. All rights reserved.
           </p>
           <FooterLegalLinks />
         </div>

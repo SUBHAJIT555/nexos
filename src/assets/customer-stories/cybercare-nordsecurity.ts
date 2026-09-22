@@ -3,7 +3,7 @@ import logosStrip from "@/assets/images/customer-stories/cybercare-nordsecurity/
 import heroChart from "@/assets/images/customer-stories/cybercare-nordsecurity/cybercare-hero-chart.webp";
 import nordLogoWhite from "@/assets/images/customer-stories/cybercare-nordsecurity/nordsec-horizontal-white.webp";
 import cybercareLogoWhite from "@/assets/images/customer-stories/cybercare-nordsecurity/cybercare-white.webp";
-import nexosLogoWhite from "@/assets/images/customer-stories/cybercare-nordsecurity/nexos-ai-logo-white.svg";
+import brandLogoWhite from "@/assets/images/customer-stories/cybercare-nordsecurity/nexos-ai-logo-white.svg";
 import karolis from "@/assets/images/customer-stories/cybercare-nordsecurity/karolis-valaika.webp";
 import team from "@/assets/images/customer-stories/cybercare-nordsecurity/cybercare-team.webp";
 import justas from "@/assets/images/customer-stories/cybercare-nordsecurity/justas-morkunas.webp";
@@ -16,7 +16,7 @@ export const cybercareGraphics = {
   heroChart,
   nordLogoWhite,
   cybercareLogoWhite,
-  nexosLogoWhite,
+  brandLogoWhite,
   karolis,
   team,
   justas,

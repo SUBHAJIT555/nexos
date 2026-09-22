@@ -19,7 +19,7 @@ const icons = {
 
 export function CachingTackle() {
   return (
-    <section id="dark-section-how-nexosai-tackles-these-challenges" className="relative bg-[#071013] py-16 md:py-24">
+    <section id="dark-section-how-nexeco-ai-tackles-these-challenges" className="relative bg-[#071013] py-16 md:py-24">
       <Container>
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,468px)_minmax(0,640px)] lg:justify-between">
           <div>

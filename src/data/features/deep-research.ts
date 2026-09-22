@@ -6,14 +6,14 @@ export const deepHero = {
   headingBefore: "Deep Research:",
   headingAfter: "Hours of work, done in minutes",
   body: "Stop drowning in browser tabs – use Deep Research as your personal research assistant. Get pro-level reports in minutes, not days.",
-  primary: { label: "Get nexos.ai", href: "/pricing" } satisfies ProductLink,
+  primary: { label: "Get NexEco AI", href: "/pricing" } satisfies ProductLink,
   guarantee: "No credit card required.",
   info: {
     label: "What is Deep Research?",
     heading: "What is Deep Research?",
     paragraphs: [
       "Deep Research is an agentic system designed to handle complex research tasks and projects in minutes rather than hours.",
-      "nexos.ai Deep Research feature analyzes your request using a Large Language Model (LLM), breaks it down, plans the structure, performs a web search, and generates comprehensive reports in a matter of minutes. It also adjusts the final result per request and answers follow-up questions to refine the research.",
+      "NexEco AI Deep Research feature analyzes your request using a Large Language Model (LLM), breaks it down, plans the structure, performs a web search, and generates comprehensive reports in a matter of minutes. It also adjusts the final result per request and answers follow-up questions to refine the research.",
     ],
   },
 };
@@ -21,7 +21,7 @@ export const deepHero = {
 export const deepDepth = {
   heading: "The depth of a human analyst. The speed of AI.",
   intro:
-    "See why high-performance teams choose nexos.ai Deep Research as their go-to productivity tool.",
+    "See why high-performance teams choose NexEco AI Deep Research as their go-to productivity tool.",
   cards: [
     {
       id: "time",
@@ -67,22 +67,22 @@ export const deepHow = {
     {
       id: "plan",
       title: "Plan",
-      body: "nexos.ai structures how to process your request and creates a strategic research plan.",
+      body: "NexEco AI structures how to process your request and creates a strategic research plan.",
     },
     {
       id: "search",
       title: "Search",
-      body: "nexos.ai browses dozens of websites for you, checking multiple angles and sources.",
+      body: "NexEco AI browses dozens of websites for you, checking multiple angles and sources.",
     },
     {
       id: "analyze",
       title: "Analyze & synthesize",
-      body: "nexos.ai analyzes the findings, spots patterns, and generates deep insights that reveal the core context.",
+      body: "NexEco AI analyzes the findings, spots patterns, and generates deep insights that reveal the core context.",
     },
     {
       id: "report",
       title: "Report",
-      body: "nexos.ai generates an easy-to-understand cited report, with tables, key findings, and actionable insights.",
+      body: "NexEco AI generates an easy-to-understand cited report, with tables, key findings, and actionable insights.",
     },
   ],
   note: "After completing Deep Research, the Chat auto-switches to standard quick-answer mode for follow-up questions.",
@@ -124,11 +124,11 @@ export const deepTeams = {
 };
 
 export const deepCompare = {
-  eyebrow: "nexos.ai",
+  eyebrow: "NexEco AI",
   heading: "Deep Research vs. other providers",
-  p1: "While ChatGPT (OpenAI) and Gemini (Google) have introduced their own Deep Research modes, they lock you into a single ecosystem. Perplexity is excellent for quick cited searches, and Claude is a leader in deep analysis, but nexos.ai is the only platform that brings them all together.",
-  p2: "On nexos.ai, users aren't locked into a single provider. You have the ability to choose the reasoning of OpenAI’s o1, the creative synthesis of Claude 3.5, or the speed of Gemini – all within a specialized agentic workflow designed for professional reporting. We offer higher query limits and a more robust structure than standard retail AI apps, making it the top choice for business teams.",
-  columns: ["Feature", "nexos.ai", "ChatGPT & Gemini", "Perplexity"],
+  p1: "While ChatGPT (OpenAI) and Gemini (Google) have introduced their own Deep Research modes, they lock you into a single ecosystem. Perplexity is excellent for quick cited searches, and Claude is a leader in deep analysis, but NexEco AI is the only platform that brings them all together.",
+  p2: "On NexEco AI, users aren't locked into a single provider. You have the ability to choose the reasoning of OpenAI’s o1, the creative synthesis of Claude 3.5, or the speed of Gemini – all within a specialized agentic workflow designed for professional reporting. We offer higher query limits and a more robust structure than standard retail AI apps, making it the top choice for business teams.",
+  columns: ["Feature", "NexEco AI", "ChatGPT & Gemini", "Perplexity"],
   rows: [
     ["Model choice", "Multi-model (Choose yourself)", "Locked to one provider", "Restricted to their stack"],
     ["Research depth", "Up to 20 mins of autonomous search", "Varies; often high-level", "Optimized for speed over depth"],
@@ -141,7 +141,7 @@ export const deepCta = {
   eyebrow: "Deep Research",
   heading: "Cut hours of manual research from your workflows",
   body: "Get Deep Research and see a boost in productivity for yourself.",
-  primary: { label: "Get nexos.ai", href: "/pricing" } satisfies ProductLink,
+  primary: { label: "Get NexEco AI", href: "/pricing" } satisfies ProductLink,
 };
 
 export const deepFaq: ProductFaqItem[] = [
@@ -154,9 +154,9 @@ export const deepFaq: ProductFaqItem[] = [
   },
   {
     id: "limits",
-    question: "What are the deep research query limits on nexos.ai?",
+    question: "What are the deep research query limits on NexEco AI?",
     answer: faqParagraphs(
-      "While platforms like OpenAI and other new models often impose strict daily caps on their most advanced models, nexos.ai is built for the volume of high-performing teams. We offer significantly higher limits than the standard ChatGPT Plus or Gemini Advanced tiers, ensuring your team can run comprehensive investigations and access the necessary findings in 5-20 minutes without hitting a \"usage ceiling\" mid-project.",
+      "While platforms like OpenAI and other new models often impose strict daily caps on their most advanced models, NexEco AI is built for the volume of high-performing teams. We offer significantly higher limits than the standard ChatGPT Plus or Gemini Advanced tiers, ensuring your team can run comprehensive investigations and access the necessary findings in 5-20 minutes without hitting a \"usage ceiling\" mid-project.",
     ),
   },
   {
@@ -184,7 +184,7 @@ export const deepFaq: ProductFaqItem[] = [
     id: "best",
     question: "What is the best AI tool for deep research?",
     answer: faqParagraphs(
-      "While the Gemini app and Perplexity, for example, offer users helpful search capabilities, nexos.ai is the best choice for professional research. Agent and Deep Research capabilities allow you to plan and execute deep dives using any top-tier model – ChatGPT, Claude, or Gemini – in one place. By combining a multi-step search process with high report quality, nexos.ai provides the depth of research needed by fast-paced teams.",
+      "While the Gemini app and Perplexity, for example, offer users helpful search capabilities, NexEco AI is the best choice for professional research. Agent and Deep Research capabilities allow you to plan and execute deep dives using any top-tier model – ChatGPT, Claude, or Gemini – in one place. By combining a multi-step search process with high report quality, NexEco AI provides the depth of research needed by fast-paced teams.",
     ),
   },
 ];
