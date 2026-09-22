@@ -31,24 +31,18 @@ export function CheckoutTokenSlider({
 }: CheckoutTokenSliderProps) {
   const rate = item.pricePerThousandTokensPaise / 100;
   const [draft, setDraft] = useState(String(tokens));
+  const [isEditing, setIsEditing] = useState(false);
   const sliderValue = Math.min(tokens, item.maxTokens);
 
   useEffect(() => {
-    setDraft(String(tokens));
-  }, [tokens]);
-
-  function handleDraftChange(raw: string) {
-    setDraft(raw);
-    const parsed = parseTokenInput(raw);
-    if (parsed == null) {
-      return;
+    if (!isEditing) {
+      setDraft(String(tokens));
     }
-    onChange(normalizeTokenAmount(item, parsed));
-  }
+  }, [tokens, isEditing]);
 
-  function handleDraftBlur() {
-    const parsed = parseTokenInput(draft);
-    if (parsed == null) {
+  function commitDraft(raw: string) {
+    const parsed = parseTokenInput(raw);
+    if (parsed == null || parsed < item.minTokens) {
       setDraft(String(tokens));
       return;
     }
@@ -57,8 +51,25 @@ export function CheckoutTokenSlider({
     onChange(normalized);
   }
 
+  function handleDraftChange(raw: string) {
+    if (raw !== "" && !/^[\d,]*$/.test(raw)) {
+      return;
+    }
+    setDraft(raw);
+    const parsed = parseTokenInput(raw);
+    if (parsed != null && parsed >= item.minTokens) {
+      onChange(normalizeTokenAmount(item, parsed));
+    }
+  }
+
+  function handleDraftBlur() {
+    setIsEditing(false);
+    commitDraft(draft);
+  }
+
   function handleSliderChange(value: number) {
     const clamped = Math.min(item.maxTokens, Math.max(item.minTokens, value));
+    setIsEditing(false);
     setDraft(String(clamped));
     onChange(clamped);
   }
@@ -76,8 +87,14 @@ export function CheckoutTokenSlider({
           disabled={disabled}
           value={draft}
           placeholder={String(item.defaultTokens)}
+          onFocus={() => setIsEditing(true)}
           onChange={(event) => handleDraftChange(event.target.value)}
           onBlur={handleDraftBlur}
+          onKeyDown={(event) => {
+            if (event.key === "Enter") {
+              event.currentTarget.blur();
+            }
+          }}
           className="mt-2 h-11 w-full rounded-md border border-neutral-300 bg-white px-3 text-sm tabular-nums text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus-visible:border-accent disabled:cursor-not-allowed disabled:bg-neutral-50"
         />
         <p className="mt-1.5 text-xs leading-5 text-neutral-500">
