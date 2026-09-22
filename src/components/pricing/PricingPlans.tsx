@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/Button";
 import { cn, isExternalHref } from "@/lib/utils";
 import type { PricingPlanCard } from "@/data/pricing";
 import { PricingFeatureIcon } from "@/components/pricing/PricingIcons";
+import { PricingTokenPlanCard } from "@/components/pricing/PricingTokenPlanCard";
 
 const highlightClass =
   "pricing-plan-highlight border border-transparent shadow-sm [background:linear-gradient(138deg,#fff_54%,#f8f5fc_70%,#f7f2f8_82%,#ebe0fc_92%)_padding-box,linear-gradient(160deg,#c0b9ff,#dabcff,#d7c1ff)_border-box]";
@@ -10,7 +11,10 @@ const highlightClass =
 export function PricingPlans({ plans }: { plans: PricingPlanCard[] }) {
   return (
     <div className="grid gap-6 min-[480px]:grid-cols-2">
-      {plans.map((plan) => (
+      {plans.map((plan) =>
+        plan.catalogItemId ? (
+          <PricingTokenPlanCard key={plan.id} plan={{ ...plan, catalogItemId: plan.catalogItemId }} />
+        ) : (
         <article
           key={plan.id}
           className={cn(
@@ -96,7 +100,8 @@ export function PricingPlans({ plans }: { plans: PricingPlanCard[] }) {
             </p>
           ) : null}
         </article>
-      ))}
+        ),
+      )}
     </div>
   );
 }

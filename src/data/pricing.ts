@@ -55,6 +55,8 @@ export type PricingPlanCard = {
   cta: { label: string; href: string };
   detailsLabel: string;
   features: PricingFeatureItem[];
+  /** Links to checkout catalog item and renders a token slider. */
+  catalogItemId?: string;
   price?: {
     amount: string;
     period: string;
@@ -70,11 +72,12 @@ export const gatewayPlans: PricingPlanCard[] = [
     name: "Pay-as-you-go",
     description: "For developers building AI products",
     highlight: true,
+    catalogItemId: "gateway-tokens",
     cta: pricingCtas.getStarted,
     detailsLabel: "Plan details:",
     features: [
       { icon: "percent", label: "Provider LLM rates + 5% platform fee when purchasing credits" },
-      { icon: "piggy", label: "Top up your account with a minimum of $5 to get started" },
+      { icon: "piggy", label: "Top up from 10,000 tokens — no monthly minimum" },
       { icon: "chip", label: "Access all major LLM models" },
       { icon: "rotate", label: "Intelligent routing and caching" },
       { icon: "star", label: "Unified API access" },
@@ -103,20 +106,16 @@ export const workspacePlans: PricingPlanCard[] = [
   {
     id: "month",
     name: "1-month plan",
-    description: "",
+    description: "For individuals and teams — billed by token usage",
     highlight: true,
+    catalogItemId: "workspace-subscription",
     cta: pricingCtas.getNexos,
     detailsLabel: "",
-    price: {
-      amount: "$39",
-      period: "monthly",
-      renews: "Renews at $39",
-    },
     guarantee: "14-day money-back guarantee",
     features: [
       { icon: "agents", label: "Unlimited AI Agents" },
       { icon: "chip-alt", label: "200+ Top AI models" },
-      { icon: "credits", label: "1000 monthly credits" },
+      { icon: "credits", label: "Flexible token allocation" },
       { icon: "star", label: "Bonus credits" },
       { icon: "connect", label: "Connect AI to your work tools" },
       { icon: "slides", label: "AI slides, AI files, AI charts, and more" },
@@ -226,7 +225,7 @@ export const gatewayFaq = {
           id: "minimum",
           question: "Is there a minimum spend on AI usage?",
           answer: answer(
-            "There's no monthly minimum and no long-term commitment. The only minimum is a $5 top-up to add credits to your account and you then draw from that balance as you use AI models, plus the platform fee.",
+            "There's no monthly minimum and no long-term commitment. The only minimum is a 10,000-token top-up to add credits to your account and you then draw from that balance as you use AI models, plus the platform fee.",
           ),
         },
         {
@@ -294,8 +293,8 @@ export const workspaceIntegrations = {
 };
 
 export const workspaceCredits = {
-  heading: "1000 credits power your daily AI work",
-  body: "Credits let you run top AI models, AI Agents, and automate repetitive tasks.",
+  heading: "Your tokens power your daily AI work",
+  body: "Tokens let you run top AI models, AI Agents, and automate repetitive tasks — choose how many you need.",
   cta: pricingCtas.getNexos,
   bullets: [
     { icon: "search", label: "Get competitor and market research done in minutes" },

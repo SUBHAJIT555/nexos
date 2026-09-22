@@ -1,9 +1,10 @@
-import { getCheckoutPlan, isCheckoutPlanId, isCheckoutProduct } from "@/data/checkout";
+import { CHECKOUT_CURRENCY, getCatalogItem } from "@/data/checkout";
+import { buildLineItems, calculateTotalPaise } from "@/lib/checkout/pricing";
 import type {
+  CheckoutCartSelection,
   CheckoutCustomer,
-  CheckoutPlanId,
-  CheckoutProduct,
   CheckoutSessionInput,
+  PaymentMethod,
 } from "@/types/checkout";
 
 export type CheckoutValidationResult =
@@ -34,72 +35,118 @@ export function parseCheckoutCustomer(value: unknown): CheckoutCustomer | null {
   return { email, name, company };
 }
 
-export function validateCheckoutSessionPayload(
-  payload: unknown,
-): CheckoutValidationResult {
+function parsePaymentMethod(value: unknown): PaymentMethod | null {
+  if (value === "upi" || value === "card" || value === "netbanking") {
+    return value;
+  }
+  return null;
+}
+
+function parseSelections(value: unknown): CheckoutCartSelection[] | null {
+  if (!Array.isArray(value)) {
+    return null;
+  }
+
+  const selections: CheckoutCartSelection[] = [];
+
+  for (const entry of value) {
+    if (!entry || typeof entry !== "object") {
+      continue;
+    }
+    const record = entry as Record<string, unknown>;
+    const itemId = typeof record.itemId === "string" ? record.itemId : "";
+    const enabled = record.enabled === true;
+    const tokens = typeof record.tokens === "number" ? record.tokens : undefined;
+
+    if (!itemId || !getCatalogItem(itemId)) {
+      continue;
+    }
+
+    const catalogItem = getCatalogItem(itemId)!;
+    const min = catalogItem.minTokens;
+    const max = catalogItem.maxTokens;
+    const resolvedTokens = Math.min(
+      max,
+      Math.max(min, tokens ?? catalogItem.defaultTokens),
+    );
+    selections.push({ itemId, enabled, tokens: resolvedTokens });
+  }
+
+  return selections;
+}
+
+function validateCheckoutCore(payload: unknown): CheckoutValidationResult {
   if (!payload || typeof payload !== "object") {
     return { ok: false, error: "Invalid request body." };
   }
 
   const body = payload as Record<string, unknown>;
-  const product = typeof body.product === "string" ? body.product : null;
-  const planId = typeof body.plan === "string" ? body.plan : null;
   const successUrl = typeof body.successUrl === "string" ? body.successUrl : "";
   const cancelUrl = typeof body.cancelUrl === "string" ? body.cancelUrl : "";
   const customer = parseCheckoutCustomer(body.customer);
-
-  if (!isCheckoutProduct(product) || !isCheckoutPlanId(planId)) {
-    return { ok: false, error: "Unknown product or plan." };
-  }
+  const selections = parseSelections(body.selections);
 
   if (!customer) {
     return { ok: false, error: "Valid customer name and email are required." };
+  }
+
+  if (!selections || selections.length === 0) {
+    return { ok: false, error: "Invalid plan selection." };
   }
 
   if (!successUrl.startsWith("/") || !cancelUrl.startsWith("/")) {
     return { ok: false, error: "Invalid redirect URLs." };
   }
 
-  const plan = getCheckoutPlan(product, planId);
-  if (!plan) {
-    return { ok: false, error: "Selected plan is unavailable." };
+  const items = buildLineItems(selections);
+  if (items.length === 0) {
+    return { ok: false, error: "Select at least one plan item." };
+  }
+
+  const totalAmount = calculateTotalPaise(items);
+  if (totalAmount <= 0) {
+    return { ok: false, error: "Order total must be greater than zero." };
   }
 
   return {
     ok: true,
     input: {
-      product,
-      planId,
+      items,
       customer,
+      paymentMethod: "upi",
       successUrl,
       cancelUrl,
-      items: [
-        {
-          id: `${product}-${planId}`,
-          name: plan.name,
-          description: plan.description,
-          unitAmount: plan.unitAmount,
-          currency: plan.currency,
-          quantity: plan.quantity,
-          interval: plan.interval,
-        },
-      ],
+      totalAmount,
+      currency: CHECKOUT_CURRENCY,
     },
   };
 }
 
-export function resolveCheckoutSelection(
-  productParam: string | null | undefined,
-  planParam: string | null | undefined,
-): { product: CheckoutProduct; planId: CheckoutPlanId } | null {
-  if (!isCheckoutProduct(productParam) || !isCheckoutPlanId(planParam)) {
-    return null;
+export function validateCheckoutSessionPayload(payload: unknown): CheckoutValidationResult {
+  const result = validateCheckoutCore(payload);
+  if (!result.ok) {
+    return result;
   }
 
-  const plan = getCheckoutPlan(productParam, planParam);
-  if (!plan) {
-    return null;
+  if (!payload || typeof payload !== "object") {
+    return { ok: false, error: "Invalid request body." };
   }
 
-  return { product: productParam, planId: planParam };
+  const paymentMethod = parsePaymentMethod((payload as Record<string, unknown>).paymentMethod);
+  if (!paymentMethod) {
+    return { ok: false, error: "Select a payment method." };
+  }
+
+  if (paymentMethod !== "upi") {
+    return { ok: false, error: "Only UPI payments are available right now." };
+  }
+
+  return {
+    ok: true,
+    input: { ...result.input, paymentMethod },
+  };
+}
+
+export function validateCheckoutCreatePayload(payload: unknown): CheckoutValidationResult {
+  return validateCheckoutCore(payload);
 }

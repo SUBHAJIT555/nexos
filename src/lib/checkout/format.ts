@@ -1,10 +1,13 @@
 import type { BillingInterval } from "@/types/checkout";
+import { CHECKOUT_CURRENCY } from "@/data/checkout";
 
-export function formatCurrency(amountCents: number, currency = "usd"): string {
-  return new Intl.NumberFormat("en-US", {
+export function formatCurrency(amountPaise: number, currency = CHECKOUT_CURRENCY): string {
+  return new Intl.NumberFormat("en-IN", {
     style: "currency",
     currency: currency.toUpperCase(),
-  }).format(amountCents / 100);
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(amountPaise / 100);
 }
 
 export function formatBillingInterval(interval: BillingInterval): string {

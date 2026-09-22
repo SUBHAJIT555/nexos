@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
 import { saveCheckoutSession } from "@/lib/checkout/session-store";
-import { validateCheckoutSessionPayload } from "@/lib/checkout/validate";
+import { validateCheckoutCreatePayload } from "@/lib/checkout/validate";
 import type { CheckoutSession, CheckoutSessionResponse } from "@/types/checkout";
 
 export async function POST(request: Request) {
@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body." }, { status: 400 });
   }
 
-  const validation = validateCheckoutSessionPayload(payload);
+  const validation = validateCheckoutCreatePayload(payload);
   if (!validation.ok) {
     return NextResponse.json({ error: validation.error }, { status: 400 });
   }
@@ -30,9 +30,8 @@ export async function POST(request: Request) {
   const response: CheckoutSessionResponse = {
     sessionId: session.id,
     status: session.status,
-    // Payment provider integration point:
-    // paymentUrl: await paymentAdapter.createCheckoutSession(session),
-    // clientSecret: await paymentAdapter.createPaymentIntent(session),
+    totalAmount: session.totalAmount,
+    currency: session.currency,
   };
 
   return NextResponse.json(response);

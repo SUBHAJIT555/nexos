@@ -4,6 +4,8 @@ export type CheckoutProduct = "gateway" | "workspace";
 
 export type CheckoutPlanId = "payg" | "month";
 
+export type PaymentMethod = "upi" | "card" | "netbanking";
+
 export type CheckoutLineItem = {
   id: string;
   name: string;
@@ -12,6 +14,7 @@ export type CheckoutLineItem = {
   currency: string;
   quantity: number;
   interval?: BillingInterval;
+  tokens?: number;
 };
 
 export type CheckoutCustomer = {
@@ -20,24 +23,26 @@ export type CheckoutCustomer = {
   company?: string;
 };
 
+export type CheckoutCartSelection = {
+  itemId: string;
+  enabled: boolean;
+  tokens?: number;
+};
+
 export type CheckoutSessionStatus =
   | "pending"
   | "awaiting_payment"
   | "completed"
   | "cancelled";
 
-/**
- * Provider-agnostic checkout session shape.
- * A payment adapter can map this to Stripe, Adyen, or another provider later
- * without changing page-level component APIs.
- */
 export type CheckoutSessionInput = {
-  product: CheckoutProduct;
-  planId: CheckoutPlanId;
   items: CheckoutLineItem[];
   customer: CheckoutCustomer;
+  paymentMethod: PaymentMethod;
   successUrl: string;
   cancelUrl: string;
+  totalAmount: number;
+  currency: string;
 };
 
 export type CheckoutSession = CheckoutSessionInput & {
@@ -49,7 +54,7 @@ export type CheckoutSession = CheckoutSessionInput & {
 export type CheckoutSessionResponse = {
   sessionId: string;
   status: CheckoutSessionStatus;
-  /** Populated once a payment provider is connected. */
+  totalAmount: number;
+  currency: string;
   paymentUrl?: string;
-  clientSecret?: string;
 };
