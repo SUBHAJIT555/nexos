@@ -6,6 +6,13 @@ import {
 } from "@/data/checkout";
 import type { CheckoutCartSelection, CheckoutLineItem } from "@/types/checkout";
 
+export function normalizeTokenAmount(item: CheckoutCatalogItem, tokens: number): number {
+  if (!Number.isFinite(tokens)) {
+    return item.minTokens;
+  }
+  return Math.max(item.minTokens, Math.floor(tokens));
+}
+
 export function calculateTokenAmountPaise(item: CheckoutCatalogItem, tokens: number): number {
   const base = Math.round((tokens / 1000) * item.pricePerThousandTokensPaise);
   if (item.appliesPlatformFee) {
@@ -33,10 +40,7 @@ export function buildLineItem(
     return null;
   }
 
-  const tokens = Math.min(
-    item.maxTokens,
-    Math.max(item.minTokens, selection.tokens ?? item.defaultTokens),
-  );
+  const tokens = normalizeTokenAmount(item, selection.tokens ?? item.defaultTokens);
   const amount = calculateTokenAmountPaise(item, tokens);
   if (amount <= 0) {
     return null;

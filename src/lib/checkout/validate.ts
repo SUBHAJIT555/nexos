@@ -1,4 +1,5 @@
 import { CHECKOUT_CURRENCY, getCatalogItem } from "@/data/checkout";
+import { normalizeTokenAmount } from "@/lib/checkout/pricing";
 import { buildLineItems, calculateTotalPaise } from "@/lib/checkout/pricing";
 import type {
   CheckoutCartSelection,
@@ -63,11 +64,9 @@ function parseSelections(value: unknown): CheckoutCartSelection[] | null {
     }
 
     const catalogItem = getCatalogItem(itemId)!;
-    const min = catalogItem.minTokens;
-    const max = catalogItem.maxTokens;
-    const resolvedTokens = Math.min(
-      max,
-      Math.max(min, tokens ?? catalogItem.defaultTokens),
+    const resolvedTokens = normalizeTokenAmount(
+      catalogItem,
+      tokens ?? catalogItem.defaultTokens,
     );
     selections.push({ itemId, enabled, tokens: resolvedTokens });
   }

@@ -16,6 +16,7 @@ export type CheckoutCatalogItem = {
   /** When true, 5% platform fee is added (gateway only). */
   appliesPlatformFee?: boolean;
   minTokens: number;
+  /** Upper bound for the slider control. Manual entry has no upper limit. */
   maxTokens: number;
   defaultTokens: number;
   tokenStep: number;
@@ -159,7 +160,10 @@ export function parsePreselectedItems(raw: string | null | undefined): string[] 
 }
 
 function clampTokens(item: CheckoutCatalogItem, tokens: number) {
-  return Math.min(item.maxTokens, Math.max(item.minTokens, tokens));
+  if (!Number.isFinite(tokens)) {
+    return item.minTokens;
+  }
+  return Math.max(item.minTokens, Math.floor(tokens));
 }
 
 export function defaultCartSelections(preselected: string[] = [], tokenAmount?: number) {
