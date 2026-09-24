@@ -16,6 +16,8 @@
 # next.js
 /.next/
 /out/
+out/api/.env
+out/api/data/*.json
 
 # production
 /build
@@ -36,6 +38,9 @@ yarn-error.log*
 .env
 .env.*
 !.env.example
+public/api/.env
+public/api/mpurse.env
+public/api/data/*.json
 
 # vercel
 .vercel

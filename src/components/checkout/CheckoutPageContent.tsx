@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { CheckoutCustomerForm } from "@/components/checkout/CheckoutCustomerForm";
 import { CheckoutOrderSummary } from "@/components/checkout/CheckoutOrderSummary";
@@ -10,6 +9,14 @@ import { CheckoutPlanBuilder } from "@/components/checkout/CheckoutPlanBuilder";
 import { Card } from "@/components/ui/Card";
 import { defaultCartSelections } from "@/data/checkout";
 import { buildLineItems, calculateTotalPaise } from "@/lib/checkout/pricing";
+import {
+  lineItemsToCartItems,
+  PENDING_ORDER_KEY,
+  preferredUpiMode,
+  splitCustomerName,
+  startMpurseCheckout,
+  validateCustomerForPayment,
+} from "@/lib/checkout/mpurse";
 import type { CheckoutCartSelection, CheckoutCustomer, PaymentMethod } from "@/types/checkout";
 
 const customerDraftKey = "checkout-customer-draft";
@@ -26,7 +33,6 @@ export function CheckoutPageContent({
   preselectedItems,
   preselectedTokens,
 }: CheckoutPageContentProps) {
-  const router = useRouter();
   const [step, setStep] = useState<CheckoutStep>("configure");
   const [selections, setSelections] = useState<CheckoutCartSelection[]>(() =>
     defaultCartSelections(preselectedItems, preselectedTokens),
@@ -36,7 +42,6 @@ export function CheckoutPageContent({
     name: "",
     company: "",
   });
-  const [sessionId, setSessionId] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -52,6 +57,11 @@ export function CheckoutPageContent({
           email: parsed.email ?? current.email,
           name: parsed.name ?? current.name,
           company: parsed.company ?? current.company,
+          phone: parsed.phone ?? current.phone,
+          address: parsed.address ?? current.address,
+          town: parsed.town ?? current.town,
+          state: parsed.state ?? current.state,
+          postcode: parsed.postcode ?? current.postcode,
         }));
       }
 
@@ -86,55 +96,23 @@ export function CheckoutPageContent({
     }
   }, [customer, selections]);
 
-  async function createSession() {
+  function continueToPayment() {
     if (lineItems.length === 0) {
       setError("Select at least one item to continue.");
       return;
     }
-
-    setIsSubmitting(true);
-    setError(null);
-
-    try {
-      const response = await fetch("/api/checkout/session", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          selections,
-          customer,
-          successUrl: "/checkout/success",
-          cancelUrl: "/checkout/cancel",
-        }),
-      });
-
-      const data = (await response.json()) as {
-        sessionId?: string;
-        error?: string;
-        paymentUrl?: string;
-        totalAmount?: number;
-      };
-
-      if (!response.ok || !data.sessionId) {
-        throw new Error(data.error ?? "Unable to start checkout.");
-      }
-
-      setSessionId(data.sessionId);
-
-      if (data.paymentUrl) {
-        window.location.href = data.paymentUrl;
-        return;
-      }
-
-      setStep("payment");
-    } catch (submitError) {
-      setError(submitError instanceof Error ? submitError.message : "Unable to start checkout.");
-    } finally {
-      setIsSubmitting(false);
+    const validationError = validateCustomerForPayment(customer);
+    if (validationError) {
+      setError(validationError);
+      return;
     }
+    setError(null);
+    setStep("payment");
   }
 
-  async function completeOrder(paymentMethod: PaymentMethod, upiId: string) {
-    if (!sessionId) {
+  async function completeOrder(paymentMethod: PaymentMethod) {
+    if (paymentMethod !== "upi") {
+      setError("Only UPI is available right now.");
       return;
     }
 
@@ -142,25 +120,28 @@ export function CheckoutPageContent({
     setError(null);
 
     try {
-      const response = await fetch(`/api/checkout/session/${sessionId}/complete`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ paymentMethod, upiId }),
+      const { firstName, lastName } = splitCustomerName(customer.name);
+      const notes = customer.company ? `Company: ${customer.company}` : "";
+      const result = await startMpurseCheckout({
+        action: "create_session",
+        payment_method: "upi",
+        upi_mode: preferredUpiMode(),
+        billing_first_name: firstName,
+        billing_last_name: lastName,
+        billing_email: customer.email.trim(),
+        billing_phone: customer.phone,
+        billing_address: customer.address,
+        billing_town: customer.town,
+        billing_state: customer.state ?? "",
+        billing_postcode: customer.postcode ?? "",
+        notes,
+        cart_items: lineItemsToCartItems(lineItems),
       });
-      const data = (await response.json()) as { error?: string; totalAmount?: number };
 
-      if (!response.ok) {
-        throw new Error(data.error ?? "Unable to complete checkout.");
-      }
-
-      const params = new URLSearchParams({
-        session: sessionId,
-        total: String(data.totalAmount ?? totalPaise),
-      });
-      router.push(`/checkout/success?${params.toString()}`);
+      sessionStorage.setItem(PENDING_ORDER_KEY, result.order_id!);
+      window.location.assign(`/pay?order_id=${encodeURIComponent(result.order_id!)}`);
     } catch (submitError) {
-      setError(submitError instanceof Error ? submitError.message : "Unable to complete checkout.");
-    } finally {
+      setError(submitError instanceof Error ? submitError.message : "Unable to start UPI payment.");
       setIsSubmitting(false);
     }
   }
@@ -197,7 +178,7 @@ export function CheckoutPageContent({
                 className="mt-6"
                 onSubmit={(event) => {
                   event.preventDefault();
-                  void createSession();
+                  continueToPayment();
                 }}
               >
                 <CheckoutCustomerForm
@@ -231,10 +212,9 @@ export function CheckoutPageContent({
         ) : (
           <CheckoutPaymentStep
             amountPaise={totalPaise}
-            sessionId={sessionId ?? ""}
             isSubmitting={isSubmitting}
             error={error}
-            onComplete={(method, upiId) => void completeOrder(method, upiId)}
+            onComplete={(method) => void completeOrder(method)}
             onBack={() => {
               setStep("configure");
               setError(null);

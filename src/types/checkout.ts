@@ -21,6 +21,12 @@ export type CheckoutCustomer = {
   email: string;
   name: string;
   company?: string;
+  /** Required for mPurse Direct UPI (10-digit Indian mobile). */
+  phone?: string;
+  address?: string;
+  town?: string;
+  state?: string;
+  postcode?: string;
 };
 
 export type CheckoutCartSelection = {

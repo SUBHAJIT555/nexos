@@ -1,11 +1,12 @@
 "use client";
 
-import { type FormEvent } from "react";
+import { type FormEvent, useState } from "react";
 import { partnershipsGraphics } from "@/assets/partnerships";
 import { assetSrc } from "@/assets/home";
 import { partnershipsForm } from "@/data/partnerships";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
+import { submitToMailer } from "@/lib/forms/submitToMailer";
 
 const fieldClassName =
   "h-[50px] w-full rounded-sm border border-neutral-500 bg-white px-4 py-3 text-base leading-6 text-neutral-900 outline-none placeholder:text-neutral-500 focus-visible:border-accent";
@@ -13,8 +14,36 @@ const fieldClassName =
 const labelClassName = "text-xs leading-[18px] font-medium text-neutral-900";
 
 export function PartnershipsForm() {
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
+
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setSubmitting(true);
+    setError(null);
+    setSuccess(false);
+
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      await submitToMailer({
+        formType: "partnership",
+        fullName: String(data.get("fullName") ?? ""),
+        email: String(data.get("email") ?? ""),
+        companyName: String(data.get("companyName") ?? ""),
+        website: String(data.get("website") ?? ""),
+        partnershipType: String(data.get("partnershipType") ?? ""),
+        message: String(data.get("message") ?? ""),
+      });
+      setSuccess(true);
+      form.reset();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unable to send application.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -41,7 +70,7 @@ export function PartnershipsForm() {
           </div>
           <form
             className="flex flex-col gap-6 rounded-md border border-neutral-300 bg-white px-4 py-6 md:p-8"
-            onSubmit={onSubmit}
+            onSubmit={(event) => void onSubmit(event)}
             noValidate={false}
           >
             {partnershipsForm.fields.map((field) => (
@@ -56,6 +85,7 @@ export function PartnershipsForm() {
                   placeholder={field.placeholder}
                   required={field.required}
                   autoComplete={field.autoComplete}
+                  disabled={submitting}
                   className={fieldClassName}
                 />
               </div>
@@ -69,12 +99,23 @@ export function PartnershipsForm() {
                 name={partnershipsForm.message.name}
                 placeholder={partnershipsForm.message.placeholder}
                 rows={5}
+                disabled={submitting}
                 className="min-h-[146px] w-full resize-y rounded-sm border border-neutral-500 bg-white px-4 py-3 text-base leading-6 text-neutral-900 outline-none placeholder:text-neutral-500 focus-visible:border-accent"
               />
             </div>
+            {error ? (
+              <p className="text-sm text-red-600" role="alert">
+                {error}
+              </p>
+            ) : null}
+            {success ? (
+              <p className="text-sm text-neutral-700" role="status">
+                Thank you — we received your application and will email you shortly.
+              </p>
+            ) : null}
             <div>
-              <Button type="submit" variant="primary">
-                {partnershipsForm.submit}
+              <Button type="submit" variant="primary" disabled={submitting}>
+                {submitting ? "Sending…" : partnershipsForm.submit}
               </Button>
             </div>
             <p className="text-sm leading-[21px] text-neutral-700 italic">{partnershipsForm.requiredNote}</p>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { CheckoutPageContent } from "@/components/checkout/CheckoutPageContent";
+import { CheckoutPageWithSearchParams } from "@/components/checkout/CheckoutPageWithSearchParams";
 import { Section } from "@/components/layout/Section";
-import { parsePreselectedItems } from "@/data/checkout";
 
 export const metadata: Metadata = {
   title: "Checkout",
@@ -12,35 +11,11 @@ export const metadata: Metadata = {
   },
 };
 
-type CheckoutPageProps = {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-};
-
-export default async function CheckoutPage({ searchParams }: CheckoutPageProps) {
-  const params = await searchParams;
-  const itemsParam = typeof params.items === "string" ? params.items : null;
-
-  // Legacy pricing links: ?product=gateway&plan=payg
-  const product = typeof params.product === "string" ? params.product : null;
-  const plan = typeof params.plan === "string" ? params.plan : null;
-  const legacyItems =
-    product === "gateway" && plan === "payg"
-      ? ["gateway-tokens"]
-      : product === "workspace" && plan === "month"
-        ? ["workspace-subscription"]
-        : [];
-
-  const preselectedItems = parsePreselectedItems(itemsParam ?? legacyItems.join(","));
-  const tokensParam = typeof params.tokens === "string" ? Number(params.tokens) : undefined;
-  const preselectedTokens = Number.isFinite(tokensParam) ? tokensParam : undefined;
-
+export default function CheckoutPage() {
   return (
     <Section size="md">
       <div className="mx-auto max-w-[1120px]">
-        <CheckoutPageContent
-          preselectedItems={preselectedItems}
-          preselectedTokens={preselectedTokens}
-        />
+        <CheckoutPageWithSearchParams />
       </div>
     </Section>
   );

@@ -1,3 +1,4 @@
+import { merchantLegal } from "@/config/merchant";
 import { siteConfig } from "@/config/site";
 import { footerNavigation, headerCtas } from "@/config/navigation";
 import { Container } from "@/components/layout/Container";
@@ -67,7 +68,14 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 border-t border-neutral-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 border-t border-neutral-200 pt-6">
+          <p className="text-xs leading-5 text-neutral-600">
+            {siteConfig.name} is operated by {merchantLegal.legalName}. Registered office:{" "}
+            {merchantLegal.registeredAddress}
+          </p>
+        </div>
+
+        <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-neutral-600">
             © 2026 {siteConfig.name}. All rights reserved.
           </p>

@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/copy-html-indexes.js",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "php:api": "C:/xampp/php/php.exe -S 127.0.0.1:8088 -t public/api"
   },
   "dependencies": {
     "clsx": "^2.1.1",

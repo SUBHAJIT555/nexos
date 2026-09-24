@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { BlogListingPage } from "@/components/blog/BlogListingPage";
-import { blogListingMeta, getListingPage } from "@/data/blog/posts";
+import { BlogListingWithSearchParams } from "@/components/blog/BlogListingWithSearchParams";
+import { blogListingMeta } from "@/data/blog/posts";
 
 export const metadata: Metadata = {
   title: blogListingMeta.title,
@@ -11,14 +11,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function Page({
-  searchParams,
-}: {
-  searchParams: Promise<{ page?: string }>;
-}) {
-  const params = await searchParams;
-  const requested = Number.parseInt(params.page ?? "1", 10);
-  const listing = getListingPage(requested);
-
-  return <BlogListingPage page={listing.page} />;
+export default function Page() {
+  return <BlogListingWithSearchParams />;
 }

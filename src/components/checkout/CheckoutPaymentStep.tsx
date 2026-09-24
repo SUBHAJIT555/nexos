@@ -34,24 +34,20 @@ const paymentMethods: {
 
 type CheckoutPaymentStepProps = {
   amountPaise: number;
-  sessionId: string;
   isSubmitting: boolean;
   error?: string | null;
-  onComplete: (paymentMethod: PaymentMethod, upiId: string) => void;
+  onComplete: (paymentMethod: PaymentMethod) => void;
   onBack: () => void;
 };
 
 export function CheckoutPaymentStep({
   amountPaise,
-  sessionId,
   isSubmitting,
   error,
   onComplete,
   onBack,
 }: CheckoutPaymentStepProps) {
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("upi");
-  const [upiId, setUpiId] = useState("");
-
   const selected = paymentMethods.find((method) => method.id === paymentMethod);
 
   return (
@@ -98,23 +94,9 @@ export function CheckoutPaymentStep({
       </div>
 
       {paymentMethod === "upi" && selected?.available ? (
-        <div className="mt-6 rounded-lg border border-neutral-200 bg-neutral-50 p-4">
-          <label htmlFor="upi-id" className="text-xs font-medium text-neutral-900">
-            UPI ID
-          </label>
-          <input
-            id="upi-id"
-            type="text"
-            inputMode="email"
-            placeholder="yourname@upi"
-            value={upiId}
-            disabled={isSubmitting}
-            onChange={(event) => setUpiId(event.target.value)}
-            className="mt-2 h-[50px] w-full rounded-sm border border-neutral-500 bg-white px-4 text-base text-neutral-900 outline-none placeholder:text-neutral-500 focus-visible:border-accent"
-          />
-          <p className="mt-2 text-xs text-neutral-600">
-            You will confirm payment in your UPI app once the provider is connected.
-          </p>
+        <div className="mt-6 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm leading-6 text-neutral-600">
+          On mobile, you will open your UPI app. On desktop, scan the QR code on the next page.
+          Card and net banking are not available yet.
         </div>
       ) : null}
 
@@ -142,15 +124,14 @@ export function CheckoutPaymentStep({
         </button>
         <button
           type="button"
-          onClick={() => onComplete(paymentMethod, upiId.trim())}
-          disabled={isSubmitting || paymentMethod !== "upi" || upiId.trim().length < 3}
+          onClick={() => onComplete(paymentMethod)}
+          disabled={isSubmitting || paymentMethod !== "upi"}
           className="inline-flex h-12 flex-1 items-center justify-center rounded-full border border-neutral-1000 bg-neutral-1000 px-7 text-base font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50"
         >
           {isSubmitting ? "Processing…" : "Pay with UPI"}
         </button>
       </div>
 
-      <p className="mt-4 text-xs text-neutral-500">Session: {sessionId}</p>
     </Card>
   );
 }

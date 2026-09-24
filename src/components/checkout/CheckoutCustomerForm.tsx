@@ -57,6 +57,25 @@ export function CheckoutCustomerForm({
       </div>
 
       <div className="flex flex-col gap-1">
+        <label htmlFor="checkout-phone" className={labelClassName}>
+          Mobile number (UPI)
+        </label>
+        <input
+          id="checkout-phone"
+          name="phone"
+          type="tel"
+          required
+          autoComplete="tel"
+          inputMode="numeric"
+          disabled={disabled}
+          value={value.phone ?? ""}
+          onChange={(event) => onChange({ ...value, phone: event.target.value })}
+          className={fieldClassName}
+          placeholder="10-digit Indian mobile"
+        />
+      </div>
+
+      <div className="flex flex-col gap-1">
         <label htmlFor="checkout-company" className={labelClassName}>
           Company <span className="font-normal text-neutral-600">(optional)</span>
         </label>
@@ -75,6 +94,77 @@ export function CheckoutCustomerForm({
           }
           className={fieldClassName}
           placeholder="Company name"
+        />
+      </div>
+
+      <div className="flex flex-col gap-1">
+        <label htmlFor="checkout-address" className={labelClassName}>
+          Billing address
+        </label>
+        <input
+          id="checkout-address"
+          name="address"
+          type="text"
+          required
+          autoComplete="street-address"
+          disabled={disabled}
+          value={value.address ?? ""}
+          onChange={(event) => onChange({ ...value, address: event.target.value })}
+          className={fieldClassName}
+          placeholder="Street address"
+        />
+      </div>
+
+      <div className="grid gap-6 sm:grid-cols-2">
+        <div className="flex flex-col gap-1">
+          <label htmlFor="checkout-town" className={labelClassName}>
+            City
+          </label>
+          <input
+            id="checkout-town"
+            name="town"
+            type="text"
+            required
+            autoComplete="address-level2"
+            disabled={disabled}
+            value={value.town ?? ""}
+            onChange={(event) => onChange({ ...value, town: event.target.value })}
+            className={fieldClassName}
+            placeholder="City"
+          />
+        </div>
+        <div className="flex flex-col gap-1">
+          <label htmlFor="checkout-state" className={labelClassName}>
+            State <span className="font-normal text-neutral-600">(optional)</span>
+          </label>
+          <input
+            id="checkout-state"
+            name="state"
+            type="text"
+            autoComplete="address-level1"
+            disabled={disabled}
+            value={value.state ?? ""}
+            onChange={(event) => onChange({ ...value, state: event.target.value })}
+            className={fieldClassName}
+            placeholder="State"
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-1">
+        <label htmlFor="checkout-postcode" className={labelClassName}>
+          PIN code <span className="font-normal text-neutral-600">(optional)</span>
+        </label>
+        <input
+          id="checkout-postcode"
+          name="postcode"
+          type="text"
+          autoComplete="postal-code"
+          disabled={disabled}
+          value={value.postcode ?? ""}
+          onChange={(event) => onChange({ ...value, postcode: event.target.value })}
+          className={fieldClassName}
+          placeholder="400602"
         />
       </div>
     </div>

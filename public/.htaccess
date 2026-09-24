@@ -1,0 +1,41 @@
+DirectoryIndex index.html index.htm
+Options -Indexes -MultiViews +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteRule (^|/)\.env$ - [F,L]
+  RewriteRule (^|/)mpurse\.env$ - [F,L]
+  RewriteRule ^api/data/ - [F,L]
+
+  RewriteCond %{HTTP_HOST} ^www\.nexeco-ai\.com$ [NC]
+  RewriteRule ^ http://nexeco-ai.com%{REQUEST_URI} [L,R=301]
+
+  RewriteRule ^api/submit/?$ api/submit.php [L]
+  RewriteRule ^api/mpurse/?$ api/mpurse.php [L]
+  RewriteRule ^api/mpurse-webhook/?$ api/mpurse-webhook.php [L]
+  RewriteRule ^mail\.php$ api/submit.php [L]
+
+  RewriteCond %{REQUEST_URI} !^/api/
+  RewriteCond %{DOCUMENT_ROOT}/$1 -d
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html !-f
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+?)/?$ /$1.html [L,QSA]
+
+  RewriteRule ^checkout/?$ checkout.html [L]
+  RewriteRule ^pay/?$ pay.html [L]
+  RewriteRule ^checkout/success/?$ checkout/success.html [L]
+  RewriteRule ^checkout/cancel/?$ checkout/cancel.html [L]
+  RewriteRule ^partnerships/?$ partnerships.html [L]
+  RewriteRule ^pricing/?$ pricing.html [L]
+
+  RewriteCond %{REQUEST_URI} !^/api/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([^.]+)/?$ $1.html [L]
+</IfModule>
+
+<FilesMatch "^\.env">
+  Require all denied
+</FilesMatch>
