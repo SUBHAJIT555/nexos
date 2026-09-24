@@ -341,7 +341,9 @@ if (!$sent) {
     json_exit(500, array(
         'success' => false,
         'error' => 'Failed to send email.',
-        'message' => 'Configure SMTP_HOST, SMTP_USER, and SMTP_PASS in public/api/.env, or enable PHP mail() for ' . $toEmail . '.',
+        'message' => function_exists('ne_mail_last_error') && ne_mail_last_error() !== ''
+            ? ne_mail_last_error()
+            : 'Could not send email to ' . $toEmail . '.',
     ));
 }
 

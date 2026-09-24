@@ -29,8 +29,13 @@ function ne_find_autoload(): ?string
     return null;
 }
 
+function ne_mail_last_error(): string
+{
+    return isset($GLOBALS['ne_last_mail_error']) ? (string) $GLOBALS['ne_last_mail_error'] : '';
+}
+
 /**
- * Send HTML mail via SMTP (when configured) or PHP mail().
+ * Send HTML mail via SMTP when configured, otherwise PHP mail().
  */
 function ne_deliver_mail(
     string $toEmail,
@@ -41,6 +46,7 @@ function ne_deliver_mail(
     string $replyEmail = '',
     string $replyName = ''
 ): bool {
+    $GLOBALS['ne_last_mail_error'] = '';
     $smtpHost = ne_env('SMTP_HOST');
     $smtpUser = ne_env('SMTP_USER');
     $smtpPass = ne_env('SMTP_PASS');
@@ -52,39 +58,47 @@ function ne_deliver_mail(
     }
     $fromName = ne_env('MAIL_FROM_NAME', 'NexEco AI');
 
-    $autoload = ne_find_autoload();
-    if ($autoload && $smtpHost !== '' && $smtpUser !== '' && $smtpPass !== '') {
+    if ($smtpHost !== '' && $smtpUser !== '' && $smtpPass !== '') {
+        $autoload = ne_find_autoload();
+        if (!$autoload) {
+            $GLOBALS['ne_last_mail_error'] = 'PHPMailer is missing from public/api/vendor.';
+            return false;
+        }
         try {
             require_once $autoload;
-            if (class_exists('PHPMailer\\PHPMailer\\PHPMailer')) {
-                $mail = new PHPMailer\PHPMailer\PHPMailer(true);
-                $mail->Timeout = 15;
-                $mail->isSMTP();
-                $mail->Host = $smtpHost;
-                $mail->SMTPAuth = true;
-                $mail->Username = $smtpUser;
-                $mail->Password = $smtpPass;
-                $mail->Port = $smtpPort > 0 ? $smtpPort : 465;
-                if ($smtpSecure === 'smtps' || $smtpPort === 465) {
-                    $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
-                } else {
-                    $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
-                }
-                $mail->CharSet = 'UTF-8';
-                $mail->setFrom($fromEmail, $fromName);
-                $mail->addAddress($toEmail, $toName);
-                if ($replyEmail !== '') {
-                    $mail->addReplyTo($replyEmail, $replyName !== '' ? $replyName : $replyEmail);
-                }
-                $mail->isHTML(true);
-                $mail->Subject = $subject;
-                $mail->Body = $html;
-                $mail->AltBody = $alt !== '' ? $alt : strip_tags($subject);
-                $mail->send();
-                return true;
+            if (!class_exists('PHPMailer\\PHPMailer\\PHPMailer')) {
+                $GLOBALS['ne_last_mail_error'] = 'PHPMailer failed to load.';
+                return false;
             }
+            $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+            $mail->Timeout = 20;
+            $mail->isSMTP();
+            $mail->Host = $smtpHost;
+            $mail->SMTPAuth = true;
+            $mail->Username = $smtpUser;
+            $mail->Password = $smtpPass;
+            $mail->Port = $smtpPort > 0 ? $smtpPort : 465;
+            if ($smtpSecure === 'smtps' || $smtpPort === 465) {
+                $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
+            } else {
+                $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
+            }
+            $mail->CharSet = 'UTF-8';
+            $mail->setFrom($fromEmail, $fromName);
+            $mail->addAddress($toEmail, $toName);
+            if ($replyEmail !== '') {
+                $mail->addReplyTo($replyEmail, $replyName !== '' ? $replyName : $replyEmail);
+            }
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+            $mail->Body = $html;
+            $mail->AltBody = $alt !== '' ? $alt : strip_tags($subject);
+            $mail->send();
+            return true;
         } catch (Throwable $e) {
-            // Fall through to mail()
+            $detail = trim($e->getMessage());
+            $GLOBALS['ne_last_mail_error'] = $detail !== '' ? $detail : 'SMTP send failed.';
+            return false;
         }
     }
 
@@ -99,16 +113,23 @@ function ne_deliver_mail(
     $headers[] = 'X-Mailer: PHP/' . phpversion();
 
     if (!function_exists('mail')) {
+        $GLOBALS['ne_last_mail_error'] = 'SMTP is not set in public/api/.env and PHP mail() is disabled.';
         return false;
     }
 
-    return @mail(
-        $toEmail,
-        '=?UTF-8?B?' . base64_encode($subject) . '?=',
-        $html,
-        implode("\r\n", $headers),
-        '-f' . $fromEmail
-    );
+    $extra = PHP_OS_FAMILY === 'Windows' ? '' : '-f' . $fromEmail;
+    $sent = $extra !== ''
+        ? @mail($toEmail, '=?UTF-8?B?' . base64_encode($subject) . '?=', $html, implode("\r\n", $headers), $extra)
+        : @mail($toEmail, '=?UTF-8?B?' . base64_encode($subject) . '?=', $html, implode("\r\n", $headers));
+
+    if ($sent) {
+        return true;
+    }
+
+    $last = error_get_last();
+    $hint = ($last && !empty($last['message'])) ? ' ' . $last['message'] : '';
+    $GLOBALS['ne_last_mail_error'] = 'SMTP_HOST, SMTP_USER, and SMTP_PASS are empty in public/api/.env, and PHP mail() cannot send from this computer.' . $hint;
+    return false;
 }
 
 if (!function_exists('deliverMail')) {

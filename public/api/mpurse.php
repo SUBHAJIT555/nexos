@@ -1266,29 +1266,34 @@ function sendOrderPaidEmail($order, $gateway)
     }
 
     if ($email !== '' && filter_var($email, FILTER_VALIDATE_EMAIL) && empty($order['emailed_customer'])) {
-        $customerBody =
-            '<p>Hi ' . clean($name) . ',</p>'
+        $customerIntro =
+            '<tr><td style="padding:0 24px 8px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#333;">'
+            . '<p>Hi ' . clean($name) . ',</p>'
             . '<p>Thank you — we received your payment of <strong>₹' . clean($amount) . '</strong> for order <strong>' . clean($orderId) . '</strong>.</p>'
-            . '<p>Your NexEco AI plan selections are recorded. Our team will follow up at this email if any activation steps are needed.</p>'
-            . '<p>Regards,<br><strong>' . clean($brandName) . ' Team</strong></p>';
-        $customerMain = '<tr><td style="padding:0 24px 24px;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#333;">'
-            . $customerBody
+            . '<p>This is your receipt. Keep the order ID if you need to contact us.</p>'
             . '</td></tr>';
         $result['customer'] = deliverMail(
             $email,
             $name,
             'Payment receipt — ' . $brandName . ' — ' . $orderId,
-            wrapEmail('Payment receipt', $customerMain, $email),
-            'Payment receipt for order ' . $orderId . ' — ₹' . $amount
+            wrapEmail('Payment receipt', $customerIntro . $mainContent, $email),
+            'Payment receipt for order ' . $orderId . ' — ₹' . $amount . "\n" . $alt
         );
     } elseif (!empty($order['emailed_customer'])) {
         $result['customer'] = true;
     }
 
+    $mailDetail = function_exists('ne_mail_last_error') ? ne_mail_last_error() : '';
     if (!$result['merchant'] && !$result['customer']) {
-        $result['error'] = 'Configure SMTP in public/api/.env or enable PHP mail() for ' . $toEmail . '.';
+        $result['error'] = $mailDetail !== '' ? $mailDetail : 'Could not send the receipt email.';
     } elseif (!$result['customer'] && $email !== '') {
-        $result['error'] = 'Merchant notified but customer receipt email could not be sent.';
+        $result['error'] = $mailDetail !== ''
+            ? 'Merchant notified, but the customer receipt failed: ' . $mailDetail
+            : 'Merchant notified but customer receipt email could not be sent.';
+    } elseif (!$result['merchant']) {
+        $result['error'] = $mailDetail !== ''
+            ? 'Customer receipt sent, but the merchant copy failed: ' . $mailDetail
+            : 'Customer receipt sent, but the merchant copy could not be sent.';
     }
 
     return $result;
