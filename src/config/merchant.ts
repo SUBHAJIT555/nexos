@@ -1,8 +1,8 @@
 /** Legal payee / mPurse merchant details (not payment secrets). */
 export const merchantLegal = {
-  legalName: "ECHOZIA DIGITAL STUDIO PRIVATE LIMITED",
+  legalName: "VIREXA ECOMMERCE HUB PVT LTD",
   registeredAddress:
-    "5th Floor, 501, Raunak Arcade B Wing, Gopal Krishna Gokhale Marg, Gokhale Rd, Naupada, Thane West, Thane, Maharashtra 400602",
-  phone: "9820932083",
+    "5TH FLOOR, 501, Raunak Arcade, B WING GOKHALE ROAD, Naupada, Thane, Maharashtra-400602",
+  phone: "8452948703",
   orderEmail: "info@nexeco-ai.com",
 } as const;

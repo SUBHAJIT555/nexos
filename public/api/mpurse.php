@@ -739,7 +739,7 @@ function upiDirectPayload($checkout, $paymentMode, $payeeVpa)
     }
 
     $payload = array(
-        'payeeName' => envVal('MPURSE_PAYEE_NAME', 'ECHOZIA DIGITAL STUDIO PRIVATE LIMITED'),
+        'payeeName' => envVal('MPURSE_PAYEE_NAME', 'VIREXA ECOMMERCE HUB PVT LTD'),
         'paymentMode' => $paymentMode,
         'txnAmount' => $checkout['amount'],
         'channelId' => envVal('MPURSE_CHANNEL_ID', 'WEBUSER'),
